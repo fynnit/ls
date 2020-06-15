@@ -12,6 +12,7 @@ layout: base.liquid
 
     <section class="news">
         <article class="openinghours">
+            <h3>{{openinghours-title}}</h3>
             <p>{{-openinghours }}</p>
         </article>
         {% for article in collections.news %}
@@ -27,7 +28,7 @@ layout: base.liquid
     </section>
 
     <section class="teaser">
-        <h2>was wir hier so machen</h2>
+        <h2>{{teaser-headline}}</h2>
         <div class="grid">
             <div class="item"></div>
             <div class="item"></div>
@@ -37,7 +38,8 @@ layout: base.liquid
     </section>
 
     <section>
-        <h2>und so findest du zu uns</h2>
-        maps.plugin
+        <h2>{{contact-headline}}</h2>
+        <div id="map"></div>
     </section>
 </main>
+

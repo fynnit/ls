@@ -19,6 +19,8 @@ a,span,p,li,div {
     color: inherit;
 }
 
-p:not(:last-child) {
-    margin-bottom: 1rem;
+p { 
+    &:not(:last-child) {
+        margin-bottom: 1rem;
+    }
 }

@@ -1,8 +1,7 @@
 <nav class="nav">
     {% for site in collections.page %}
         <div class="nav-item order-{{site.data.nav-order}} {% if page.url == site.url %} active {% endif %}">
-            <a href="{{site.url}}" 
-                >{{site.data.nav-title}}</a>
+            <a href="{{site.url}}">{{site.data.nav-title}}</a>
         </div>
     {% endfor %}
 </nav>

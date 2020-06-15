@@ -8,7 +8,11 @@ permalink: /
 headertitle: tach zusammen
 headercontent: "leuchtstoff - kaffeebar is an unpretentious 3rd wave coffee shop in Berlin/Neukölln with free wifi and some great homemade organic baked goods"
 
+openinghours-title: Unsere Öffnungszeiten
 openinghours: "Mo - Fr 7 - 18 Uhr,\nSa - So 9 - 18 Uhr\n\nSiegfriedstraße 18,\n12051 Berlin"
+header_image: ""
+teaser-headline: was wir hier so machen
+contact-headline: und so findest du zu uns
 ---
 
 
