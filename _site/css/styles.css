@@ -5,6 +5,10 @@ h1, h2, h3, nav a {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h2 {
+  margin-bottom: 1rem;
+}
+
 a, span, p, li, div {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -13,7 +17,7 @@ a, span, p, li, div {
   color: inherit;
 }
 
-p {
+p:not(:last-child) {
   margin-bottom: 1rem;
 }
 
@@ -63,7 +67,14 @@ p {
 }
 
 .home header {
+  height: 300px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  background-color: #efefef;
   padding: 0 20px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 @media (min-width: 768px) {
   .home header {
@@ -73,6 +84,11 @@ p {
 @media (min-width: 1024px) {
   .home header {
     padding: 0 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .home header {
+    margin-bottom: 100px;
   }
 }
 .home .news {
@@ -91,6 +107,12 @@ p {
 }
 .home article.openinghours {
   white-space: pre-line;
+}
+.home h2 {
+  text-align: center;
+}
+.home .intro {
+  text-align: center;
 }
 
 * {
@@ -120,6 +142,7 @@ body.loading {
 
 section {
   padding: 0 20px;
+  margin-bottom: 50px;
 }
 @media (min-width: 768px) {
   section {
@@ -129,6 +152,7 @@ section {
 @media (min-width: 1024px) {
   section {
     padding: 0 60px;
+    margin-bottom: 100px;
   }
 }
 

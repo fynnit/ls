@@ -12,27 +12,27 @@ layout: base.liquid
 
     <section class="news">
         <article class="openinghours">
-            {{ openinghours }}
+            <p>{{-openinghours }}</p>
         </article>
         {% for article in collections.news %}
-        <article class="article" onclick="window.location.href='{{article.url}}'">            
+            <article class="article" onclick="window.location.href='{{article.url}}'">            
                 <h3>{{article.data.title}}</h3>
-                <p>{{article.content}}</p>
-
-        </article>
+                <p>{{-article.data.page.excerpt}}</p>
+            </article>
         {% endfor %}
     </section>
     
-    <section>
+    <section class="intro">
         {{content}}
     </section>
 
     <section class="teaser">
+        <h2>was wir hier so machen</h2>
 
     </section>
 
     <section>
         <h2>und so findest du zu uns</h2>
-        maps
+        maps.plugin
     </section>
 </main>

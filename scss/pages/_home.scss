@@ -1,12 +1,23 @@
 .home {
 
     header {
+        height: 300px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        background-color: $light;
+
         padding: 0 20px;
         @include media-up(md) {
             padding: 0 40px;
         }
         @include media-up(mdl) {
             padding: 0 60px;
+        }
+        text-align: center;
+        margin-bottom: 50px;
+        @include media-up(mdl) {
+            margin-bottom: 100px;
         }
     }
 
@@ -17,7 +28,7 @@
     
     article {
         width: 30%;
-        background-color: #efefef;
+        background-color: $light;
         padding: 20px;
         a {
             display: block;
@@ -27,5 +38,11 @@
         &.openinghours {
             white-space: pre-line;
         }
+    }
+    h2 {
+        text-align: center;
+    }
+    .intro {
+        text-align: center;
     }
 }
