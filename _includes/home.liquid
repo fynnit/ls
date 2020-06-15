@@ -2,24 +2,37 @@
 layout: base.liquid
 ---
 
-<main class="home" style="background-image: url({{image}})">
-    
-    {% include _menu.liquid %}
-    
+<main class="home"
+      style="background-image: url({{image}})">
+
     <header>
-        images
+        <h2>{{headertitle}}</h2>
+        <p>{{headercontent}}</p>
     </header>
 
     <section class="news">
+        <article class="openinghours">
+            {{ openinghours }}
+        </article>
         {% for article in collections.news %}
-        <div class="article">
-            <a href="{{article.url}}" 
-                >{{article.data.title}}</a>
-        </div>
-    {% endfor %}
+        <article class="article" onclick="window.location.href='{{article.url}}'">            
+                <h3>{{article.data.title}}</h3>
+                <p>{{article.content}}</p>
+
+        </article>
+        {% endfor %}
+    </section>
+    
+    <section>
+        {{content}}
     </section>
 
+    <section class="teaser">
 
-    {{content}}
+    </section>
 
+    <section>
+        <h2>und so findest du zu uns</h2>
+        maps
+    </section>
 </main>

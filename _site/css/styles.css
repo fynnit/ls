@@ -22,11 +22,16 @@ p {
   width: 100%;
   align-self: flex-start;
   justify-content: space-between;
-  padding: 1rem 0;
+  padding: 1rem 20px;
+}
+@media (min-width: 768px) {
+  .nav {
+    padding: 1.2rem 40px;
+  }
 }
 @media (min-width: 1024px) {
   .nav {
-    padding: 1rem 0;
+    padding: 1.5rem 60px;
   }
 }
 .nav .nav-item {
@@ -57,6 +62,37 @@ p {
   order: 4;
 }
 
+.home header {
+  padding: 0 20px;
+}
+@media (min-width: 768px) {
+  .home header {
+    padding: 0 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .home header {
+    padding: 0 60px;
+  }
+}
+.home .news {
+  display: flex;
+  justify-content: space-between;
+}
+.home article {
+  width: 30%;
+  background-color: #efefef;
+  padding: 20px;
+}
+.home article a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.home article.openinghours {
+  white-space: pre-line;
+}
+
 * {
   margin: 0;
   font-family: "Sukhumvit", sans-serif;
@@ -83,26 +119,17 @@ body.loading {
 }
 
 section {
-  flex-grow: 1;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  text-align: left;
-  justify-content: flex-end;
+  padding: 0 20px;
 }
 @media (min-width: 768px) {
   section {
-    min-height: calc(100% - 50px);
-    justify-content: center;
+    padding: 0 40px;
   }
 }
 @media (min-width: 1024px) {
-  section .mobile-image {
-    display: none;
+  section {
+    padding: 0 60px;
   }
-}
-section .mobile-image img {
-  max-height: 40vh;
 }
 
 /*# sourceMappingURL=styles.css.map */

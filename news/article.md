@@ -1,6 +1,6 @@
 ---
 title: stuff happened
-tag: news
+tags: news
 ---
 
 ## insane in the membrane

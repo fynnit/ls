@@ -1,3 +1,31 @@
 .home {
 
+    header {
+        padding: 0 20px;
+        @include media-up(md) {
+            padding: 0 40px;
+        }
+        @include media-up(mdl) {
+            padding: 0 60px;
+        }
+    }
+
+    .news {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    article {
+        width: 30%;
+        background-color: #efefef;
+        padding: 20px;
+        a {
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+        &.openinghours {
+            white-space: pre-line;
+        }
+    }
 }

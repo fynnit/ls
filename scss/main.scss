@@ -30,23 +30,11 @@ body {
 }
 
 section {
-    flex-grow: 1;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    text-align: left;
-    justify-content: flex-end;
+    padding: 0 20px;
     @include media-up(md) {
-        min-height: calc(100% - 50px);
-        justify-content: center;
+        padding: 0 40px;
     }
     @include media-up(mdl) {
-        .mobile-image  {
-            display: none;
-        }
-    }
-
-    .mobile-image img {
-        max-height: 40vh;
+        padding: 0 60px;
     }
 }

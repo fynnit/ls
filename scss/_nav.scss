@@ -1,14 +1,15 @@
 .nav {
-
     display: flex;
     width: 100%;
     align-self: flex-start;
     justify-content: space-between;
-
-    padding: 1rem 0;
-
+    
+    padding: 1rem 20px;
+    @include media-up(md) {
+        padding: 1.2rem 40px;
+    }
     @include media-up(mdl) {
-        padding: 1rem 0;
+        padding: 1.5rem 60px;
     }
 
     .nav-item {
