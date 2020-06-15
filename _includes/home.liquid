@@ -1,0 +1,25 @@
+---
+layout: base.liquid
+---
+
+<main class="home" style="background-image: url({{image}})">
+    
+    {% include _menu.liquid %}
+    
+    <header>
+        images
+    </header>
+
+    <section class="news">
+        {% for article in collections.news %}
+        <div class="article">
+            <a href="{{article.url}}" 
+                >{{article.data.title}}</a>
+        </div>
+    {% endfor %}
+    </section>
+
+
+    {{content}}
+
+</main>

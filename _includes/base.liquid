@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>{{title}}</title>
+
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+
+</head>
+<body id="body" class="loading">
+    {{content}}
+</body>
+
+<script>
+setTimeout(function(){
+    document.getElementById('body').classList.remove('loading');
+},300);
+
+</script>
+</html>
