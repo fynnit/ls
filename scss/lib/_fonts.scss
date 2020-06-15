@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Sukhumvit';
+    font-display: swap;
+    src: url(/assets/fonts/SukhumvitSet-Thin.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Sukhumvit';
+    font-display: swap;
+    src: url(/assets/fonts/SukhumvitSet-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Tamil';
+    font-display: swap;
+    src: url('/assets/fonts/Tamil MN.ttc');
+    font-weight: 300;
+}
+h1 {
+    margin-top: 50px;
+    margin-bottom: 0.8rem;
+    @include media-up(lg) {
+        margin-bottom: 1rem;
+    }
+    @include media-up(xl) {
+        margin-bottom: 1.2rem;
+    }
+}
+
+h1,h2,h3,nav a {
+    font-family: 'Tamil';
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a,span,p,li,div {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Sukhumvit', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    color: inherit;
+}
+
+p {
+    margin-bottom: 1rem;
+}

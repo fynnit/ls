@@ -1,0 +1,21 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:eleventy": "npm @11ty/eleventy --serve",
+    "watch:sass": "sass scss/main.scss _site/css/styles.css --watch",
+    "start": "npm run watch:eleventy && npm run watch:sass",
+    "build": "eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  },
+  "dependencies": {
+    "sass": "^1.26.8"
+  }
+}
