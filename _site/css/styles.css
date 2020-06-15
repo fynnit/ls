@@ -162,4 +162,15 @@ header p {
   text-align: justify;
 }
 
+.teaser .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 40px;
+}
+.teaser .grid .item {
+  background-color: #efefef;
+  padding: 20px;
+}
+
 /*# sourceMappingURL=styles.css.map */

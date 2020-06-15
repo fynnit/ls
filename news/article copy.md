@@ -1,5 +1,5 @@
 ---
-title: stuff  really happened
+title: demo post 2
 layout: post.liquid
 tags: news
 ---
