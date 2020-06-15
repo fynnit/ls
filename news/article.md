@@ -1,5 +1,6 @@
 ---
 title: stuff happened
+layout: post.liquid
 tags: news
 ---
 

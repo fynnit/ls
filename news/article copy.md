@@ -1,5 +1,6 @@
 ---
 title: stuff  really happened
+layout: post.liquid
 tags: news
 ---
 wowowowwowowow wowowowwowowow wowowow
