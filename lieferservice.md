@@ -2,7 +2,8 @@
 title: lieferservice
 nav-title: lieferservice
 nav-order: 2
-layout: base.liquid
+layout: page.liquid
 tags: page
 permalink: /lieferservice.html
+header-image: ""
 ---

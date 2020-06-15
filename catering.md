@@ -2,7 +2,11 @@
 title: catering
 nav-title: catering
 nav-order: 2
-layout: base.liquid
+layout: page.liquid
 tags: page
 permalink: /catering.html
+header-image: ""
 ---
+## Gastgeben ist keine Frage des Ortes
+
+Wir kommen gern zu euch! Mit unserer mobilen Kaffee-Bar bringen wir besten Kaffee und feinste Speisen auf Märkte, Messen, Festivals, oder Feste - groß oder klein, drinnen oder draußen. Mit einem liebevoll dekorierten Stand und einem großen Lächeln laden wir ein zu Kaffee und Saft, Kuchen und Stulle, Suppe und Finger Food. Was wir auch können, ist dir bei der Planung und Umsetzung einer solchen Veranstaltung unter die Arme zu greifen oder sie dir komplett abzunehmen.

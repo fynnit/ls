@@ -86,9 +86,6 @@ p:not(:last-child) {
 .home h2 {
   text-align: center;
 }
-.home .intro {
-  text-align: center;
-}
 
 * {
   margin: 0;
@@ -130,6 +127,9 @@ section {
     margin-bottom: 100px;
   }
 }
+section.centered {
+  text-align: center;
+}
 
 header {
   height: 300px;
@@ -141,6 +141,9 @@ header {
   padding: 0 20px;
   text-align: center;
   margin-bottom: 50px;
+}
+header.small {
+  height: 200px;
 }
 @media (min-width: 768px) {
   header {
