@@ -18,7 +18,12 @@ layout: base.liquid
         {% for article in collections.news %}
             <article class="article" onclick="window.location.href='{{article.url}}'">            
                 <h3>{{article.data.title}}</h3>
-                <p>{{-article.data.page.excerpt}}</p>
+                <p>{% if article.data.page.excerpt %}
+                        {{-article.data.page.excerpt}}
+                    {% else %}
+                        {{-article.data.content}}
+                    {% endif %}
+                </p>
             </article>
         {% endfor %}
     </section>
