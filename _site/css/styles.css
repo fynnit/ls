@@ -13,12 +13,6 @@
 @font-face {
   font-family: "Moon";
   font-display: swap;
-  src: url(/assets/fonts/Moon2.0-Bold.otf);
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Moon";
-  font-display: swap;
   src: url(/assets/fonts/Moon2.0-Regular.otf);
   font-weight: 500;
 }
@@ -28,15 +22,28 @@
   src: url(/assets/fonts/Moon2.0-Light.otf);
   font-weight: 300;
 }
-h1, h2, h3, .teaser .grid .item, nav a {
-  font-family: "Ramona", serif;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-nav a {
+@font-face {
+  font-family: "Topica";
+  font-display: swap;
+  src: url(/assets/fonts/Tapioca.ttf);
   font-weight: 500;
-  text-transform: lowercase;
+}
+@font-face {
+  font-family: "neord";
+  font-display: swap;
+  src: url(/assets/fonts/neord.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "lulo";
+  font-display: swap;
+  src: url(/assets/fonts/lulo.otf);
+  font-weight: 500;
+}
+h1, h2, h3 {
+  font-family: "lulo", "Ramona", serif;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -46,7 +53,7 @@ h2 {
 a, span, p, li, div {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Moon", "Helvetica Neue", sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-weight: 500;
   color: inherit;
 }
@@ -131,7 +138,7 @@ p:not(:last-child) {
     margin-bottom: 20px;
   }
 }
-.home article h3, .home article .teaser .grid .item, .teaser .grid .home article .item {
+.home article h3 {
   margin-bottom: 0.5rem;
 }
 .home article.openinghours p {
@@ -276,6 +283,9 @@ header p {
   justify-content: center;
   align-items: center;
   height: 300px;
+}
+.teaser .grid .item span {
+  font-family: "lulo", "Ramona", serif;
 }
 
 .teaser .grid .item {
