@@ -22,7 +22,8 @@
             text-decoration: none;
         }
         &.active a {
-            border-bottom: 1px solid rgba($text-black, 0.2);
+            color: $blue;
+            border-bottom: 1px solid rgba($blue, 0.2);
         }
         &.order-1 {order: 1; flex-grow: 1; margin-left: 0;}
         &.order-2 {order: 2;}

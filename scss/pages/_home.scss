@@ -1,6 +1,15 @@
 .home {
 
-
+    header {
+        background-color: rgba($blue, 0.04);
+        
+        .background {
+            background-size: 100% 180%;
+            background-position: 0 -170px;
+            background-repeat: no-repeat;
+            opacity: 0.041;
+        }
+    }
     .news {
         display: flex;
         justify-content: space-between;
@@ -12,13 +21,15 @@
     article {
         width: 30%;
         cursor: pointer;
+        background-color: rgba($blue, 0.04);
         @include media-down(md) {
             width: 100%;
-            margin-bottom: 1rem;
+            margin-bottom: 20px;
         }
-        background-color: $light;
         padding: 20px;
-
+        
+        // @extend %hover;
+        
         h3 {
             margin-bottom: 0.5rem;
         }

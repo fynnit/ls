@@ -1,8 +1,42 @@
-h1, h2, h3, nav a {
-  font-family: "Tamil";
+@font-face {
+  font-family: "Ramona";
+  font-display: swap;
+  src: url(/assets/fonts/Ramona-Light.ttf);
   font-weight: 300;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+  font-family: "Ramona";
+  font-display: swap;
+  src: url(/assets/fonts/Ramona-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Moon";
+  font-display: swap;
+  src: url(/assets/fonts/Moon2.0-Bold.otf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Moon";
+  font-display: swap;
+  src: url(/assets/fonts/Moon2.0-Regular.otf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Moon";
+  font-display: swap;
+  src: url(/assets/fonts/Moon2.0-Light.otf);
+  font-weight: 300;
+}
+h1, h2, h3, .teaser .grid .item, nav a {
+  font-family: "Ramona", serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+nav a {
+  font-weight: 500;
+  text-transform: lowercase;
 }
 
 h2 {
@@ -12,8 +46,8 @@ h2 {
 a, span, p, li, div {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Sukhumvit", "Helvetica Neue", sans-serif;
-  font-weight: 300;
+  font-family: "Moon", "Helvetica Neue", sans-serif;
+  font-weight: 500;
   color: inherit;
 }
 
@@ -49,7 +83,8 @@ p:not(:last-child) {
   text-decoration: none;
 }
 .nav .nav-item.active a {
-  border-bottom: 1px solid rgba(31, 31, 31, 0.2);
+  color: #04b5f6;
+  border-bottom: 1px solid rgba(4, 181, 246, 0.2);
 }
 .nav .nav-item.order-1 {
   order: 1;
@@ -66,6 +101,15 @@ p:not(:last-child) {
   order: 4;
 }
 
+.home header {
+  background-color: rgba(4, 181, 246, 0.04);
+}
+.home header .background {
+  background-size: 100% 180%;
+  background-position: 0 -170px;
+  background-repeat: no-repeat;
+  opacity: 0.041;
+}
 .home .news {
   display: flex;
   justify-content: space-between;
@@ -78,16 +122,16 @@ p:not(:last-child) {
 .home article {
   width: 30%;
   cursor: pointer;
-  background-color: #efefef;
+  background-color: rgba(4, 181, 246, 0.04);
   padding: 20px;
 }
 @media (max-width: 767px) {
   .home article {
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 20px;
   }
 }
-.home article h3 {
+.home article h3, .home article .teaser .grid .item, .teaser .grid .home article .item {
   margin-bottom: 0.5rem;
 }
 .home article.openinghours p {
@@ -103,7 +147,9 @@ p:not(:last-child) {
   box-sizing: border-box;
 }
 
-html, body, main {
+html,
+body,
+main {
   min-height: 100%;
   height: 100%;
 }
@@ -158,12 +204,24 @@ header {
   justify-content: center;
   align-items: center;
   background-color: #efefef;
+  position: relative;
   padding: 0 20px;
   text-align: center;
   margin-bottom: 50px;
 }
 header.small {
   height: 200px;
+}
+header .background {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
 }
 @media (min-width: 768px) {
   header {
@@ -186,13 +244,49 @@ header p {
 
 .teaser .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 40px;
-  row-gap: 40px;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+}
+@media (min-width: 768px) {
+  .teaser .grid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .teaser .grid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 60px;
+  }
+}
+@media (min-width: 1280px) {
+  .teaser .grid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+    row-gap: 100px;
+  }
 }
 .teaser .grid .item {
   background-color: #efefef;
   padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.teaser .grid .item {
+  transform: scale(1);
+  transition: transform 400ms 100ms, border-radius 300ms 100ms;
+  cursor: pointer;
+}
+.teaser .grid .item:hover {
+  transform: scale(1.025);
+  transition: transform 300ms, border-radius 200ms;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */

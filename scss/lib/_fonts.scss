@@ -1,12 +1,46 @@
-
-
-h1,h2,h3,nav a {
-    font-family: 'Tamil';
+@font-face {
+    font-family: 'Ramona';
+    font-display: swap;
+    src: url(/assets/fonts/Ramona-Light.ttf);
     font-weight: 300;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+    font-family: 'Ramona';
+    font-display: swap;
+    src: url(/assets/fonts/Ramona-Bold.ttf);
+    font-weight: 700;
 }
 
+@font-face {
+    font-family: 'Moon';
+    font-display: swap;
+    src: url(/assets/fonts/Moon2.0-Bold.otf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Moon';
+    font-display: swap;
+    src: url(/assets/fonts/Moon2.0-Regular.otf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Moon';
+    font-display: swap;
+    src: url(/assets/fonts/Moon2.0-Light.otf);
+    font-weight: 300;
+}
+
+h1,h2,h3,nav a {
+    font-family: 'Ramona', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    // -webkit-font-smoothing: antialiased;
+    // -moz-osx-font-smoothing: grayscale;
+}
+nav a {
+    font-weight: 500;
+    text-transform: lowercase;
+}
 h2 {
     margin-bottom: 1rem;
 }
@@ -14,8 +48,8 @@ h2 {
 a,span,p,li,div {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: 'Sukhumvit', 'Helvetica Neue', sans-serif;
-    font-weight: 300;
+    font-family:'Moon', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
     color: inherit;
 }
 

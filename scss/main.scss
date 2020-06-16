@@ -11,7 +11,9 @@
     box-sizing: border-box;
 }
 
-html, body, main {
+html,
+body,
+main {
     min-height: 100%;
     height: 100%;
 }
@@ -19,10 +21,12 @@ html, body, main {
 html {
     background-color: #fdfdfd;
 }
+
 body {
     color: $text-black;
     opacity: 1;
     transition: opacity 200ms;
+
     &.loading {
         opacity: 0;
         transition: opacity 200ms;
@@ -32,21 +36,26 @@ body {
 section {
     padding: 0 20px;
     margin-bottom: 50px;
+
     @include media-up(md) {
         padding: 0 40px;
     }
+
     @include media-up(mdl) {
         padding: 0 60px;
         margin-bottom: 100px;
     }
+
     &.centered {
         text-align: center;
         display: flex;
         flex-flow: column;
         align-items: center;
+
         h2 {
             max-width: 700px;
         }
+
         p {
             line-height: $line-height;
             max-width: 700px;
@@ -56,42 +65,98 @@ section {
 
 header {
     height: 300px;
+
     &.small {
         height: 200px;
     }
+
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
     background-color: $light;
+    position: relative;
+
+    .background {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 0;
+    }
 
     padding: 0 20px;
+
     @include media-up(md) {
         padding: 0 40px;
     }
+
     @include media-up(mdl) {
         padding: 0 60px;
     }
+
     text-align: center;
     margin-bottom: 50px;
+
     @include media-up(mdl) {
         margin-bottom: 100px;
     }
+
     p {
         max-width: 375px;
     }
 }
 
-.teaser { 
+.teaser {
     .grid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 40px;
-        row-gap: 40px;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        
+        @include media-up(md) {
+            grid-template-columns: 1fr 1fr;
+            column-gap: 40px;
+            row-gap: 40px;
+        }
+        
+        @include media-up(mdl) {
+            grid-template-columns: 1fr 1fr;
+            column-gap: 60px;
+            row-gap: 60px;
+        }
+
+        @include media-up(lg) {
+            grid-template-columns: 1fr 1fr;
+            column-gap: 100px;
+            row-gap: 100px;
+        }
 
         .item {
             background-color: $light;
             padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            @extend h3;
+            @extend %hover;
         }
+    }
+}
+
+%hover {
+    transform: scale(1.0);
+    transition: transform 400ms 100ms, border-radius 300ms 100ms;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.025);
+        transition: transform 300ms, border-radius 200ms;
+        border-radius: 5px;
     }
 }
