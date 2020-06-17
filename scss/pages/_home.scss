@@ -21,7 +21,8 @@
     article {
         width: 30%;
         cursor: pointer;
-        background-color: rgba($blue, 0.04);
+        background-color: $black;
+        color: lighten($blue, 30%);
         @include media-down(md) {
             width: 100%;
             margin-bottom: 20px;

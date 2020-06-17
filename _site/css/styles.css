@@ -129,7 +129,8 @@ p:not(:last-child) {
 .home article {
   width: 30%;
   cursor: pointer;
-  background-color: rgba(4, 181, 246, 0.04);
+  background-color: #1a1a1a;
+  color: #96e1fd;
   padding: 20px;
 }
 @media (max-width: 767px) {
