@@ -46,17 +46,28 @@
     font-weight: 500;
 }
 
-$sans:       'Helvetica Neue', Arial, sans-serif;
-$display:    'lulo', 'Ramona', serif;
+@font-face {
+    font-family: 'happy';
+    font-display: swap;
+    src: url(/assets/fonts/kghb.ttf);
+    font-weight: 700;
+}
+
+$sans:       'Moon', 'Helvetica Neue', Arial, sans-serif;
+$display:    'happy', 'lulo', 'Ramona', serif;
 $display-2:  'neord', serif;
 
 
-h1,h2,h3 {
+h1,h2,h3,
+nav a {
     font-family: $display;
     font-weight: 300;
     text-transform: uppercase;
     // -webkit-font-smoothing: antialiased;
     // -moz-osx-font-smoothing: grayscale;
+
+    letter-spacing: normal;
+    word-spacing: normal;
 }
 nav a {
     // font-weight: 300;
@@ -72,6 +83,10 @@ a,span,p,li,div {
     font-family: $sans;
     font-weight: 500;
     color: inherit;
+
+
+    letter-spacing: 2px;
+    word-spacing: -3px;
 }
 
 p { 

@@ -13,7 +13,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.0"
+    "@11ty/eleventy": "^0.11.0",
+    "moment-timezone": "^0.5.31"
   },
   "dependencies": {
     "sass": "^1.26.8"

@@ -18,7 +18,9 @@ layout: base.liquid
             <p>{{-openinghours }}</p>
         </article>
         {% for article in collections.news %}
-            <article class="article" onclick="window.location.href='{{article.url}}'">            
+            <article class="article" onclick="window.location.href='{{article.url}}'">
+                <span class="date">{{article.date | dateformat }}</span>         
+                
                 <h3>{{article.data.title}}</h3>
                 <p>{% if article.data.page.excerpt %}
                         {{-article.data.page.excerpt}}

@@ -143,8 +143,15 @@ header {
             justify-content: center;
             align-items: center;
             height: 300px;
+            filter: grayscale(100%);
+            transition: filter 300ms;
+            &:hover {
+                filter: grayscale(0%);
+                transition: filter 300ms;
+            }
             span { 
-                font-family: $display;
+            //     font-family: $display;
+                @extend h2;
             }
             @extend %hover;
         }
