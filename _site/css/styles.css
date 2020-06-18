@@ -172,6 +172,12 @@ p:not(:last-child) {
 .home h2, .home .teaser .grid .item span, .teaser .grid .item .home span {
   text-align: center;
 }
+.home section.centered {
+  background: linear-gradient(180deg, white 0%, #f6cab3 100%);
+}
+.home .maps {
+  filter: grayscale(0%);
+}
 
 * {
   margin: 0;
@@ -200,19 +206,29 @@ body.loading {
   transition: opacity 200ms;
 }
 
+img {
+  max-width: 100%;
+}
+
+i.open {
+  font-style: normal;
+  transform: rotate(90deg);
+  display: inline-block;
+}
+
 section {
-  padding: 0 20px;
-  margin-bottom: 50px;
+  padding: 25px 20px;
+  margin-bottom: 25px;
 }
 @media (min-width: 768px) {
   section {
-    padding: 0 40px;
+    padding: 25px 40px;
   }
 }
 @media (min-width: 1024px) {
   section {
-    padding: 0 60px;
-    margin-bottom: 100px;
+    padding: 50px 60px;
+    margin-bottom: 50px;
   }
 }
 section.centered {
@@ -308,6 +324,8 @@ header p {
   justify-content: center;
   align-items: center;
   height: 300px;
+  background-size: contain;
+  background-position: center;
   filter: grayscale(100%);
   transition: filter 300ms;
 }
@@ -315,6 +333,33 @@ header p {
   filter: grayscale(0%);
   transition: filter 300ms;
 }
+.button {
+  padding: 0.8rem 2rem;
+  flex-grow: 1;
+  text-align: center;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+.button a {
+  text-decoration: none;
+}
+.buttons-wrapper {
+  display: flex;
+}
+.buttons-wrapper .button {
+  margin-top: 20px;
+}
+.buttons-wrapper .button:first-child {
+  margin-right: 10px;
+}
+.buttons-wrapper .button:last-child {
+  margin-left: 10px;
+}
+
+.maps {
+  text-align: center;
+}
+
 .teaser .grid .item {
   transform: scale(1);
   transition: transform 400ms 100ms, border-radius 300ms 100ms;

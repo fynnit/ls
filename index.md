@@ -13,6 +13,10 @@ openinghours: "Mo - Fr 7 - 18 Uhr,\nSa - So 9 - 18 Uhr\n\nSiegfriedstraße 18,\n
 header_image: "/assets/images/ls_logo.svg"
 teaser-headline: was wir hier so machen
 contact-headline: und so findest du zu uns
+
+teaser: 
+    
+
 ---
 
 

@@ -39,16 +39,14 @@ layout: base.liquid
     <section class="teaser">
         <h2>{{teaser-headline}}</h2>
         <div class="grid">
-            <div class="item"><span>Kaffeebar</span></div>
-            <div class="item"><span>Bakery</span></div>
-            <div class="item"><span>Catering</span></div>
-            <div class="item"><span>Lieferservice</span></div>
+            <div class="item" style="background-image: url()"><span>Kaffeebar</span></div>
+            <div class="item" style="background-image: url()"><span>Bakery</span></div>
+            <div class="item" style="background-image: url()"><span>Catering</span></div>
+            <div class="item" style="background-image: url()"><span>Lieferservice</span></div>
         </div>
     </section>
 
-    <section>
-        <h2>{{contact-headline}}</h2>
-        <div id="map"></div>
-    </section>
+    {% include _maps.liquid %}
+    
 </main>
 

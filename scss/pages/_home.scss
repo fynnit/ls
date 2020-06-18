@@ -55,5 +55,13 @@
     h2 {
         text-align: center;
     }
+
+    section.centered {
+        background: linear-gradient(180deg, white 0%, rgba(246,202,179,1) 100%);
+    }
+    
+    .maps {
+        filter: grayscale(0%);
+    }
     
 }

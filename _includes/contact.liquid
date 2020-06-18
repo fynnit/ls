@@ -1,0 +1,15 @@
+---
+layout: base.liquid
+---
+<main class="post">
+    <header class="small" style="background-image: url({{header-image}})">
+        <h1>{{title}}</h1>
+    </header>
+
+    <section class="centered">
+        {{-content}}
+    </section>
+
+    {% include _maps.liquid %}
+
+</main>
