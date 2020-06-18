@@ -2,6 +2,7 @@
 title: demo post 2
 layout: post.liquid
 tags: news
+date: 2020-06-05
 ---
 wowowowwowowow wowowowwowowow wowowow
 ---
