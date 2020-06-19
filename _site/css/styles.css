@@ -95,12 +95,17 @@ p:not(:last-child) {
   text-transform: lowercase;
   display: block;
   margin-left: 1rem;
+  transition: color 400ms 100ms, border-bottom 400ms 100ms;
 }
 .nav .nav-item a {
   padding-bottom: 3px;
   text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid rgba(4, 181, 246, 0);
 }
-.nav .nav-item.active a {
+.nav .nav-item.active a,
+.nav .nav-item a:hover {
+  transition: color 300ms, border-bottom 300ms;
   color: #04b5f6;
   border-bottom: 1px solid rgba(4, 181, 246, 0.2);
 }
@@ -339,10 +344,16 @@ header p {
   text-align: center;
   border: 1px solid #000;
   cursor: pointer;
+  transition: background-color 400ms 100ms;
 }
 .button a {
   text-decoration: none;
 }
+.button:hover {
+  transition: background-color 400ms;
+  background-color: rgba(150, 225, 253, 0.2);
+}
+
 .buttons-wrapper {
   display: flex;
 }
@@ -369,6 +380,10 @@ header p {
   transform: scale(1.025);
   transition: transform 300ms, border-radius 200ms;
   border-radius: 5px;
+}
+
+::selection {
+  background-color: #96e1fd;
 }
 
 /*# sourceMappingURL=styles.css.map */
