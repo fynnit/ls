@@ -5,11 +5,16 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy({"assets/": "/assets/"});
     eleventyConfig.addWatchTarget("./scss/");
     eleventyConfig.setFrontMatterParsingOptions({
-        excerpt: true,
-        // Optional, default is "---"
-      });
+      excerpt: true,
+    });
 
-      eleventyConfig.addFilter("dateformat", function(dateIn) {
-        return moment(dateIn).tz('CEST').format('DD.MMMM');
+    eleventyConfig.addFilter("dateformat", function(dateIn) {
+      return moment(dateIn).tz('CEST').format('DD.MMMM');
+    });
+
+    eleventyConfig.addCollection("newsrev", function(collectionApi) {
+      return collectionApi.getFilteredByTag("news").slice(0,2).sort(function(a, b) {
+        return b.date - a.date;
+      });
     });
 };

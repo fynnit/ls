@@ -17,7 +17,8 @@ layout: base.liquid
             <h3>{{openinghours-title}}</h3>
             <p>{{-openinghours }}</p>
         </article>
-        {% for article in collections.news %}
+        
+        {% for article in collections.newsrev %}
             <article class="article" onclick="window.location.href='{{article.url}}'">
                 <span class="date">{{article.date | dateformat }}</span>         
                 
