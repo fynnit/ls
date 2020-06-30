@@ -14,9 +14,27 @@ header_image: "/assets/images/ls_logo.svg"
 teaser-headline: was wir hier so machen
 contact-headline: und so findest du zu uns
 
-teaser: 
-    
-
+teasers: 
+    {
+       name: 'Kaffeebar',
+       url: '/kaffeebar.html',
+       image: '/assets/images/ls-coffee.jpg',
+    },
+    {
+       name: 'Bakery',
+       url: '/bakery.html',
+       image: '/assets/images/ls-coffee.jpg',
+    },
+    {
+       name: 'Catering',
+       url: '/catering.html',
+       image: '/assets/images/ls-coffee.jpg',
+    },
+    {
+       name: 'Lieferservice',
+       url: '/lieferservice.html',
+       image: '/assets/images/ls-coffee.jpg',
+    }
 ---
 
 
