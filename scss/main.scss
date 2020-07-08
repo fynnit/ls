@@ -3,6 +3,10 @@
 @import 'lib/fonts';
 
 @import 'nav';
+@import 'header';
+@import 'footer';
+@import 'teaser';
+@import 'buttons';
 @import 'pages/home';
 
 * {
@@ -15,7 +19,6 @@ html,
 body,
 main {
     min-height: 100%;
-    height: 100%;
 }
 
 html {
@@ -73,146 +76,13 @@ section {
     }
 }
 
-header {
-    height: 300px;
-
-    &.small {
-        height: 200px;
-    }
-
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    background-color: $light;
-    position: relative;
-
-    .background {
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        z-index: 0;
-    }
-
-    padding: 0 20px;
-
-    @include media-up(md) {
-        padding: 0 40px;
-    }
-
-    @include media-up(mdl) {
-        padding: 0 60px;
-    }
-
-    text-align: center;
-    margin-bottom: 50px;
-
-    @include media-up(mdl) {
-        margin-bottom: 100px;
-    }
-
-    p {
-        max-width: 375px;
-    }
-}
-
-.teaser {
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        row-gap: 20px;
-        
-        @include media-up(md) {
-            grid-template-columns: 1fr 1fr;
-            column-gap: 40px;
-            row-gap: 40px;
-        }
-
-        @include media-up(mdl) {
-            grid-template-columns: 1fr 1fr;
-            column-gap: 60px;
-            row-gap: 60px;
-        }
-
-        @include media-up(lg) {
-            grid-template-columns: 1fr 1fr;
-            column-gap: 100px;
-            row-gap: 100px;
-        }
-
-        .item {
-            background-color: $light;
-            padding: 20px;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 300px;
-            background-size: contain;
-            background-position: center;
-            filter: grayscale(100%);
-            transition: filter 300ms;
-            &:hover {
-                filter: grayscale(0%);
-                transition: filter 300ms;
-            }
-            span { 
-            //     font-family: $display;
-                @extend h2;
-            }
-            @extend %hover;
-        }
-    }
-}
-.button {
-    padding: 0.8rem 2rem;
-    flex-grow: 1;
-    text-align: center;
-    border: 1px solid #000;
-    cursor: pointer;
-    a {
-        text-decoration: none;
-    }
-    
-    transition: background-color 400ms 100ms;
-    &:hover {
-        transition: background-color 400ms;
-        background-color: rgba($light-blue,0.2);
-    }
-}
-.buttons-wrapper {
-    display: flex;
-    .button {
-        margin-top: 20px;
-        &:first-child {
-            margin-right: 10px;
-        }
-        &:last-child {
-            margin-left: 10px;
-        }
-    }
-}
 
 .maps {
     text-align: center;
-}
-%hover {
-    transform: scale(1.0);
-    transition: transform 400ms 100ms, border-radius 300ms 100ms;
-    cursor: pointer;
-
-    &:hover {
-        transform: scale(1.025);
-        transition: transform 300ms, border-radius 200ms;
-        border-radius: 5px;
-    }
 }
 
 ::selection {
     background-color: $light-blue;
 }
+
+

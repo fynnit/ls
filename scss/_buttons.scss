@@ -1,0 +1,29 @@
+
+.button {
+    padding: 0.8rem 2rem;
+    flex-grow: 1;
+    text-align: center;
+    border: 1px solid #000;
+    cursor: pointer;
+    a {
+        text-decoration: none;
+    }
+    
+    transition: background-color 400ms 100ms;
+    &:hover {
+        transition: background-color 400ms;
+        background-color: rgba($light-blue,0.2);
+    }
+}
+.buttons-wrapper {
+    display: flex;
+    .button {
+        margin-top: 20px;
+        &:first-child {
+            margin-right: 10px;
+        }
+        &:last-child {
+            margin-left: 10px;
+        }
+    }
+}

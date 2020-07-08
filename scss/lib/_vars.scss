@@ -19,4 +19,14 @@ $breakpoints: (
   xxl: 1600px
 );
 
+%hover {
+  transform: scale(1.0);
+  transition: transform 400ms 100ms, border-radius 300ms 100ms;
+  cursor: pointer;
 
+  &:hover {
+      transform: scale(1.025);
+      transition: transform 300ms, border-radius 200ms;
+      border-radius: 5px;
+  }
+}
