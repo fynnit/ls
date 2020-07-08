@@ -1,6 +1,7 @@
 footer {
     @include padding;
-    background-color: rgba($light-blue,0.2);
+    background-color: rgba($blue, 1);
+    color: white;
 
     .inner {
         display: flex;
