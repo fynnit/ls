@@ -3,7 +3,6 @@ title: Leuchtstoff
 nav-title: leuchtstoff.berlin
 nav-order: 1
 layout: home.liquid
-tags: page
 permalink: /index.html
 headertitle: tach zusammen
 headercontent: "leuchtstoff - kaffeebar is an unpretentious 3rd wave coffee shop in Berlin/Neukölln with free wifi and some great homemade organic baked goods"

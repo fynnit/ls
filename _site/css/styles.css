@@ -10,39 +10,15 @@
 }
 
 @font-face {
-  font-family: "Ramona";
+  font-family: "moon";
   font-display: swap;
-  src: url(/assets/fonts/Ramona-Light.ttf);
+  src: url(/assets/fonts/moon.otf);
   font-weight: 300;
 }
 @font-face {
-  font-family: "Ramona";
+  font-family: "lulo-b";
   font-display: swap;
-  src: url(/assets/fonts/Ramona-Bold.ttf);
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Moon";
-  font-display: swap;
-  src: url(/assets/fonts/Moon2.0-Regular.otf);
-  font-weight: 500;
-}
-@font-face {
-  font-family: "Moon";
-  font-display: swap;
-  src: url(/assets/fonts/Moon2.0-Light.otf);
-  font-weight: 300;
-}
-@font-face {
-  font-family: "Topica";
-  font-display: swap;
-  src: url(/assets/fonts/Tapioca.ttf);
-  font-weight: 500;
-}
-@font-face {
-  font-family: "neord";
-  font-display: swap;
-  src: url(/assets/fonts/neord.ttf);
+  src: url(/assets/fonts/lulo-bold.otf);
   font-weight: 500;
 }
 @font-face {
@@ -51,15 +27,9 @@
   src: url(/assets/fonts/lulo.otf);
   font-weight: 500;
 }
-@font-face {
-  font-family: "happy";
-  font-display: swap;
-  src: url(/assets/fonts/kghb.ttf);
-  font-weight: 700;
-}
 h1, h2, .teaser .grid .item span, h3,
 nav a {
-  font-family: "happy", "lulo", "Ramona", serif;
+  font-family: "lulo-b", serif;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: normal;
@@ -73,7 +43,7 @@ h2, .teaser .grid .item span {
 a, span, p, li, div {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Moon", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-weight: 500;
   color: inherit;
   letter-spacing: 2px;
@@ -89,41 +59,22 @@ p:not(:last-child) {
   width: 100%;
   align-self: flex-start;
   justify-content: space-between;
-  padding: 1rem 20px;
-}
-@media (min-width: 768px) {
-  .nav {
-    padding: 1.2rem 40px;
-  }
-}
-@media (min-width: 1024px) {
-  .nav {
-    padding: 1.5rem 60px;
-  }
 }
 .nav .nav-item {
-  font-size: 12px;
   text-transform: lowercase;
-  display: block;
-  margin-left: 1rem;
-  transition: color 400ms 100ms, border-bottom 400ms 100ms;
-}
-.nav .nav-item a {
-  padding-bottom: 3px;
+  display: inline-block;
   text-decoration: none;
   color: inherit;
-  border-bottom: 1px solid rgba(0, 124, 176, 0);
+  font-size: 28px;
+  padding: 6px 0 0;
+  line-height: 1;
+  letter-spacing: -5px;
 }
-.nav .nav-item.active a,
-.nav .nav-item a:hover {
-  transition: color 300ms, border-bottom 300ms;
-  color: #007cb0;
-  border-bottom: 1px solid rgba(0, 124, 176, 0.2);
+.nav .nav-item.active, .nav .nav-item:hover {
+  font-family: "lulo", serif;
 }
 .nav .nav-item.order-1 {
   order: 1;
-  flex-grow: 1;
-  margin-left: 0;
 }
 .nav .nav-item.order-2 {
   order: 2;
@@ -182,7 +133,7 @@ header p {
 
 footer {
   padding: 0 20px;
-  background-color: #007cb0;
+  background-color: black;
   color: white;
 }
 @media (min-width: 768px) {
@@ -204,7 +155,7 @@ footer .inner {
 }
 footer a {
   text-decoration: none;
-  font-family: "happy", "lulo", "Ramona", serif;
+  font-family: "lulo-b", serif;
   text-transform: uppercase;
 }
 footer a:hover {
@@ -286,13 +237,14 @@ footer a:hover {
 }
 
 .home header {
-  background-color: rgba(0, 124, 176, 0.04);
+  background-color: white;
+  margin-bottom: 50px;
 }
 .home header .background {
   background-size: 100% 180%;
   background-position: 0 -170px;
   background-repeat: no-repeat;
-  opacity: 0.041;
+  opacity: 0.2;
 }
 .home .news {
   display: flex;
