@@ -1,44 +1,16 @@
 @font-face {
-    font-family: 'Ramona';
+    font-family: 'moon';
     font-display: swap;
-    src: url(/assets/fonts/Ramona-Light.ttf);
-    font-weight: 300;
-}
-@font-face {
-    font-family: 'Ramona';
-    font-display: swap;
-    src: url(/assets/fonts/Ramona-Bold.ttf);
-    font-weight: 700;
-}
-
-
-@font-face {
-    font-family: 'Moon';
-    font-display: swap;
-    src: url(/assets/fonts/Moon2.0-Regular.otf);
-    font-weight: 500;
-}
-@font-face {
-    font-family: 'Moon';
-    font-display: swap;
-    src: url(/assets/fonts/Moon2.0-Light.otf);
+    src: url(/assets/fonts/moon.otf);
     font-weight: 300;
 }
 
 @font-face {
-    font-family: 'Topica';
+    font-family: 'lulo-b';
     font-display: swap;
-    src: url(/assets/fonts/Tapioca.ttf);
+    src: url(/assets/fonts/lulo-bold.otf);
     font-weight: 500;
 }
-
-@font-face {
-    font-family: 'neord';
-    font-display: swap;
-    src: url(/assets/fonts/neord.ttf);
-    font-weight: 500;
-}
-
 @font-face {
     font-family: 'lulo';
     font-display: swap;
@@ -46,16 +18,9 @@
     font-weight: 500;
 }
 
-@font-face {
-    font-family: 'happy';
-    font-display: swap;
-    src: url(/assets/fonts/kghb.ttf);
-    font-weight: 700;
-}
-
-$font-family-sans:       'Moon', 'Helvetica Neue', Arial, sans-serif;
-$font-family-display:    'happy', 'lulo', 'Ramona', serif;
-$font-family-display-2:  'neord', serif;
+$font-family-sans:       'Helvetica Neue', Arial, sans-serif;
+$font-family-display:    'lulo-b', serif;
+$font-family-display-2:  serif;
 
 
 h1,h2,h3,
@@ -65,7 +30,6 @@ nav a {
     text-transform: uppercase;
     // -webkit-font-smoothing: antialiased;
     // -moz-osx-font-smoothing: grayscale;
-
     letter-spacing: normal;
     word-spacing: normal;
 }

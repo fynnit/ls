@@ -3,7 +3,8 @@
     width: 100%;
     align-self: flex-start;
     justify-content: space-between;
-    
+    background-color: #000;
+    color: white;
     padding: 1rem 20px;
     @include media-up(md) {
         padding: 1.2rem 40px;

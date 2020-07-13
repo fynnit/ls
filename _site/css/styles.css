@@ -10,39 +10,15 @@
 }
 
 @font-face {
-  font-family: "Ramona";
+  font-family: "moon";
   font-display: swap;
-  src: url(/assets/fonts/Ramona-Light.ttf);
+  src: url(/assets/fonts/moon.otf);
   font-weight: 300;
 }
 @font-face {
-  font-family: "Ramona";
+  font-family: "lulo-b";
   font-display: swap;
-  src: url(/assets/fonts/Ramona-Bold.ttf);
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Moon";
-  font-display: swap;
-  src: url(/assets/fonts/Moon2.0-Regular.otf);
-  font-weight: 500;
-}
-@font-face {
-  font-family: "Moon";
-  font-display: swap;
-  src: url(/assets/fonts/Moon2.0-Light.otf);
-  font-weight: 300;
-}
-@font-face {
-  font-family: "Topica";
-  font-display: swap;
-  src: url(/assets/fonts/Tapioca.ttf);
-  font-weight: 500;
-}
-@font-face {
-  font-family: "neord";
-  font-display: swap;
-  src: url(/assets/fonts/neord.ttf);
+  src: url(/assets/fonts/lulo-bold.otf);
   font-weight: 500;
 }
 @font-face {
@@ -51,15 +27,9 @@
   src: url(/assets/fonts/lulo.otf);
   font-weight: 500;
 }
-@font-face {
-  font-family: "happy";
-  font-display: swap;
-  src: url(/assets/fonts/kghb.ttf);
-  font-weight: 700;
-}
 h1, h2, .teaser .grid .item span, h3,
 nav a {
-  font-family: "happy", "lulo", "Ramona", serif;
+  font-family: "lulo-b", serif;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: normal;
@@ -73,7 +43,7 @@ h2, .teaser .grid .item span {
 a, span, p, li, div {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Moon", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-weight: 500;
   color: inherit;
   letter-spacing: 2px;
@@ -89,6 +59,8 @@ p:not(:last-child) {
   width: 100%;
   align-self: flex-start;
   justify-content: space-between;
+  background-color: #000;
+  color: white;
   padding: 1rem 20px;
 }
 @media (min-width: 768px) {
@@ -204,7 +176,7 @@ footer .inner {
 }
 footer a {
   text-decoration: none;
-  font-family: "happy", "lulo", "Ramona", serif;
+  font-family: "lulo-b", serif;
   text-transform: uppercase;
 }
 footer a:hover {
