@@ -17,4 +17,9 @@ module.exports = function(eleventyConfig) {
         return b.date - a.date;
       });
     });
+    eleventyConfig.addCollection("bohnerev", function(collectionApi) {
+      return collectionApi.getFilteredByTag("bohne").sort(function(a, b) {
+        return b.date - a.date;
+      });
+    });
 };

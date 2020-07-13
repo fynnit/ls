@@ -1,0 +1,23 @@
+.kaffeebar {
+    
+    .bohnen-liste {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 50px;
+        row-gap: 100px;
+        
+    }
+    .bohne {
+        background-size: cover;
+
+        width: 320px;
+        position: relative;
+        &-content {
+            margin-top: 150px;
+            background-color: $light-blue;
+            padding: 8px 10px;
+        }
+
+    }
+}

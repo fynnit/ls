@@ -269,17 +269,6 @@ footer a:hover {
     margin-bottom: 20px;
   }
 }
-.home article .date {
-  display: block;
-  padding: 5px 10px;
-  font-size: 12px;
-  color: #efefef;
-  background-color: #1a1a1a;
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(0, -50%);
-}
 .home article h3 {
   margin-bottom: 0.5rem;
 }
@@ -294,6 +283,24 @@ footer a:hover {
 }
 .home .maps {
   filter: grayscale(0%);
+}
+
+.kaffeebar .bohnen-liste {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 50px;
+  row-gap: 100px;
+}
+.kaffeebar .bohne {
+  background-size: cover;
+  width: 320px;
+  position: relative;
+}
+.kaffeebar .bohne-content {
+  margin-top: 150px;
+  background-color: #4acaff;
+  padding: 8px 10px;
 }
 
 * {
@@ -359,6 +366,18 @@ section.centered h2, section.centered .teaser .grid .item span, .teaser .grid .i
 section.centered p {
   line-height: 24px;
   max-width: 700px;
+}
+
+.date {
+  display: block;
+  padding: 5px 10px;
+  font-size: 12px;
+  color: #efefef;
+  background-color: #1a1a1a;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(0, -50%);
 }
 
 .maps {

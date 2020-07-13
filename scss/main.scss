@@ -8,6 +8,7 @@
 @import 'teaser';
 @import 'buttons';
 @import 'pages/home';
+@import 'pages/kaffeebar';
 
 * {
     margin: 0;
@@ -76,6 +77,18 @@ section {
     }
 }
 
+.date {
+    display: block;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: $light;
+    background-color: $black;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0, -50%);
+}
 
 .maps {
     text-align: center;

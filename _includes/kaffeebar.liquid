@@ -1,0 +1,24 @@
+---
+layout: base.liquid
+---
+<main class="page kaffeebar">
+    <header class="small" style="background-image: url({{header-image}})">
+        <h1>{{title}}</h1>
+    </header>
+
+    <section class="{%if style != 'left'%}centered{%endif%}">
+        {{-content}}
+    </section>
+
+    <section class="bohnen-liste">
+    {% for bohne in collections.bohnerev %}
+        <article class="bohne" style="background-image: url({{bohne.data.image}})">
+                <span class="date">{{-bohne.data.date | dateformat }}</span>
+            <div class="bohne-content">
+                <h4>{{-bohne.data.title}}</h4>
+                <p>{{-bohne.data.page.excerpt}}</p>
+            </div>
+        </article>
+    {% endfor %}
+    </section>
+</main>
