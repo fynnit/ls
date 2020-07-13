@@ -3,35 +3,21 @@
     width: 100%;
     align-self: flex-start;
     justify-content: space-between;
-    background-color: #000;
-    color: white;
-    padding: 1rem 20px;
-    @include media-up(md) {
-        padding: 1.2rem 40px;
-    }
-    @include media-up(mdl) {
-        padding: 1.5rem 60px;
-    }
 
     .nav-item {
-        font-size: 12px;
         text-transform: lowercase;
-        display: block;
-        margin-left: 1rem;
-        a {
-            padding-bottom: 3px;
-            text-decoration: none;
-            color: inherit;
-            border-bottom: 1px solid rgba($blue, 0);
+        display: inline-block;
+        text-decoration: none;
+        color: inherit;
+        font-size: 28px;
+        padding: 6px 0 0;
+        line-height: 1;
+        letter-spacing: -5px;
+        &.active,
+        &:hover {
+            font-family: $font-family-display-2;
         }
-        transition: color 400ms 100ms, border-bottom 400ms 100ms;
-        &.active a,
-        a:hover {
-            transition: color 300ms, border-bottom 300ms;
-            color: $blue;
-            border-bottom: 1px solid rgba($blue, 0.2);
-        }
-        &.order-1 {order: 1; flex-grow: 1; margin-left: 0;}
+        &.order-1 {order: 1;}
         &.order-2 {order: 2;}
         &.order-3 {order: 3;}
         &.order-4 {order: 4;}

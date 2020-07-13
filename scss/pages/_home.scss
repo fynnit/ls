@@ -1,13 +1,13 @@
 .home {
 
     header {
-        background-color: rgba($blue, 0.04);
-        
+        background-color: white;
+        margin-bottom: 50px;
         .background {
             background-size: 100% 180%;
             background-position: 0 -170px;
             background-repeat: no-repeat;
-            opacity: 0.041;
+            opacity: 0.2;
         }
     }
     .news {
@@ -52,6 +52,7 @@
             }
         }
     }
+
     h2 {
         text-align: center;
     }
