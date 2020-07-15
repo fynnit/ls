@@ -7,7 +7,7 @@
     "watch:eleventy": "npm @11ty/eleventy --serve",
     "watch:sass": "sass scss/main.scss _site/css/styles.css --watch",
     "start": "npm run watch:eleventy && npm run watch:sass",
-    "build": "eleventy"
+    "build": "eleventy && sass scss/main.scss _site/css/styles.css"
   },
   "keywords": [],
   "author": "",
