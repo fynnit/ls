@@ -1,0 +1,19 @@
+---
+label: bohnen-post
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: tags
+  label: tags
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: image
+  label: image
