@@ -9,13 +9,21 @@
         
     }
     .bohne {
-        background-size: cover;
 
         width: 320px;
+        height: 300px;
         position: relative;
+        display: flex;
+        &-bild {
+            height: 100%;
+            width: 55%;
+            background-size: cover;
+        }
         &-content {
-            margin-top: 150px;
-            background-color: $light-blue;
+            width: 45%;
+            background-color: $tafel-black;
+            color: white;
+            height: 100%;
             padding: 8px 10px;
         }
 

@@ -12,8 +12,9 @@ layout: base.liquid
 
     <section class="bohnen-liste">
     {% for bohne in collections.bohnerev %}
-        <article class="bohne" style="background-image: url({{bohne.data.image}})">
-                <span class="date">{{-bohne.data.date | dateformat }}</span>
+        <article class="bohne">
+            <span class="date">{{-bohne.data.date | dateformat }}</span>
+            <div class="bohne-bild" style="background-image: url({{bohne.data.image}})"></div>
             <div class="bohne-content">
                 <h4>{{-bohne.data.title}}</h4>
                 <p>{{-bohne.data.page.excerpt}}</p>

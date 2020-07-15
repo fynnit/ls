@@ -21,8 +21,8 @@
     article {
         width: 30%;
         cursor: pointer;
-        background-color: $black;
-        color: lighten($blue, 30%);
+        background-color: $tafel-black;
+        color: white;
         @include media-down(md) {
             width: 100%;
             margin-bottom: 20px;

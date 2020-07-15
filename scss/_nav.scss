@@ -15,7 +15,8 @@
         letter-spacing: -5px;
         &.active,
         &:hover {
-            font-family: $font-family-display-2;
+            font-family: $font-family-display;
+            color: $tafel-black;
         }
         &.order-1 {order: 1;}
         &.order-2 {order: 2;}

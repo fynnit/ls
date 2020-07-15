@@ -28,12 +28,16 @@
   font-weight: 500;
 }
 h1, h2, .teaser .grid .item span, h3,
-nav a {
+.sitename {
   font-family: "lulo-b", serif;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: normal;
   word-spacing: normal;
+}
+
+nav a:not(.sitename) {
+  font-family: "lulo", serif;
 }
 
 h2, .teaser .grid .item span {
@@ -71,7 +75,8 @@ p:not(:last-child) {
   letter-spacing: -5px;
 }
 .nav .nav-item.active, .nav .nav-item:hover {
-  font-family: "lulo", serif;
+  font-family: "lulo-b", serif;
+  color: #0f2229;
 }
 .nav .nav-item.order-1 {
   order: 1;
@@ -258,8 +263,8 @@ footer a:hover {
 .home article {
   width: 30%;
   cursor: pointer;
-  background-color: #1a1a1a;
-  color: #4acaff;
+  background-color: #0f2229;
+  color: white;
   padding: 20px;
   position: relative;
 }
@@ -293,13 +298,21 @@ footer a:hover {
   row-gap: 100px;
 }
 .kaffeebar .bohne {
-  background-size: cover;
   width: 320px;
+  height: 300px;
   position: relative;
+  display: flex;
+}
+.kaffeebar .bohne-bild {
+  height: 100%;
+  width: 55%;
+  background-size: cover;
 }
 .kaffeebar .bohne-content {
-  margin-top: 150px;
-  background-color: #4acaff;
+  width: 45%;
+  background-color: #0f2229;
+  color: white;
+  height: 100%;
   padding: 8px 10px;
 }
 
@@ -373,7 +386,7 @@ section.centered p {
   padding: 5px 10px;
   font-size: 12px;
   color: #efefef;
-  background-color: #1a1a1a;
+  background-color: #0f2229;
   position: absolute;
   top: 0;
   right: 0;

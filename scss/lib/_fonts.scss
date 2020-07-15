@@ -24,7 +24,7 @@ $font-family-display-2:  'lulo', serif;
 
 
 h1,h2,h3,
-nav a {
+.sitename {
     font-family: $font-family-display;
     font-weight: 300;
     text-transform: uppercase;
@@ -33,7 +33,9 @@ nav a {
     letter-spacing: normal;
     word-spacing: normal;
 }
-nav a {
+nav a:not(.sitename) {
+    font-family: $font-family-display-2;
+
     // font-weight: 300;
     // text-transform: lowercase;
 }
