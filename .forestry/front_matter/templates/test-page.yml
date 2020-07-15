@@ -1,9 +1,0 @@
----
-label: test-page
-hide_body: false
-fields:
-- name: multi
-  type: image_gallery
-  config: {}
-  label: multi
-  description: wowowo
