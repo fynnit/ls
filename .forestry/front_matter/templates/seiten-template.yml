@@ -1,5 +1,5 @@
 ---
-label: seiten-template
+label: page
 hide_body: false
 fields:
 - type: text
