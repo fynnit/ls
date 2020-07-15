@@ -90,6 +90,9 @@ p:not(:last-child) {
 .nav .nav-item.order-4 {
   order: 4;
 }
+.nav .sitename {
+  color: #007cb0;
+}
 
 header {
   height: 300px;
@@ -286,6 +289,14 @@ footer a:hover {
 .home section.centered {
   background: linear-gradient(180deg, white 0%, #f6cab3 100%);
 }
+.home .about {
+  margin-bottom: 0;
+}
+.home .opentable {
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
 .home .maps {
   filter: grayscale(0%);
 }
@@ -309,6 +320,36 @@ footer a:hover {
   background-size: cover;
 }
 .kaffeebar .bohne-content {
+  width: 45%;
+  background-color: #0f2229;
+  color: white;
+  height: 100%;
+  padding: 8px 10px;
+}
+
+.catering h2, .catering .teaser .grid .item span, .teaser .grid .item .catering span {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.catering .produkte-liste {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 50px;
+  row-gap: 100px;
+}
+.catering .produkt {
+  width: 320px;
+  height: 300px;
+  position: relative;
+  display: flex;
+}
+.catering .produkt-bild {
+  height: 100%;
+  width: 55%;
+  background-size: cover;
+}
+.catering .produkt-content {
   width: 45%;
   background-color: #0f2229;
   color: white;

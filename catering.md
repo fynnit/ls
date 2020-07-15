@@ -2,10 +2,11 @@
 title: catering
 nav-title: catering
 nav-order: 3
-layout: page.liquid
+layout: catering.liquid
 tags: page
 permalink: /catering.html
 header-image: ""
+produkte-title: Unsere Produkte
 ---
 ## Gastgeben ist keine Frage des Ortes
 

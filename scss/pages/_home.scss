@@ -49,7 +49,14 @@
     section.centered {
         background: linear-gradient(180deg, white 0%, rgba(246,202,179,1) 100%);
     }
-    
+    .about {
+        margin-bottom: 0;
+    }
+    .opentable {
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
     .maps {
         filter: grayscale(0%);
     }

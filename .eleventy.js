@@ -23,4 +23,9 @@ module.exports = function(eleventyConfig) {
         return b.date - a.date;
       });
     });
+    eleventyConfig.addCollection("produkterev", function(collectionApi) {
+      return collectionApi.getFilteredByTag("produkte").sort(function(a, b) {
+        return b.date - a.date;
+      });
+    });
 };
