@@ -1,7 +1,7 @@
 ---
 title: catering
 nav-title: catering
-nav-order: 2
+nav-order: 3
 layout: page.liquid
 tags: page
 permalink: /catering.html

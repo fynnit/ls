@@ -1,7 +1,7 @@
 ---
 title: Kaffeebar
 nav-title: Kaffeebar
-nav-order: 2
+nav-order: 1
 layout: kaffeebar.liquid
 tags: page
 permalink: /kaffeebar.html

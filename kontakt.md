@@ -1,7 +1,7 @@
 ---
 title: kontakt
 nav-title: kontakt
-nav-order: 2
+nav-order: 4
 layout: contact.liquid
 tags: page
 permalink: /kontakt.html

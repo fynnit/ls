@@ -1,7 +1,7 @@
 ---
 title: Leuchtstoff
 nav-title: leuchtstoff.berlin
-nav-order: 1
+
 layout: home.liquid
 permalink: /index.html
 headertitle: tach zusammen
