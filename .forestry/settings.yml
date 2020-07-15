@@ -7,29 +7,23 @@ sections:
 - type: document
   path: index.md
   label: Home
-  match: "**/*"
 - type: document
   path: bakery.md
   label: bakery
-  match: "**/*"
 - type: document
   path: catering.md
   label: catering
-  match: "**/*"
 - type: document
   path: kaffebar.md
   label: kaffebar
-  match: "**/*"
 - type: document
   path: kontakt.md
   label: kontakt
-  match: "**/*"
 - type: document
   path: impressum.md
   label: impressum
-  match: "**/*"
-upload_dir: uploads
-public_path: "/uploads"
+upload_dir: assets/images
+public_path: "/assets/images"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
