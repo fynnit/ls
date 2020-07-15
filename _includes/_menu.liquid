@@ -2,7 +2,7 @@
     <a href="/" class="nav-item sitename">leuchtstoff</a>
     {% for site in collections.page %}
         {% comment %} <div class="nav-item order-{{site.data.nav-order}}"> {% endcomment %}
-            <a href="{{site.url}}" class="nav-item {% if page.url == site.url %} active {% endif %}">{{site.data.nav-title}}</a>
+            <a href="{{site.url}}" class="nav-item order-{{site.data.nav-order} {% if page.url == site.url %} active {% endif %}">{{site.data.nav-title}}</a>
         {% comment %} </div> {% endcomment %}
     {% endfor %}
 </nav>
