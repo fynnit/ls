@@ -8,12 +8,6 @@ sections:
   path: index.md
   label: Home
 - type: document
-  path: bakery.md
-  label: bakery
-- type: document
-  path: catering.md
-  label: catering
-- type: document
   path: kaffebar.md
   label: kaffebar
 - type: directory
@@ -23,6 +17,12 @@ sections:
   match: "**/*"
   templates:
   - bohnen-post
+- type: document
+  path: bakery.md
+  label: bakery
+- type: document
+  path: catering.md
+  label: catering
 - type: document
   path: kontakt.md
   label: kontakt
