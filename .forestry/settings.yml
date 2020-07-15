@@ -22,6 +22,11 @@ sections:
 - type: document
   path: impressum.md
   label: impressum
+- type: directory
+  path: bohnen
+  label: Bohnen
+  create: documents
+  match: "**/*"
 upload_dir: assets/images
 public_path: "/assets/images"
 front_matter_path: ''
