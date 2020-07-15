@@ -16,17 +16,19 @@ sections:
 - type: document
   path: kaffebar.md
   label: kaffebar
+- type: directory
+  path: bohnen
+  label: Neue Bohnen
+  create: documents
+  match: "**/*"
+  templates:
+  - bohnen-post
 - type: document
   path: kontakt.md
   label: kontakt
 - type: document
   path: impressum.md
   label: impressum
-- type: directory
-  path: bohnen
-  label: Bohnen
-  create: documents
-  match: "**/*"
 upload_dir: assets/images
 public_path: "/assets/images"
 front_matter_path: ''
