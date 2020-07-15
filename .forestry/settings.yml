@@ -8,25 +8,27 @@ sections:
   path: index.md
   label: Home
 - type: document
+  path: kaffebar.md
+  label: kaffebar
+- type: directory
+  path: bohnen
+  label: Bohnen
+  create: documents
+  match: "**/*"
+  templates:
+  - bohnen-post
+- type: document
   path: bakery.md
   label: bakery
 - type: document
   path: catering.md
   label: catering
 - type: document
-  path: kaffebar.md
-  label: kaffebar
-- type: document
   path: kontakt.md
   label: kontakt
 - type: document
   path: impressum.md
   label: impressum
-- type: directory
-  path: bohnen
-  label: Bohnen
-  create: documents
-  match: "**/*"
 upload_dir: assets/images
 public_path: "/assets/images"
 front_matter_path: ''

@@ -1,0 +1,29 @@
+---
+label: seiten-template
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: nav-title
+  label: nav-title
+- type: number
+  name: nav-order
+  label: nav-order
+- type: text
+  name: layout
+  label: layout
+  hidden: true
+  default: page.liquid
+- type: text
+  name: tags
+  label: tags
+  default: page
+  hidden: true
+- type: text
+  name: permalink
+  label: permalink
+- type: text
+  name: header-image
+  label: header-image
