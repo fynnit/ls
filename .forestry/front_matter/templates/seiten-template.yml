@@ -14,9 +14,13 @@ fields:
 - type: text
   name: layout
   label: layout
+  hidden: true
+  default: page.liquid
 - type: text
   name: tags
   label: tags
+  default: page
+  hidden: true
 - type: text
   name: permalink
   label: permalink
