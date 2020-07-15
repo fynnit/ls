@@ -5,7 +5,7 @@ nav-order: 2
 layout: page.liquid
 tags: page
 permalink: /bakery.html
-header-image: ""
+header-image: "/assets/images/kaffeebar/363A5924_1.JPG"
 ---
 ## Unser Gebäck
 

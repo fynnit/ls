@@ -9,7 +9,7 @@ headercontent: "leuchtstoff - kaffeebar is an unpretentious 3rd wave coffee shop
 
 openinghours-title: Unsere Öffnungszeiten
 openinghours: "Mo - Fr 7 - 18 Uhr,\nSa - So 9 - 18 Uhr\n\nSiegfriedstraße 18,\n12051 Berlin"
-header_image: "/assets/images/ls_logo.svg"
+header-image: "/assets/images/ls_logo.svg"
 opentable: "Buch dir einen Tisch"
 opentable_image: "/assets/images/kaffeebar/363A5862.JPG"
 teaser-headline: was wir hier so machen
