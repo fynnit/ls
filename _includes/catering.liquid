@@ -15,12 +15,12 @@ layout: base.liquid
 
     <section >
         <h2>{{produkte-title}}</h2>
-        <div class="produkte-liste">
+        <div class="post-list">
             {% for produkt in collections.produkterev %}
-                <article class="produkt">
+                <article class="post">
                     <span class="date">{{-produkt.data.date | dateformat }}</span>
-                    <div class="produkt-bild" style="background-image: url({{produkt.data.image}})"></div>
-                    <div class="produkt-content">
+                    <div class="post-bild" style="background-image: url({{produkt.data.image}})"></div>
+                    <div class="post-content">
                         <h4>{{-produkt.data.title}}</h4>
                         <p>{{-produkt.data.page.excerpt}}</p>
                     </div>

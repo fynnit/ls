@@ -313,6 +313,49 @@ footer a:hover {
   filter: grayscale(0%);
   transition: filter 300ms;
 }
+.post {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+}
+.post-list {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr;
+  row-gap: 40px;
+}
+@media (min-width: 768px) {
+  .post-list {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .post-list {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 60px;
+  }
+}
+@media (min-width: 1280px) {
+  .post-list {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 100px;
+    row-gap: 100px;
+  }
+}
+.post-bild {
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+}
+.post-content {
+  background-color: #0f2229;
+  color: white;
+  padding: 20px 20px;
+}
+
 .button {
   padding: 0.8rem 2rem;
   flex-grow: 1;
@@ -400,32 +443,6 @@ footer a:hover {
   filter: grayscale(0%);
 }
 
-.kaffeebar .bohnen-liste {
-  display: grid;
-  justify-content: space-between;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 50px;
-  row-gap: 100px;
-}
-.kaffeebar .bohne {
-  width: 320px;
-  height: 300px;
-  position: relative;
-  display: flex;
-}
-.kaffeebar .bohne-bild {
-  height: 100%;
-  width: 55%;
-  background-size: cover;
-}
-.kaffeebar .bohne-content {
-  width: 45%;
-  background-color: #0f2229;
-  color: white;
-  height: 100%;
-  padding: 8px 10px;
-}
-
 .catering h2, .catering .teaser .grid .item span, .teaser .grid .item .catering span {
   text-align: center;
   margin-bottom: 50px;
@@ -458,7 +475,6 @@ footer a:hover {
 
 * {
   margin: 0;
-  font-family: "Sukhumvit", sans-serif;
   box-sizing: border-box;
 }
 
