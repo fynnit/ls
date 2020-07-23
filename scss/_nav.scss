@@ -4,12 +4,14 @@
     align-self: flex-start;
     justify-content: space-between;
     position: relative;
-    @include media-down(mdl) {
+    @include media-between(sm, mdl) {
         padding: 0 20px;
     }
     .sitename {
         color: $blue;
-        margin-right: 100px;
+        @include media-up(mdl){
+            margin-right: 100px;
+        }
     }
     .menu-items {
         flex-grow: 1;
@@ -88,7 +90,10 @@
                 height: 100vh;
                 // height: 300px;
                 background: linear-gradient(180deg, $blue 0%, $blue 30%, rgba(255,255,255,0) 100%);
-                padding: 20px;
+                padding: 20px 0;
+                @include media-between(sm, mdl) {
+                    padding: 20px;
+                }
             }
             .bar-1, .bar-2 {
                 background-color: #fff;

@@ -71,14 +71,18 @@ p:not(:last-child) {
   justify-content: space-between;
   position: relative;
 }
-@media (max-width: 1023px) {
+@media (min-width: 480px) and (max-width: 1023px) {
   .nav {
     padding: 0 20px;
   }
 }
 .nav .sitename {
   color: #007cb0;
-  margin-right: 100px;
+}
+@media (min-width: 1024px) {
+  .nav .sitename {
+    margin-right: 100px;
+  }
 }
 .nav .menu-items {
   flex-grow: 1;
@@ -163,8 +167,15 @@ p:not(:last-child) {
     display: flex;
     height: 100vh;
     background: linear-gradient(180deg, #007cb0 0%, #007cb0 30%, rgba(255, 255, 255, 0) 100%);
+    padding: 20px 0;
+  }
+}
+@media (max-width: 1023px) and (min-width: 480px) and (max-width: 1023px) {
+  .nav.active .menu-items {
     padding: 20px;
   }
+}
+@media (max-width: 1023px) {
   .nav.active .bar-1, .nav.active .bar-2 {
     background-color: #fff;
   }
