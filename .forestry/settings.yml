@@ -28,6 +28,13 @@ sections:
 - type: document
   path: catering.md
   label: catering
+- type: directory
+  path: produkte
+  label: catering produkte
+  create: documents
+  match: "**/*"
+  templates:
+  - produkte-post
 - type: document
   path: kontakt.md
   label: kontakt
