@@ -6,10 +6,10 @@ webhook_url:
 sections:
 - type: document
   path: index.md
-  label: Home
+  label: home
 - type: directory
   path: news
-  label: news
+  label: home news
   create: documents
   match: "**/*"
 - type: document
@@ -17,7 +17,7 @@ sections:
   label: kaffebar
 - type: directory
   path: bohnen
-  label: Bohnen
+  label: kaffee bohnen
   create: documents
   match: "**/*"
   templates:
