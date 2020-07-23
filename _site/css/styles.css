@@ -10,9 +10,15 @@
 }
 
 @font-face {
-  font-family: "moon";
+  font-family: "Nanum";
   font-display: swap;
-  src: url(/assets/fonts/moon.otf);
+  src: url(/assets/fonts/nanumgothic-regular.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Staatliches";
+  font-display: swap;
+  src: url(/assets/fonts/Staatliches-Regular.ttf);
   font-weight: 300;
 }
 @font-face {
@@ -47,7 +53,7 @@ h2, .teaser .grid .item span {
 a, span, p, li, div {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "Nanum", "Helvetica Neue", Arial, sans-serif;
   font-weight: 500;
   color: inherit;
   letter-spacing: 2px;
