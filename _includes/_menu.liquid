@@ -1,8 +1,16 @@
-<nav class="nav">
+<nav class="nav" id="nav">
     <a href="/" class="nav-item sitename">leuchtstoff</a>
-    {% for site in collections.page %}
-        {% comment %} <div class="nav-item order-{{site.data.nav-order}}"> {% endcomment %}
-            <a href="{{site.url}}" class="nav-item order-{{site.data.nav-order}} {% if page.url == site.url %} active {% endif %}">{{site.data.nav-title}}</a>
-        {% comment %} </div> {% endcomment %}
+    <div class="mobile-menu-button" onclick="document.getElementById('nav').classList.toggle('active');">
+        <div class="bar-1"></div>
+        <div class="bar-2"></div>
+    </div>
+    <div class="menu-items" onclick="document.getElementById('nav').classList.remove('active');">
+        {% for site in collections.page %}
+            {% comment %} <div class="nav-item order-{{site.data.nav-order}}"> {% endcomment %}
+                <a href="{{site.url}}" class="nav-item order-{{site.data.nav-order}} {% if page.url == site.url %} active {% endif %}">{{site.data.nav-title}}</a>
+            {% comment %} </div> {% endcomment %}
     {% endfor %}
+    </div>
+
+    
 </nav>
