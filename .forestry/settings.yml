@@ -28,6 +28,13 @@ sections:
 - type: document
   path: frühstück.md
   label: frühstück
+- type: directory
+  path: frühstück
+  label: frühstück
+  create: documents
+  match: "**/*"
+  templates:
+  - bohnen-post
 - type: document
   path: catering.md
   label: catering
