@@ -34,7 +34,7 @@ sections:
   create: documents
   match: "**/*"
   templates:
-  - bohnen-post
+  - breakfast-post
 - type: document
   path: catering.md
   label: catering

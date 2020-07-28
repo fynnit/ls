@@ -1,0 +1,29 @@
+---
+label: bohnen-post
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: layout
+  label: layout
+  hidden: true
+  default: detail-post.liquid
+- type: text
+  name: tags
+  label: tags
+  hidden: false
+  default: bohne
+- type: datetime
+  name: date
+  label: date
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: image
+pages:
+- bohnen/filter-athiopia-yirgacheffe-natural-by-jb.md
+- bohnen/leuchtstoff-hausblend-250g.md
+- bohnen/leuchtstoff-housblend-259g.md
