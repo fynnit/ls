@@ -1,7 +1,7 @@
 ---
 layout: post.liquid
 tags: hausblend
-title: Leuchtstoff Hausblend 1000g
+title: Leuchtstoff Espresso Hausblend 1000g
 date: 
 image: "/assets/images/ls-coffee.jpg"
 
