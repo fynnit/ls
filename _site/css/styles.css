@@ -454,18 +454,18 @@ footer a:hover {
   text-align: center;
 }
 
-.bohnen-post {
+.detail-post {
   display: flex;
   justify-content: space-between;
   margin-top: 80px;
 }
-.bohnen-post [class*=col] {
+.detail-post [class*=col] {
   width: 50%;
 }
-.bohnen-post .col-1 {
+.detail-post .col-1 {
   padding-right: 20px;
 }
-.bohnen-post .col-2 {
+.detail-post .col-2 {
   padding-left: 20px;
   text-align: left;
 }

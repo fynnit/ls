@@ -1,5 +1,5 @@
 ---
-layout: bohnen-post.liquid
+layout: detail-post.liquid
 tags: hausblend
 title: Leuchtstoff Espresso Hausblend 250g
 date: 

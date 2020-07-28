@@ -6,14 +6,7 @@ layout: kaffeebar.liquid
 tags: page
 permalink: "/kaffeebar.html"
 header-image: ''
-housecoffee:
-- name: Leuchtstoff Hausblend 250g
-  image: "/assets/images/ls-coffee.jpg"
-  description: Unsere lang erprobte mittel-geröstete Espresso-Hausmischung. Milchschokokolade.
-    Walnuss. Karamell. Eine Idee Kirsche. Für unterwegs oder zuhause. Geil und geil.
-- name: ''
-  image: ''
-  description: ''
+
 housecoffeeheadline: unsere house blends
 othercoffeeheadline: neu bei uns
 

@@ -26,6 +26,9 @@ sections:
   path: bakery.md
   label: bakery
 - type: document
+  path: frühstück.md
+  label: frühstück
+- type: document
   path: catering.md
   label: catering
 - type: directory

@@ -1,0 +1,46 @@
+---
+layout: base.liquid
+---
+<main class="page kaffeebar">
+    <header class="small">
+        <div class="background"
+            style="background-image: url({{header-image}})">
+            </div>
+        <h1>{{title}}</h1>
+    </header>
+
+    <section class="{%if style != 'left'%}centered{%endif%}">
+        {{-content}}
+    </section>
+
+    {% if collections.week %}
+        <h2>{{weekheadline}}</h2>
+        <section class="post-list">
+            {% for item in collections.week %}
+                <article class="post" onclick="window.location='{{item.url}}'">
+                
+                <div class="post-bild" style="background-image: url({{item.data.image}})"></div>
+                
+                <div class="post-content">
+                    <h4>{{-item.data.title}}</h4>
+                </div>
+            </article>
+            {% endfor %}
+        </section>
+    {% endif %}
+
+    <h2>{{weekendheadline}}</h2>
+    <section class="post-list">
+
+    {% for item in collections.weekend %}
+        <article class="post" onclick="window.location='{{item.url}}'">
+            
+            <div class="post-bild" style="background-image: url({{item.data.image}})"></div>
+            
+            <div class="post-content">
+                <h4>{{-item.data.title}}</h4>
+            </div>
+        </article>
+    {% endfor %}
+    </section>
+</main>

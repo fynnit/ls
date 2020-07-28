@@ -1,5 +1,5 @@
 ---
-layout: bohnen-post.liquid
+layout: detail-post.liquid
 tags: bohne
 title: Filter Äthiopia Yirgacheffe Natural by JB
 date: 
