@@ -14,7 +14,7 @@ sections:
   match: "**/*"
 - type: document
   path: kaffebar.md
-  label: kaffe
+  label: kaffee
 - type: directory
   path: bohnen
   label: neue bohnen
