@@ -1,9 +1,11 @@
 ---
 layout: post.liquid
 tags: bohne
-title: Leuchtstoff Housblend 259g
+title: Leuchtstoff Hausblend 250g
 date: 
-image: ''
+image: "/assets/images/ls-coffee.jpg"
 
 ---
-Unsere lang erprobte Hausmischung.  Geil und geil.
+Unsere lang erprobte mittel-dunkle Espresso-Hausmischung. Milchschokokolade. Walnuss. Karamell. 
+
+Für unterwegs oder zuhause. Geil und geil.
