@@ -1,9 +1,7 @@
 ---
 title: kontakt
 nav-title: kontakt
-nav-order: "4"
 layout: contact.liquid
-tags: page
 permalink: "/kontakt.html"
 header-image: ''
 contact-headline: und so findest du zu uns
