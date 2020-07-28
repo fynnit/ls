@@ -6,18 +6,18 @@ webhook_url:
 sections:
 - type: document
   path: index.md
-  label: Home
+  label: home
 - type: directory
   path: news
-  label: news
+  label: home news
   create: documents
   match: "**/*"
 - type: document
   path: kaffebar.md
-  label: kaffebar
+  label: kaffe
 - type: directory
   path: bohnen
-  label: Bohnen
+  label: neue bohnen
   create: documents
   match: "**/*"
   templates:
@@ -28,6 +28,13 @@ sections:
 - type: document
   path: catering.md
   label: catering
+- type: directory
+  path: produkte
+  label: catering produkte
+  create: documents
+  match: "**/*"
+  templates:
+  - produkte-post
 - type: document
   path: kontakt.md
   label: kontakt
