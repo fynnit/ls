@@ -24,5 +24,4 @@ fields:
     maxSize: 64
   label: image
 pages:
-- bohnen/super-nice-bohne.md
 - produkte/article.md
