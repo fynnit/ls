@@ -26,8 +26,9 @@ Wenn Ihr es mal nicht in den Laden schafft, oder weit weg wohnt, könnt Ihr unse
 
 Welche Bohne?  
 Welche Menge?  
+Falls Ihr die Bohnen gemahlen haben wollt, lasst uns wissen für welche Maschine.  
 Liefer- und Rechnungsadresse.
 
-Ihr bekommt dann von uns eine Rechnung und nach Zahlungseingang die Ware. 
+Ihr bekommt dann von uns eine Rechnung und nach Zahlungseingang die Ware.
 
 Für Bestellungen bis 30€ berechnen wir 4,90€ Verpackung und Versand. Bei höherem Bestellwert entfällt das.
