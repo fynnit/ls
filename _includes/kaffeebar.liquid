@@ -34,7 +34,6 @@ layout: base.liquid
 
     {% for bohne in collections.bohnerev %}
         <article class="post" onclick="window.location='{{bohne.url}}'">
-            <span class="date">{{-bohne.data.date | dateformat }}</span>
             
             <div class="post-bild" style="background-image: url({{bohne.data.image}})"></div>
             
