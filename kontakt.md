@@ -1,12 +1,11 @@
 ---
 title: kontakt
 nav-title: kontakt
-nav-order: 4
+nav-order: "4"
 layout: contact.liquid
 tags: page
-permalink: /kontakt.html
-header-image: ""
-
+permalink: "/kontakt.html"
+header-image: ''
 contact-headline: und so findest du zu uns
 
 ---
@@ -37,5 +36,4 @@ Siegfriedstraße 18<br>
 
 ## Öffnungszeiten
 
-Mo-Fr: 7-18 Uhr
-Sa-So: 9-18 Uhr
+Mo-Fr: 8-18 Uhr Sa-So: 9-18 Uhr
