@@ -14,10 +14,10 @@ sections:
   match: "**/*"
 - type: document
   path: kaffebar.md
-  label: kaffebar
+  label: kaffe
 - type: directory
   path: bohnen
-  label: kaffee bohnen
+  label: neue bohnen
   create: documents
   match: "**/*"
   templates:
