@@ -17,7 +17,7 @@ sections:
   label: kaffee
 - type: directory
   path: bohnen
-  label: neue bohnen
+  label: bohnen
   create: documents
   match: "**/*"
   templates:
