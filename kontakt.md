@@ -17,8 +17,19 @@ Seit 2011 leuchtet die Bude. Dort, wo Neukölln der Ringbahn am nächsten ist, g
 
 ## Kontakt
 
-Ihr wollt uns erreichen?<br>
-Schreibt am besten eine kurze Email an
+Ihr wollt Bohnen bestellen?   
+Schreibt uns bitte eine Email an Kaffee@leuchtstoff.berlin mit folgenden Infos:
+
+Welche Bohne?  
+Welche Menge?  
+Falls Ihr die Bohnen gemahlen haben wollt, lasst uns wissen für welche Maschine.  
+Liefer- und Rechnungsadresse.
+
+Ihr wollt ein Catering oder eine Kuchenlieferung anfragen?  
+Schreibt uns an Catering@leuchtstoff.berlin
+
+  
+Ihr wollt uns im Büro erreichen?<br> Schreibt am besten eine kurze Email an
 
 <div class="button"><a href="mailto:zentrale@leuchtstoff.berlin">zentrale(at)leuchtstoff.berlin</a></div>
 
