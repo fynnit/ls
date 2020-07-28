@@ -13,7 +13,7 @@ fields:
 - type: text
   name: tags
   label: tags
-  hidden: true
+  hidden: false
   default: bohne
 - type: datetime
   name: date
