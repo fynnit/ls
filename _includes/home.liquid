@@ -44,12 +44,9 @@ layout: base.liquid
     <section class="teaser">
         <h2>{{teaser-headline}}</h2>
         <div class="grid">
-        {% for item in teasers%}
-            <div class="item" style="background-image: url({{item.image}})" onclick="window.location='{{item.url}}'"><span>{{item.name}}</span></div>
-        {% endfor %}
-            <!--div class="item" style="background-image: url()"><span>Bakery</span></div>
-            <div class="item" style="background-image: url()"><span>Catering</span></div>
-            <div class="item" style="background-image: url()"><span>Lieferservice</span></div-->
+            {% for item in teasers%}
+                <div class="item" style="background-image: url({{item.image}})" onclick="window.location='{{item.url}}'"><span>{{item.name}}</span></div>
+            {% endfor %}
         </div>
     </section>
 

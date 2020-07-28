@@ -6,6 +6,22 @@ layout: kaffeebar.liquid
 tags: page
 permalink: /kaffeebar.html
 header-image: ""
+
+housecoffeeheadline: "unsere house blends"
+othercoffeeheadline: "neu bei uns"
+
+housecoffee: [
+    {
+        name: 'Leuchtstoff Houseblend one',
+        image: '/assets/images/ls-coffee.jpg',
+        description: 'kasbdkjaewbdflaewdf alwdkbawidiuh awdouh odh awdoiuh awodiuh awoduhawod awoidh awodih awfoih awodih ',
+    },
+    {
+        name: 'Leuchtstoff Houseblend one',
+        image: '/assets/images/ls-coffee.jpg',
+        description: 'kasbdkjaewbdflaewdf alwdkbawidiuh awdouh odh awdoiuh awodiuh awoduhawod awoidh awodih awfoih awodih ',
+    },
+    ]
 ---
 
 ## Was macht die Kaffeebar?

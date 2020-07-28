@@ -12,12 +12,30 @@ layout: base.liquid
     <section class="{%if style != 'left'%}centered{%endif%}">
         {{-content}}
     </section>
+    <h2>{{housecoffeeheadline}}</h2>
 
+    <section class="post-list">
+        {% for item in housecoffee %}
+            <article class="post">
+               
+                <div class="post-bild" style="background-image: url({{item.image}})"></div>
+               
+                <div class="post-content">
+                    <h4>{{-item.name}}</h4>
+                    <p>{{-item.description}}</p>
+                </div>
+            </article>
+        {% endfor %}
+    </section>
+
+    <h2>{{othercoffeeheadline}}</h2>
     <section class="post-list">
     {% for bohne in collections.bohnerev %}
         <article class="post">
             <span class="date">{{-bohne.data.date | dateformat }}</span>
+            
             <div class="post-bild" style="background-image: url({{bohne.data.image}})"></div>
+            
             <div class="post-content">
                 <h4>{{-bohne.data.title}}</h4>
                 <p>{{-bohne.data.page.excerpt}}</p>
