@@ -24,4 +24,5 @@ fields:
     maxSize: 64
   label: image
 pages:
+- bohnen/leuchtstoff-hausblend-250g.md
 - bohnen/leuchtstoff-housblend-259g.md
