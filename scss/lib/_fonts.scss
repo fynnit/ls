@@ -39,6 +39,7 @@ h1,h2,h3,
     // -moz-osx-font-smoothing: grayscale;
     letter-spacing: normal;
     word-spacing: normal;
+    word-break: break-word;
 }
 nav a:not(.sitename) {
     font-family: $font-family-display-2;
