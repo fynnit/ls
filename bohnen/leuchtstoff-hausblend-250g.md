@@ -12,4 +12,4 @@ Für unterwegs oder zuhause. Geil und geil.
 
 Hier im praktischen Kilopack für die Vieltrinker.
 
-35€
+1000g = 35€
