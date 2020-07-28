@@ -9,7 +9,7 @@ fields:
   name: layout
   label: layout
   hidden: true
-  default: post.liquid
+  default: bohnen-post.liquid
 - type: text
   name: tags
   label: tags

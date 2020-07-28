@@ -1,8 +1,7 @@
 ---
 layout: post.liquid
-tags: bohne
+tags: hausblend
 title: Leuchtstoff Hausblend 250g
-date: 
 image: "/assets/images/ls-coffee.jpg"
 
 ---
