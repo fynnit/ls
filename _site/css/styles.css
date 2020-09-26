@@ -397,18 +397,21 @@ footer a:hover {
   font-family: "lulo-b", sans-serif;
 }
 
-.button {
+.button, a[href^="mailto:"] {
   padding: 0.8rem 2rem;
   flex-grow: 1;
+  text-decoration: none;
   text-align: center;
   border: 1px solid #000;
   cursor: pointer;
+  display: block;
+  margin-top: 30px;
   transition: background-color 400ms 100ms, border-color 400ms 100ms, color 400ms 100ms;
 }
-.button a {
+.button a, a[href^="mailto:"] a {
   text-decoration: none;
 }
-.button:hover {
+.button:hover, a[href^="mailto:"]:hover {
   transition: background-color 400ms, border-color 400ms, color 400ms;
   background-color: #009de0;
   color: white;
@@ -438,6 +441,9 @@ footer a:hover {
   background-repeat: no-repeat;
   opacity: 0.2;
   background-attachment: scroll;
+}
+.home header p {
+  text-shadow: 1px 1px 5px white;
 }
 .home .news {
   display: flex;

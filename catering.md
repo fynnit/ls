@@ -16,4 +16,4 @@ Wir kommen gern zu euch! Mit unserer mobilen Kaffee-Bar bringen wir besten Kaffe
 
 Schreibt uns gerne an, wenn Ihr zusätzliche Informationen oder ein Angebot einholen wollt.
 
-catering@leuchtstoff.berlin
+[catering@leuchtstoff.berlin](mailto:catering@leuchtstoff.berlin)
