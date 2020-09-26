@@ -34,7 +34,11 @@
         color: inherit;
         font-size: 28px;
         padding: 6px 0 0;
-        @include media-up(mdl){margin-left: 5vw;}
+        @include media-up(mdl){
+            margin-left: 3vw;
+            font-size: 25px;
+        }
+        @include media-up(lg){margin-left: 5vw;}
         line-height: 1;
         letter-spacing: -5px;
         color: $fresh-blue;

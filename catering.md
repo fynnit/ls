@@ -4,7 +4,7 @@ title: catering
 nav-title: catering
 nav-order: "4"
 layout: catering.liquid
-tags: 
+tags: page
 permalink: "/catering.html"
 header-image: ''
 produkte-title: Unsere Produkte
