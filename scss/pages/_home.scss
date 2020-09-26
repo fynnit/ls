@@ -17,6 +17,10 @@
         @include media-down(md) {
             flex-flow: column;
         }
+
+        &.length-1 article {
+            width: 45%;
+        }
     }
     
     article {
@@ -40,6 +44,10 @@
             span {
                 display: block;
             }
+        }
+        hr, 
+        hr ~ * {
+            display: none;
         }
     }
 

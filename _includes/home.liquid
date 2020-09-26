@@ -12,10 +12,10 @@ layout: base.liquid
         <p>{{headercontent}}</p>
     </header>
 
-    <section class="news">
+    <section class="news length-{{collections.newsrev.length}}">
         <article class="openinghours">
             <h3>{{openinghours-title}}</h3>
-            <p>{{-openinghours }}</p>
+            <p>{% for row in openinghours %}<div>{{row}}</div>{%endfor%}</p>
         </article>
         
         {% for article in collections.newsrev %}

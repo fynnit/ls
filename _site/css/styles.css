@@ -442,6 +442,9 @@ footer a:hover {
     flex-flow: column;
   }
 }
+.home .news.length-1 article {
+  width: 45%;
+}
 .home article {
   width: 30%;
   cursor: pointer;
@@ -461,6 +464,10 @@ footer a:hover {
 }
 .home article.openinghours span {
   display: block;
+}
+.home article hr,
+.home article hr ~ * {
+  display: none;
 }
 .home h2, .home .teaser .grid .item span, .teaser .grid .item .home span {
   text-align: center;
