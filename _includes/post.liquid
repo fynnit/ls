@@ -4,9 +4,11 @@ layout: base.liquid
 
 <main class="post">
     <header class="small">
+    {% if header-image %}
     <div class="background"
         style="background-image: url({{header-image}})">
         </div>
+        {% endif %}
         <h1>{{title}}</h1>
     </header>
     <section>

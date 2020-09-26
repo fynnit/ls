@@ -629,4 +629,8 @@ section.centered p {
   background-color: #4acaff;
 }
 
+.post hr {
+  display: none;
+}
+
 /*# sourceMappingURL=styles.css.map */

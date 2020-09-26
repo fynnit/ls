@@ -18,5 +18,8 @@ fields:
 - type: datetime
   name: date
   label: date
+- type: image
+  name: header-image
+  label: header-image
 pages:
 - news/webseiten-neubau-bezugsfertig.md

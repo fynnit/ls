@@ -15,10 +15,7 @@ layout: base.liquid
     <section class="news">
         <article class="openinghours">
             <h3>{{openinghours-title}}</h3>
-            <p>{%for row in openinghours%}
-            <span>{{-row}}</span>
-            {%endfor%}
-            </p>
+            <p>{{-openinghours }}</p>
         </article>
         
         {% for article in collections.newsrev %}
@@ -40,36 +37,20 @@ layout: base.liquid
         {{content}}
     </section>
 
-    {% comment %} <section class="opentable"  style="background-image: url({{opentable_image}})">
+    <section class="opentable"  style="background-image: url({{opentable_image}})">
         <h2>{{opentable}}</h2>
-    </section> {% endcomment %}
+    </section>
 
     <section class="teaser">
-        {% if teaser-headline %}<h2>{{teaser-headline}}</h2>{% endif %}
+        <h2>{{teaser-headline}}</h2>
         <div class="grid">
             {% for item in teasers%}
-                <div class="item" onclick="window.location='{{item.url}}'">
-                    <div class="image" style="
-                    background-image: url({{item.image}});
-                    {%if item.image-y-position%}
-                        background-position-y: {{item.image-y-position}};
-                    {%endif%}
-                    "></div>
-                    {% comment %} <img src="{{item.image}}" alt=""> {% endcomment %}
-                    <span>{{item.name}}</span>
-                </div>
+                <div class="item" style="background-image: url({{item.image}})" onclick="window.location='{{item.url}}'"><span>{{item.name}}</span></div>
             {% endfor %}
         </div>
     </section>
 
     {% include _maps.liquid %}
     
-   <section class="certificates">
-        <div class="grid">
-            <div class="item">
-            <link href="https://awards.infcdn.net/circ5_n.css" rel="stylesheet"/><div id="rest_circ5" onclick="if(event.target.nodeName.toLowerCase() != 'a') {window.open(this.querySelector('.circ_top_title').href);return 0;}"><div class="circ_cont"><div class="circ_img" style="background: url('https://awards.infcdn.net/img/star_red.svg') no-repeat center">&nbsp;</div><a href="https://restaurantguru.com/leuchtstoff-Kaffeebar-Berlin" target="_blank" class="circ_top_title">Restaurant Guru 2020</a><span>Recommended</span><a href="https://restaurantguru.com/leuchtstoff-Kaffeebar-Berlin" class="circ_bot_title" target="_blank">leuchtstoff</a></div></div>
-            </div>
-        </div>
-    </section>
 </main>
 
