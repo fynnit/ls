@@ -1,5 +1,5 @@
 ---
-disabled: true
+disabled: false
 title: catering
 nav-title: catering
 nav-order: "4"
