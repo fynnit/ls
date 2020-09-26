@@ -235,7 +235,7 @@ header.has-image .title {
     padding: 0 60px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (min-height: 800px) {
   header {
     margin-bottom: 100px;
   }

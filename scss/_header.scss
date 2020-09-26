@@ -23,7 +23,6 @@ header {
         left: 0;
         background-size: cover;
         background-position: center;
-        // background-attachment: fixed;
         background-repeat: no-repeat;
         z-index: 0;
     }
@@ -40,7 +39,9 @@ header {
     margin-bottom: 50px;
 
     @include media-up(mdl) {
-        margin-bottom: 100px;
+        @media (min-height: 800px) {
+            margin-bottom: 100px;
+        }
     }
 
     p {
