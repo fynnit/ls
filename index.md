@@ -17,10 +17,6 @@ opentable_image: "/assets/images/kaffeebar/363A5862.JPG"
 teaser-headline: 
 contact-headline: und so findest du zu uns
 teasers:
-- name: Catering
-  url: "/catering.html"
-  image: ''
-  image-y-position: ''
 - name: Kaffeebar
   url: "/kaffeebar.html"
   image: "/assets/images/bohnenregal.jpg"
@@ -33,7 +29,10 @@ teasers:
   url: "/breakfast.html"
   image: assets/images/baguette-magic.jpg
   image-y-position: 10%
-
+- name: Catering
+  url: "/catering.html"
+  image: ''
+  image-y-position: ''
 ---
 ## der stoff der dich zum leuchten bringt
 
