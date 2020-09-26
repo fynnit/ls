@@ -1,6 +1,6 @@
 ---
 title: Webseiten Neubau bezugsfertig
-layout: post
+layout: post.liquid
 tags: news
 date: 
 
