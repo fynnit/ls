@@ -3,7 +3,7 @@ title: kontakt
 nav-title: kontakt
 layout: contact.liquid
 permalink: "/kontakt.html"
-header-image: ''
+header-image: 'assets/images/kontakt.jpg'
 contact-headline: und so findest du zu uns
 
 ---
@@ -16,20 +16,21 @@ Seit 2011 leuchtet die Bude. Dort, wo Neukölln der Ringbahn am nächsten ist, g
 ## Kontakt
 
 Ihr wollt Bohnen bestellen?   
-Schreibt uns bitte eine Email an Kaffee@leuchtstoff.berlin mit folgenden Infos:
+Schreibt uns bitte eine Email mit folgenden Infos:
 
 Welche Bohne?  
 Welche Menge?  
-Falls Ihr die Bohnen gemahlen haben wollt, lasst uns wissen für welche Maschine.  
-Liefer- und Rechnungsadresse.
+(Falls Ihr die Bohnen gemahlen haben wollt, lasst uns wissen für welche Maschine.  
+Liefer- und Rechnungsadresse) an 
+[kaffee(at)leuchtstoff.berlin](mailto:Kaffee@leuchtstoff.berlin) 
 
 Ihr wollt ein Catering oder eine Kuchenlieferung anfragen?  
-Schreibt uns an Catering@leuchtstoff.berlin
+Schreibt uns an [catering(at)leuchtstoff.berlin](mailto:Catering@leuchtstoff.berlin)
 
   
 Ihr wollt uns im Büro erreichen?<br> Schreibt am besten eine kurze Email an
 
-<div class="button"><a href="mailto:zentrale@leuchtstoff.berlin">zentrale(at)leuchtstoff.berlin</a></div>
+[zentrale(at)leuchtstoff.berlin](mailto:zentrale@leuchtstoff.berlin)
 
 <br>
 <br>

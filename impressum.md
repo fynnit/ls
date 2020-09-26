@@ -4,7 +4,7 @@ nav-title: impressum
 layout: page.liquid
 style: left
 permalink: /impressum.html
-header-image: ""
+header-image: 'assets/images/kontakt.jpg'
 ---
 
 Unternehmensangaben nach § 5 Telemediengesetz (TMG)

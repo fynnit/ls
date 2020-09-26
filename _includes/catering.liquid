@@ -2,12 +2,7 @@
 layout: base.liquid
 ---
 <main class="page catering">
-    <header class="">
-    <div class="background"
-        style="background-image: url({{header-image}})">
-        </div>
-        <h1>{{title}}</h1>
-    </header>
+    {% include _header.liquid %}
 
     <section class="{%if style != 'left'%}centered{%endif%}">
         {{-content}}

@@ -6,7 +6,7 @@ layout: breakfast.liquid
 tags: page
 permalink: "/breakfast.html"
 header-image: 'assets/images/baguette-magic.jpg'
-header-image-y-position: 10%
+header-image-y-position: 30%
 
 weekheadline: unser wochenangeboot
 weekendheadline: am wochenende

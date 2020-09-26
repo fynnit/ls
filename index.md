@@ -31,7 +31,7 @@ teasers:
   image-y-position: 10%
 - name: Catering
   url: "/catering.html"
-  image: ''
+  image: '/assets/images/catering.jpeg'
   image-y-position: ''
 ---
 ## der stoff der dich zum leuchten bringt

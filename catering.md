@@ -6,7 +6,8 @@ nav-order: "4"
 layout: catering.liquid
 tags: page
 permalink: "/catering.html"
-header-image: ''
+header-image: "/assets/images/catering.jpeg"
+header-image-y-position: "34%"
 produkte-title: Unsere Produkte
 
 ---
