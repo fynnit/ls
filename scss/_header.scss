@@ -13,6 +13,7 @@ header {
     position: relative;
     h1,h2,h3 {
         z-index: 1;
+        text-align: center;
     }
     .background {
         height: 100%;
@@ -26,7 +27,13 @@ header {
         background-repeat: no-repeat;
         z-index: 0;
     }
-
+    &.has-image .title {
+        background-color: $fresh-blue;
+        padding: 10px 20px;
+        color: white;
+        position: static;
+        z-index: 4;
+    }
     @include padding;
 
     text-align: center;

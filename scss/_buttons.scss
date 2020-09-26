@@ -9,10 +9,12 @@
         text-decoration: none;
     }
     
-    transition: background-color 400ms 100ms;
+    transition: background-color 400ms 100ms, border-color 400ms 100ms, color 400ms 100ms;
     &:hover {
-        transition: background-color 400ms;
-        background-color: rgba($light-blue,0.2);
+        transition: background-color 400ms, border-color 400ms, color 400ms;
+        background-color: $fresh-blue;
+        color: white;
+        border-color: $fresh-blue;
     }
 }
 .buttons-wrapper {

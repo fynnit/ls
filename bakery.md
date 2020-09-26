@@ -1,7 +1,7 @@
 ---
 title: bakery
 nav-title: bakery
-nav-order: "3"
+nav-order: "2"
 layout: page.liquid
 tags: page
 permalink: "/bakery.html"

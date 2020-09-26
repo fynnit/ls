@@ -1,14 +1,3 @@
-.teaser .grid .item {
-  transform: scale(1);
-  transition: transform 400ms 100ms, border-radius 300ms 100ms;
-  cursor: pointer;
-}
-.teaser .grid .item:hover {
-  transform: scale(1.025);
-  transition: transform 300ms, border-radius 200ms;
-  border-radius: 5px;
-}
-
 @font-face {
   font-family: "Nanum";
   font-display: swap;
@@ -33,9 +22,14 @@
   src: url(/assets/fonts/lulo.otf);
   font-weight: 500;
 }
+@font-face {
+  font-family: "poppins";
+  font-display: swap;
+  src: url(/assets/fonts/Poppins-Light.otf);
+}
 h1, h2, .teaser .grid .item span, h3,
 .sitename {
-  font-family: "lulo-b", serif;
+  font-family: "lulo-b", sans-serif;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: normal;
@@ -44,7 +38,7 @@ h1, h2, .teaser .grid .item span, h3,
 }
 
 nav a:not(.sitename) {
-  font-family: "lulo", serif;
+  font-family: "lulo", sans-serif;
 }
 
 h2, .teaser .grid .item span {
@@ -54,11 +48,9 @@ h2, .teaser .grid .item span {
 a, span, p, li, div {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Nanum", "Helvetica Neue", Arial, sans-serif;
+  font-family: "poppins", "Nanum", "Helvetica Neue", Arial, sans-serif;
   font-weight: 500;
   color: inherit;
-  letter-spacing: 2px;
-  word-spacing: -3px;
 }
 
 p:not(:last-child) {
@@ -77,18 +69,18 @@ p:not(:last-child) {
     padding: 0 20px;
   }
 }
-.nav .sitename {
-  color: #007cb0;
-}
 @media (min-width: 1024px) {
-  .nav .sitename {
-    margin-right: 100px;
+  .nav {
+    padding: 0 60px;
   }
+}
+.nav .sitename {
+  margin-left: 0 !important;
 }
 .nav .menu-items {
   flex-grow: 1;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 @media (max-width: 1023px) {
   .nav .menu-items {
@@ -104,10 +96,16 @@ p:not(:last-child) {
   padding: 6px 0 0;
   line-height: 1;
   letter-spacing: -5px;
+  color: #009de0;
+}
+@media (min-width: 1024px) {
+  .nav .nav-item {
+    margin-left: 5vw;
+  }
 }
 .nav .nav-item.active, .nav .nav-item:hover {
-  font-family: "lulo-b", serif;
-  color: #0f2229;
+  font-family: "lulo-b", sans-serif;
+  color: #009de0;
 }
 .nav .nav-item.order-1 {
   order: 1;
@@ -207,6 +205,7 @@ header.small {
 }
 header h1, header h2, header .teaser .grid .item span, .teaser .grid .item header span, header h3 {
   z-index: 1;
+  text-align: center;
 }
 header .background {
   height: 100%;
@@ -218,6 +217,13 @@ header .background {
   background-position: center;
   background-repeat: no-repeat;
   z-index: 0;
+}
+header.has-image .title {
+  background-color: #009de0;
+  padding: 10px 20px;
+  color: white;
+  position: static;
+  z-index: 4;
 }
 @media (min-width: 768px) {
   header {
@@ -262,13 +268,12 @@ footer .inner {
 }
 footer a {
   text-decoration: none;
-  font-family: "lulo-b", serif;
+  font-family: "lulo-b", sans-serif;
   text-transform: uppercase;
 }
 footer a:hover {
-  transition: color 300ms, border-bottom 300ms;
-  color: #007cb0;
-  border-bottom: 1px solid rgba(0, 124, 176, 0.2);
+  transition: color 300ms;
+  color: #009de0;
 }
 
 .teaser .grid {
@@ -298,21 +303,44 @@ footer a:hover {
   }
 }
 .teaser .grid .item {
-  background-color: #efefef;
-  padding: 20px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: column;
   height: 300px;
   background-size: contain;
   background-position: center;
-  filter: grayscale(100%);
   transition: filter 300ms;
+  cursor: pointer;
+  position: relative;
 }
 .teaser .grid .item:hover {
-  filter: grayscale(0%);
   transition: filter 300ms;
+}
+.teaser .grid .item:hover .image:after {
+  box-shadow: inset 0 0 0 5px #009de0;
+  transition: box-shadow 400ms 100ms;
+}
+.teaser .grid .item .image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-color: #efefef;
+  margin-bottom: 20px;
+  position: relative;
+}
+.teaser .grid .item .image:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 5px transparent;
+  transition: box-shadow 400ms;
+  z-index: 2;
 }
 .post {
   text-align: center;
@@ -360,7 +388,7 @@ footer a:hover {
 }
 .post h4 {
   margin-bottom: 5px;
-  font-family: "lulo-b", serif;
+  font-family: "lulo-b", sans-serif;
 }
 
 .button {
@@ -369,14 +397,16 @@ footer a:hover {
   text-align: center;
   border: 1px solid #000;
   cursor: pointer;
-  transition: background-color 400ms 100ms;
+  transition: background-color 400ms 100ms, border-color 400ms 100ms, color 400ms 100ms;
 }
 .button a {
   text-decoration: none;
 }
 .button:hover {
-  transition: background-color 400ms;
-  background-color: rgba(74, 202, 255, 0.2);
+  transition: background-color 400ms, border-color 400ms, color 400ms;
+  background-color: #009de0;
+  color: white;
+  border-color: #009de0;
 }
 
 .buttons-wrapper {
@@ -415,7 +445,7 @@ footer a:hover {
 .home article {
   width: 30%;
   cursor: pointer;
-  background-color: #0f2229;
+  background-color: #009de0;
   color: white;
   padding: 20px;
   position: relative;
@@ -429,8 +459,8 @@ footer a:hover {
 .home article h3 {
   margin-bottom: 0.5rem;
 }
-.home article.openinghours p {
-  white-space: pre-line;
+.home article.openinghours span {
+  display: block;
 }
 .home h2, .home .teaser .grid .item span, .teaser .grid .item .home span {
   text-align: center;
@@ -445,6 +475,9 @@ footer a:hover {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+}
+.home section.teaser {
+  padding-top: 50px;
 }
 .home .maps {
   filter: grayscale(0%);
@@ -505,17 +538,17 @@ footer a:hover {
   box-sizing: border-box;
 }
 
-html,
-body,
-main {
-  min-height: 100%;
-}
-
 html {
+  height: 100%;
   background-color: #fdfdfd;
 }
 
+main {
+  min-height: calc(100% - 34px - 58px);
+}
+
 body {
+  height: 100%;
   color: #1f1f1f;
   opacity: 1;
   transition: opacity 200ms;
@@ -569,7 +602,7 @@ section.centered p {
   padding: 5px 10px;
   font-size: 12px;
   color: #efefef;
-  background-color: #0f2229;
+  background-color: #009de0;
   position: absolute;
   top: 0;
   right: 0;
@@ -578,6 +611,18 @@ section.centered p {
 
 .maps {
   text-align: center;
+}
+.maps .map {
+  position: relative;
+}
+.maps .copyright {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  opacity: 0.5;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
 }
 
 ::selection {

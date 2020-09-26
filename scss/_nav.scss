@@ -7,16 +7,22 @@
     @include media-between(sm, mdl) {
         padding: 0 20px;
     }
+    
+
+    @include media-up(mdl) {
+        padding: 0 60px;
+    }
+
+
     .sitename {
-        color: $blue;
-        @include media-up(mdl){
-            margin-right: 100px;
-        }
+        margin-left: 0 !important;
     }
     .menu-items {
         flex-grow: 1;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
+        // max-width: 800px;
+
         @include media-down(mdl) {
             display: none;
         }
@@ -28,12 +34,14 @@
         color: inherit;
         font-size: 28px;
         padding: 6px 0 0;
+        @include media-up(mdl){margin-left: 5vw;}
         line-height: 1;
         letter-spacing: -5px;
+        color: $fresh-blue;
         &.active,
         &:hover {
             font-family: $font-family-display;
-            color: $tafel-black;
+            color: $fresh-blue;
         }
         &.order-1 {order: 1;}
         &.order-2 {order: 2;}

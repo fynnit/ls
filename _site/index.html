@@ -18,13 +18,11 @@
     </div>
     <div class="menu-items" onclick="document.getElementById('nav').classList.remove('active');">
         
-                <a href="/catering.html" class="nav-item order-4 ">catering</a>
-    
                 <a href="/kaffeebar.html" class="nav-item order-1 ">Kaffee</a>
     
-                <a href="/bakery.html" class="nav-item order-3 ">bakery</a>
+                <a href="/bakery.html" class="nav-item order-2 ">bakery</a>
     
-                <a href="/frühstück.html" class="nav-item order-2 ">frühstück</a>
+                <a href="/breakfast.html" class="nav-item order-3 ">frühstück</a>
     
     </div>
 
@@ -46,7 +44,14 @@
     <section class="news">
         <article class="openinghours">
             <h3>Unsere Öffnungszeiten</h3>
-            <p>Mo - Fr 8 - 18 Uhr, Sa - So 9 - 18 Uhr Siegfriedstraße 18,12051 Berlin</p>
+            <p>
+            <span>Mo - Fr 8 - 18 Uhr,</span>
+            
+            <span>Sa - So 9 - 18 Uhr</span>
+            
+            <span>Siegfriedstraße 18, 12051 Berlin</span>
+            
+            </p>
         </article>
         
         
@@ -78,28 +83,39 @@
 
     </section>
 
-    <section class="opentable"  style="background-image: url(/assets/images/kaffeebar/363A5862.JPG)">
-        <h2>Buch dir einen Tisch</h2>
-    </section>
+    
 
     <section class="teaser">
-        <h2>was wir hier so machen</h2>
+        
         <div class="grid">
             
-                <div class="item" style="background-image: url(/assets/images/ls-coffee.jpg)" onclick="window.location='/kaffeebar.html'"><span>Kaffeebar</span></div>
+                <div class="item" onclick="window.location='/kaffeebar.html'">
+                    <div class="image" style="background-image: url(/assets/images/bohnenregal.jpg)"></div>
+                    
+                    <span>Kaffeebar</span>
+                </div>
             
-                <div class="item" style="background-image: url(/assets/images/ls-coffee.jpg)" onclick="window.location='/bakery.html'"><span>Bakery</span></div>
+                <div class="item" onclick="window.location='/bakery.html'">
+                    <div class="image" style="background-image: url(assets/images/kaffeebar/363A5979_1.JPG)"></div>
+                    
+                    <span>Bakery</span>
+                </div>
             
-                <div class="item" style="background-image: url(/assets/images/ls-coffee.jpg)" onclick="window.location='/catering.html'"><span>Catering</span></div>
-            
-                <div class="item" style="background-image: url(/assets/images/ls-coffee.jpg)" onclick="window.location='/lieferservice.html'"><span>Lieferservice</span></div>
+                <div class="item" onclick="window.location='/breakfast.html'">
+                    <div class="image" style="background-image: url()"></div>
+                    
+                    <span>Frühstück</span>
+                </div>
             
         </div>
     </section>
 
     <section class="maps">
     <h2>und so findest du zu uns</h2>
-    <img src="/assets/images/maps.jpg" alt="">
+    <div class="map">
+        <img src="/assets/images/maps.jpg" alt="">
+        <div class="copyright">copyright  maps</div>
+    </div>
     <div class="buttons-wrapper">
         <div class="button" onclick="window.open('https://maps.apple.com/?address=Siegfriedstra%C3%9Fe%2019,%2012051%20Berlin,%20Germany&auid=12550425442495375995&ll=52.468219,13.432493&lsp=9902&q=leuchtstoff%20-%20Coffeebar%20and%20Bakery&_ext=ChkKBQgEEIEBCgQIBRADCgQIBhAICgQIChAAEiYpggysGVY7SkAxqZy/YqzZKkA5AOLRdXw8SkBBE79dIznhKkBQBA%3D%3D','_blank')">apple maps <i class="open">⎋</i></div>
 
@@ -108,6 +124,13 @@
 </section>
 
     
+   <section class="certificates">
+        <div class="grid">
+            <div class="item">
+            <link href="https://awards.infcdn.net/circ5_n.css" rel="stylesheet"/><div id="rest_circ5" onclick="if(event.target.nodeName.toLowerCase() != 'a') {window.open(this.querySelector('.circ_top_title').href);return 0;}"><div class="circ_cont"><div class="circ_img" style="background: url('https://awards.infcdn.net/img/star_red.svg') no-repeat center">&nbsp;</div><a href="https://restaurantguru.com/leuchtstoff-Kaffeebar-Berlin" target="_blank" class="circ_top_title">Restaurant Guru 2020</a><span>Recommended</span><a href="https://restaurantguru.com/leuchtstoff-Kaffeebar-Berlin" class="circ_bot_title" target="_blank">leuchtstoff</a></div></div>
+            </div>
+        </div>
+    </section>
 </main>
 
 

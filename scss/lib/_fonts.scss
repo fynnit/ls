@@ -24,10 +24,15 @@
     src: url(/assets/fonts/lulo.otf);
     font-weight: 500;
 }
+@font-face {
+    font-family: 'poppins';
+    font-display: swap;
+    src: url(/assets/fonts/Poppins-Light.otf);
+}
 
-$font-family-sans:       'Nanum', 'Helvetica Neue', Arial, sans-serif;
-$font-family-display:    'lulo-b', serif;
-$font-family-display-2:  'lulo', serif;
+$font-family-sans:       'poppins', 'Nanum', 'Helvetica Neue', Arial, sans-serif;
+$font-family-display:    'lulo-b', sans-serif;
+$font-family-display-2:  'lulo', sans-serif;
 
 
 h1,h2,h3,
@@ -58,12 +63,12 @@ a,span,p,li,div {
     font-weight: 500;
     color: inherit;
 
-
-    letter-spacing: 2px;
-    word-spacing: -3px;
+    // letter-spacing: 2px;
+    // word-spacing: -3px;
 }
 
 p { 
+
     &:not(:last-child) {
         margin-bottom: 1rem;
     }

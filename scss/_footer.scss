@@ -16,9 +16,8 @@ footer {
         font-family: $font-family-display;
         text-transform: uppercase;
         &:hover {
-            transition: color 300ms, border-bottom 300ms;
-            color: $blue;
-            border-bottom: 1px solid rgba($blue, 0.2);
+            transition: color 300ms,;
+            color: $fresh-blue;
         }
     }
 }

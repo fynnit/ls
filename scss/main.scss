@@ -19,14 +19,19 @@
 html,
 body,
 main {
-    min-height: 100%;
+    // min-height: 100%;
 }
 
 html {
+    height: 100%;
     background-color: #fdfdfd;
 }
 
+main {
+    min-height: calc(100% - 34px - 58px);
+}
 body {
+    height: 100%;
     color: $text-black;
     opacity: 1;
     transition: opacity 200ms;
@@ -82,7 +87,7 @@ section {
     padding: 5px 10px;
     font-size: 12px;
     color: $light;
-    background-color: $tafel-black;
+    background-color: $fresh-blue;
 
     position: absolute;
     top: 0;
@@ -92,6 +97,16 @@ section {
 
 .maps {
     text-align: center;
+    .map {position: relative;}
+    .copyright {
+        font-size: 14px;
+        font-weight: 500;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        opacity: 0.5;
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+    }
 }
 
 ::selection {

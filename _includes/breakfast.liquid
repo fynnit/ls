@@ -13,7 +13,7 @@ layout: base.liquid
         {{-content}}
     </section>
 
-    {% if collections.week %}
+    {% comment %} {% if collections.week %}
         <h2>{{weekheadline}}</h2>
         <section class="post-list">
             {% for item in collections.week %}
@@ -42,5 +42,5 @@ layout: base.liquid
             </div>
         </article>
     {% endfor %}
-    </section>
+    </section> {% endcomment %}
 </main>

@@ -2,18 +2,13 @@
 layout: base.liquid
 ---
 <main class="page kaffeebar">
-    <header class="small">
-        <div class="background"
-            style="background-image: url({{header-image}})">
-            </div>
-        <h1>{{title}}</h1>
-    </header>
+    {% include _header.liquid %}
 
     <section class="{%if style != 'left'%}centered{%endif%}">
         {{-content}}
     </section>
 
-    {% if collections.hausblend %}
+    {% comment %} {% if collections.hausblend %}
         <h2>{{housecoffeeheadline}}</h2>
         <section class="post-list">
             {% for bohne in collections.hausblend %}
@@ -30,17 +25,17 @@ layout: base.liquid
     {% endif %}
 
     <h2>{{othercoffeeheadline}}</h2>
-    <section class="post-list">
+        <section class="post-list">
 
-    {% for bohne in collections.bohnerev %}
-        <article class="post" onclick="window.location='{{bohne.url}}'">
-            
-            <div class="post-bild" style="background-image: url({{bohne.data.image}})"></div>
-            
-            <div class="post-content">
-                <h4>{{-bohne.data.title}}</h4>
-            </div>
-        </article>
-    {% endfor %}
-    </section>
+        {% for bohne in collections.bohnerev %}
+            <article class="post" onclick="window.location='{{bohne.url}}'">
+                
+                <div class="post-bild" style="background-image: url({{bohne.data.image}})"></div>
+                
+                <div class="post-content">
+                    <h4>{{-bohne.data.title}}</h4>
+                </div>
+            </article>
+        {% endfor %}
+    </section> {% endcomment %}
 </main>

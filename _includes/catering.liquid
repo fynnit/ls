@@ -13,7 +13,7 @@ layout: base.liquid
         {{-content}}
     </section>
 
-    <section >
+    {% comment %} <section >
         <h2>{{produkte-title}}</h2>
         <div class="post-list">
             {% for produkt in collections.produkterev %}
@@ -27,5 +27,5 @@ layout: base.liquid
                 </article>
             {% endfor %}
         </div>
-    </section>
+    </section> {% endcomment %}
 </main>
