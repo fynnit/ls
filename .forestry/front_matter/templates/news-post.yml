@@ -14,5 +14,3 @@ fields:
 - type: datetime
   name: date
   label: date
-pages:
-- news/web-relaunch-kommt.md
