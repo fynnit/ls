@@ -1,7 +1,7 @@
 ---
 title: Webseiten Neubau bezugsfertig
-layout: ''
-tags: ''
+layout: post
+tags: news
 date: 
 
 ---
