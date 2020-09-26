@@ -5,7 +5,8 @@ nav-order: "3"
 layout: breakfast.liquid
 tags: page
 permalink: "/breakfast.html"
-header-image: ''
+header-image: 'assets/images/baguette-magic.jpg'
+header-image-y-position: 10%
 
 weekheadline: unser wochenangeboot
 weekendheadline: am wochenende
@@ -22,5 +23,3 @@ Leckofanny, is dat jeil.
 Im Leuchtstoff legen wir - wie immer - weniger Wert auf schicket Geschirr, Tischdeko, Food-Porn und Instagramability, dafür umso mehr auf hochwertige Bio-Zutaten und leckerste Jeschmäcker.
 
 Leuchtstoff Breakfast - all day, every day
-
-[frühstück@leuchtstoff.berlin](mailto:frühstück@leuchtstoff.berlin)

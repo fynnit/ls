@@ -6,6 +6,7 @@ layout: page.liquid
 tags: page
 permalink: "/bakery.html"
 header-image: "/assets/images/kaffeebar/363A5924_1.JPG"
+header-image-y-position: 20%
 
 ---
 ## Unser Gebäck

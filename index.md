@@ -20,12 +20,15 @@ teasers:
 - name: Kaffeebar
   url: "/kaffeebar.html"
   image: "/assets/images/bohnenregal.jpg"
+  image-y-position: center
 - name: Bakery
   url: "/bakery.html"
   image: "assets/images/kaffeebar/363A5979_1.JPG"
+  image-y-position: 10%
 - name: Frühstück
   url: "/breakfast.html"
-  image: ""
+  image: "assets/images/baguette-magic.jpg"
+  image-y-position: 10%
 
 ---
 ## der stoff der dich zum leuchten bringt

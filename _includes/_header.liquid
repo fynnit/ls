@@ -1,6 +1,9 @@
 <header class="{%if header-image %}has-image{%endif%}">
     <div class="background"
-        style="background-image: url({{header-image}})">
+        style="background-image: url({{header-image}});
+        {%if header-image-y-position%}
+            background-position-y: {{header-image-y-position}};
+        {%endif%}">
     </div>
     <div class="title">
         <h1>{{title}}</h1>
