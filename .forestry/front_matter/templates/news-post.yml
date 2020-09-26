@@ -8,9 +8,13 @@ fields:
 - type: text
   name: layout
   label: layout
+  default: post.liquid
+  hidden: true
 - type: text
   name: tags
   label: tags
+  default: news
+  hidden: true
 - type: datetime
   name: date
   label: date
