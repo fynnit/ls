@@ -37,15 +37,17 @@ layout: base.liquid
         {{content}}
     </section>
 
-    <section class="opentable"  style="background-image: url({{opentable_image}})">
+    {% comment %} <section class="opentable"  style="background-image: url({{opentable_image}})">
         <h2>{{opentable}}</h2>
-    </section>
+    </section> {% endcomment %}
 
     <section class="teaser">
-        <h2>{{teaser-headline}}</h2>
+        {% comment %} <h2>{{teaser-headline}}</h2> {% endcomment %}
         <div class="grid">
             {% for item in teasers%}
-                <div class="item" style="background-image: url({{item.image}})" onclick="window.location='{{item.url}}'"><span>{{item.name}}</span></div>
+                <div class="item" style="background-image: url({{item.image}})" onclick="window.location='{{item.url}}'">
+                    <span>{{item.name}}</span>
+                </div>
             {% endfor %}
         </div>
     </section>
