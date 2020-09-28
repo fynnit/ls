@@ -19,5 +19,11 @@ footer {
             transition: color 300ms,;
             color: $fresh-blue;
         }
+        &:last-child {
+            @include media-down(md) {
+                margin-left: 5px;
+                display: inline-block;
+            }
+        }
     }
 }

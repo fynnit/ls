@@ -22,7 +22,9 @@
         }
 
         &.length-1 article {
-            width: 45%;
+            @include media-up(md){
+                width: 45%;
+            }
         }
     }
     

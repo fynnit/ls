@@ -107,6 +107,12 @@ section {
         bottom: 15px;
         left: 15px;
     }
+    .open {
+        display: none;
+        @include media-up(md) {
+            display: block;
+        }
+    }
 }
 
 ::selection {

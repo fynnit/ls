@@ -281,6 +281,12 @@ footer a:hover {
   transition: color 300ms;
   color: #009de0;
 }
+@media (max-width: 767px) {
+  footer a:last-child {
+    margin-left: 5px;
+    display: inline-block;
+  }
+}
 
 .teaser .grid {
   display: grid;
@@ -398,7 +404,7 @@ footer a:hover {
 }
 
 .button, a[href^="mailto:"] {
-  padding: 0.8rem 2rem;
+  padding: 0.8rem;
   flex-grow: 1;
   text-decoration: none;
   text-align: center;
@@ -407,6 +413,11 @@ footer a:hover {
   display: block;
   margin-top: 30px;
   transition: background-color 400ms 100ms, border-color 400ms 100ms, color 400ms 100ms;
+}
+@media (min-width: 768px) {
+  .button, a[href^="mailto:"] {
+    padding: 0.8rem 2rem;
+  }
 }
 .button a, a[href^="mailto:"] a {
   text-decoration: none;
@@ -454,8 +465,10 @@ footer a:hover {
     flex-flow: column;
   }
 }
-.home .news.length-1 article {
-  width: 45%;
+@media (min-width: 768px) {
+  .home .news.length-1 article {
+    width: 45%;
+  }
 }
 .home article {
   width: 30%;
@@ -642,6 +655,14 @@ section.centered p {
   position: absolute;
   bottom: 15px;
   left: 15px;
+}
+.maps .open {
+  display: none;
+}
+@media (min-width: 768px) {
+  .maps .open {
+    display: block;
+  }
 }
 
 ::selection {
