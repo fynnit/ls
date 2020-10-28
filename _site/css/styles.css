@@ -141,7 +141,7 @@ p:not(:last-child) {
   height: 2px;
   width: 30px;
   display: block;
-  background-color: #007cb0;
+  background-color: #97e0ff;
   position: absolute;
   transform: rotate(0) translate(0, 0);
   transition: top, transform 300ms 200ms;
@@ -160,7 +160,7 @@ p:not(:last-child) {
   }
   .nav.active .sitename,
 .nav.active .nav-item {
-    color: white;
+    color: #97e0ff;
   }
   .nav.active .menu-items {
     width: 100%;
@@ -183,7 +183,7 @@ p:not(:last-child) {
 }
 @media (max-width: 1023px) {
   .nav.active .bar-1, .nav.active .bar-2 {
-    background-color: #fff;
+    background-color: #97e0ff;
   }
 }
 .nav.active .bar-1 {

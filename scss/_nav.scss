@@ -65,7 +65,7 @@
             height: 2px;
             width: 30px;
             display: block;
-            background-color: $blue;
+            background-color: $light-blue;
             position: absolute;
             transform: rotate(0) translate(0, 0);
             transition: top, transform 300ms 200ms;
@@ -89,7 +89,7 @@
             background-color: $blue;
             .sitename ,
             .nav-item {
-                color: white;
+                color: $light-blue;
             }
             .menu-items {
                 width: 100%;
@@ -109,7 +109,7 @@
                 }
             }
             .bar-1, .bar-2 {
-                background-color: #fff;
+                background-color: $light-blue;
             }
                     
         }
