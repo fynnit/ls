@@ -7,8 +7,8 @@
     text-align: center;
     border: 1px solid #000;
     cursor: pointer;
-    display: block;
-    margin-top: 30px;
+    display: inline-block;
+    margin-bottom: 10px;
     a {
         text-decoration: none;
     }
@@ -16,9 +16,9 @@
     transition: background-color 400ms 100ms, border-color 400ms 100ms, color 400ms 100ms;
     &:hover {
         transition: background-color 400ms, border-color 400ms, color 400ms;
-        background-color: $fresh-blue;
-        color: white;
-        border-color: $fresh-blue;
+        background-color: $light-blue;
+        color: $blue;
+        border-color: $light-blue;
     }
 }
 .buttons-wrapper {

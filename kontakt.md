@@ -21,11 +21,14 @@ Schreibt uns bitte eine Email mit folgenden Infos:
 Welche Bohne?  
 Welche Menge?  
 (Falls Ihr die Bohnen gemahlen haben wollt, lasst uns wissen für welche Maschine.  
-Liefer- und Rechnungsadresse) an 
+Liefer- und Rechnungsadresse) an
+
 [kaffee(at)leuchtstoff.berlin](mailto:Kaffee@leuchtstoff.berlin) 
 
 Ihr wollt ein Catering oder eine Kuchenlieferung anfragen?  
-Schreibt uns an [catering(at)leuchtstoff.berlin](mailto:Catering@leuchtstoff.berlin)
+Schreibt uns an 
+
+[catering(at)leuchtstoff.berlin](mailto:Catering@leuchtstoff.berlin)
 
   
 Ihr wollt uns im Büro erreichen?<br> Schreibt am besten eine kurze Email an

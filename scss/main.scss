@@ -110,16 +110,21 @@ section {
     .open {
         display: none;
         @include media-up(md) {
-            display: block;
+            display: inline-block;
         }
     }
 }
+
 
 ::selection {
     background-color: $light-blue;
 }
 
 .post { 
+    section {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
     hr { display: none;}
 }
 

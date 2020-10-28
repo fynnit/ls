@@ -63,6 +63,7 @@ p:not(:last-child) {
   align-self: flex-start;
   justify-content: space-between;
   position: relative;
+  background-color: #007cb0;
 }
 @media (min-width: 480px) and (max-width: 1023px) {
   .nav {
@@ -96,7 +97,7 @@ p:not(:last-child) {
   padding: 6px 0 0;
   line-height: 1;
   letter-spacing: -5px;
-  color: #009de0;
+  color: #ade6ff;
 }
 @media (min-width: 1024px) {
   .nav .nav-item {
@@ -111,7 +112,7 @@ p:not(:last-child) {
 }
 .nav .nav-item.active, .nav .nav-item:hover {
   font-family: "lulo-b", sans-serif;
-  color: #009de0;
+  color: #ade6ff;
 }
 .nav .nav-item.order-1 {
   order: 1;
@@ -166,7 +167,7 @@ p:not(:last-child) {
     position: absolute;
     top: 100%;
     left: 0;
-    z-index: 3;
+    z-index: 10;
     flex-flow: column;
     justify-content: flex-start;
     display: flex;
@@ -213,7 +214,7 @@ header h1, header h2, header .teaser .grid .item span, .teaser .grid .item heade
   z-index: 1;
   text-align: center;
 }
-header .background {
+header .background, .home header .background2 {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -225,11 +226,11 @@ header .background {
   z-index: 0;
 }
 header.has-image .title {
-  background-color: #009de0;
+  background-color: #007cb0;
   padding: 10px 20px;
-  color: white;
+  color: #97e0ff;
   position: static;
-  z-index: 4;
+  z-index: 2;
 }
 @media (min-width: 768px) {
   header {
@@ -410,8 +411,8 @@ footer a:hover {
   text-align: center;
   border: 1px solid #000;
   cursor: pointer;
-  display: block;
-  margin-top: 30px;
+  display: inline-block;
+  margin-bottom: 10px;
   transition: background-color 400ms 100ms, border-color 400ms 100ms, color 400ms 100ms;
 }
 @media (min-width: 768px) {
@@ -424,9 +425,9 @@ footer a:hover {
 }
 .button:hover, a[href^="mailto:"]:hover {
   transition: background-color 400ms, border-color 400ms, color 400ms;
-  background-color: #009de0;
-  color: white;
-  border-color: #009de0;
+  background-color: #97e0ff;
+  color: #007cb0;
+  border-color: #97e0ff;
 }
 
 .buttons-wrapper {
@@ -442,19 +443,51 @@ footer a:hover {
   margin-left: 10px;
 }
 
+main.home {
+  background-color: #007cb0;
+}
+
 .home header {
+  height: 400px;
   background-color: white;
   margin-bottom: 50px;
+  position: relative;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-bottom: 50px;
+  background-color: #1a1a1a;
 }
-.home header .background {
+.home header .background, .home header .background2 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 100% center;
+  opacity: 1;
+  z-index: 0;
+}
+.home header .background2 {
+  display: none;
+  background-color: #fff;
   background-size: 100% 180%;
   background-position: 0 -170px;
   background-repeat: no-repeat;
   opacity: 0.2;
   background-attachment: scroll;
+  width: 375px;
+  height: 200px;
+  bottom: 0;
+  top: auto;
+  left: 0;
 }
 .home header p {
-  text-shadow: 1px 1px 5px white;
+  text-align: left;
+  position: static;
+  z-index: 3;
+  color: white;
+}
+.home header h2, .home header .teaser .grid .item span, .teaser .grid .item .home header span {
+  color: white;
+  font-size: 2rem;
 }
 .home .news {
   display: flex;
@@ -498,7 +531,7 @@ footer a:hover {
   text-align: center;
 }
 .home section.centered {
-  background: linear-gradient(180deg, white 0%, #f6cab3 100%);
+  background: linear-gradient(180deg, #007cb0 0%, #f6cab3 100%);
 }
 .home .about {
   margin-bottom: 0;
@@ -510,9 +543,24 @@ footer a:hover {
 }
 .home section.teaser {
   padding-top: 50px;
+  background-color: #f6cab3;
 }
 .home .maps {
   filter: grayscale(0%);
+  margin-bottom: 0;
+}
+.home .maps h2, .home .maps .teaser .grid .item span, .teaser .grid .item .home .maps span {
+  color: white;
+}
+.home .button {
+  background-color: #009de0;
+  border-color: #009de0;
+}
+.home .button:hover {
+  transition: background-color 400ms, border-color 400ms, color 400ms;
+  background-color: #97e0ff;
+  color: #007cb0;
+  border-color: #97e0ff;
 }
 
 .kaffeebar h2, .kaffeebar .teaser .grid .item span, .teaser .grid .item .kaffeebar span {
@@ -661,14 +709,18 @@ section.centered p {
 }
 @media (min-width: 768px) {
   .maps .open {
-    display: block;
+    display: inline-block;
   }
 }
 
 ::selection {
-  background-color: #4acaff;
+  background-color: #97e0ff;
 }
 
+.post section {
+  max-width: 1600px;
+  margin: 0 auto;
+}
 .post hr {
   display: none;
 }

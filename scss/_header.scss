@@ -27,11 +27,11 @@ header {
         z-index: 0;
     }
     &.has-image .title {
-        background-color: $fresh-blue;
+        background-color: $blue;
         padding: 10px 20px;
-        color: white;
+        color: $light-blue;
         position: static;
-        z-index: 4;
+        z-index: 2;
     }
     @include padding;
 
@@ -47,4 +47,5 @@ header {
     p {
         max-width: 375px;
     }
+    
 }

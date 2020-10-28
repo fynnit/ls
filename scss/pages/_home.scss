@@ -1,17 +1,52 @@
+main.home {
+    background-color: $blue;
+}
+
 .home {
 
     header {
+        height: 400px;
         background-color: white;
         margin-bottom: 50px;
+        position: relative;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding-bottom: 50px;
+        background-color: $black;
+
         .background {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: 100% center;
+            opacity: 1;
+            z-index: 0;
+        }
+        .background2 {
+            display: none;
+            @extend .background;
+            background-color: #fff;
             background-size: 100% 180%;
             background-position: 0 -170px;
             background-repeat: no-repeat;
             opacity: 0.2;
             background-attachment: scroll;
+            width: 375px;
+            height: 200px;
+            bottom: 0;
+            top: auto;
+            left: 0;
         }
         p {
-            text-shadow: 1px 1px 5px white;
+            // text-shadow: 1px 1px 5px white;
+            text-align: left;
+            position: static;
+            z-index: 3;
+            color: white
+        }
+        h2 {
+            color: white;
+            font-size: 2rem;
         }
     }
     .news {
@@ -61,7 +96,7 @@
     }
 
     section.centered {
-        background: linear-gradient(180deg, white 0%, rgba(246,202,179,1) 100%);
+        background: linear-gradient(180deg, $blue 0%, rgba($cream, 1) 100%);
     }
     .about {
         margin-bottom: 0;
@@ -73,9 +108,21 @@
     }
     section.teaser {
         padding-top: 50px;
+        background-color: $cream;
     }
     .maps {
         filter: grayscale(0%);
+        margin-bottom: 0;
+        h2 {color: white;}
     }
-    
+    .button {
+        background-color: $fresh-blue;
+        border-color: $fresh-blue;
+        &:hover { 
+            transition: background-color 400ms, border-color 400ms, color 400ms;
+            background-color: $light-blue;
+            color: $blue;
+            border-color: $light-blue;
+        }
+    }
 }

@@ -4,6 +4,7 @@
     align-self: flex-start;
     justify-content: space-between;
     position: relative;
+    background-color: $blue;
     @include media-between(sm, mdl) {
         padding: 0 20px;
     }
@@ -41,11 +42,11 @@
         @include media-up(lg){margin-left: 5vw;}
         line-height: 1;
         letter-spacing: -5px;
-        color: $fresh-blue;
+        color: lighten($fresh-blue, 40%);
         &.active,
         &:hover {
             font-family: $font-family-display;
-            color: $fresh-blue;
+            color: lighten($fresh-blue, 40%);
         }
         &.order-1 {order: 1;}
         &.order-2 {order: 2;}
@@ -95,7 +96,7 @@
                 position: absolute;
                 top: 100%;
                 left: 0;
-                z-index: 3;
+                z-index: 10;
                 flex-flow: column;
                 justify-content: flex-start;
                 display: flex;

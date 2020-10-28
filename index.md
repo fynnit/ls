@@ -11,7 +11,8 @@ openinghours:
 - Mo - Fr 8 - 18 Uhr
 - Sa - So 9 - 18 Uhr
 - Siegfriedstraße 18, 12051 Berlin-Neukölln
-header-image: "/assets/images/ls_logo.svg"
+header-image2: "/assets/images/ls_logo.svg"
+header-image: "/assets/images/home_header4.jpeg"
 opentable: Buch dir einen Tisch
 opentable_image: "/assets/images/kaffeebar/363A5862.JPG"
 teaser-headline: 

@@ -1,5 +1,7 @@
 ---
 layout: base.liquid
+
+contact_link: 'kontakt.html'
 ---
 
 <main class="home">
@@ -8,12 +10,15 @@ layout: base.liquid
         <div class="background"
         style="background-image: url({{header-image}})">
         </div>
+        <div class="background2"
+        style="background-image: url({{header-image2}})">
+        </div>
         <h2>{{headertitle}}</h2>
         <p>{{headercontent}}</p>
     </header>
 
     <section class="news length-{{collections.newsrev.length}}">
-        <article class="openinghours">
+        <article class="openinghours" onclick="window.location.href='{{contact_link}}'">
             <h3>{{openinghours-title}}</h3>
             <p>{% for row in openinghours %}<div>{{row}}</div>{%endfor%}</p>
         </article>
