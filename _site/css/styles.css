@@ -214,7 +214,7 @@ header h1, header h2, header .teaser .grid .item span, .teaser .grid .item heade
   z-index: 1;
   text-align: center;
 }
-header .background, .home header .background2 {
+header .background {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -457,7 +457,7 @@ main.home {
   padding-bottom: 50px;
   background-color: #1a1a1a;
 }
-.home header .background, .home header .background2 {
+.home header .background {
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -466,18 +466,17 @@ main.home {
   z-index: 0;
 }
 .home header .background2 {
-  display: none;
-  background-color: #fff;
-  background-size: 100% 180%;
-  background-position: 0 -170px;
-  background-repeat: no-repeat;
-  opacity: 0.2;
-  background-attachment: scroll;
-  width: 375px;
-  height: 200px;
+  background-image: linear-gradient(to bottom, transparent 40%, rgba(0, 52, 74, 0.6) 80%);
+  position: absolute;
+  height: 100%;
+  width: 100%;
   bottom: 0;
-  top: auto;
   left: 0;
+}
+@media (min-width: 768px) {
+  .home header .background2 {
+    display: none;
+  }
 }
 .home header p {
   text-align: left;
