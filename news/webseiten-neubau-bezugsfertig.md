@@ -2,7 +2,7 @@
 title: Webseiten Neubau bezugsfertig
 layout: post.liquid
 tags: news
-date: 
+date: 2020-10-19T22:00:00Z
 header-image: "/assets/images/fynn-code26-09-20-at-3-09-pm.jpg"
 
 ---
