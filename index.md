@@ -8,7 +8,7 @@ headercontent: leuchtstoff - kaffeebar is an unpretentious 3rd wave coffee shop 
   Berlin/Neukölln with free wifi and some great homemade organic baked goods
 openinghours-title: Unsere Öffnungszeiten
 openinghours:
-- Mo - Fr 8 - 18 Uhr
+- Mo - Fr 7:30 - 18 Uhr
 - Sa - So 9 - 18 Uhr
 - Siegfriedstraße 18, 12051 Berlin-Neukölln
 header-image2: "/assets/images/ls_logo.svg"
@@ -32,8 +32,9 @@ teasers:
   image-y-position: 10%
 - name: Catering
   url: "/catering.html"
-  image: '/assets/images/catering.jpeg'
+  image: "/assets/images/catering.jpeg"
   image-y-position: ''
+
 ---
 ## der stoff der dich zum leuchten bringt
 
