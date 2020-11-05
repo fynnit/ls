@@ -254,7 +254,7 @@ header p {
 
 footer {
   padding: 0 20px;
-  background-color: black;
+  background-color: #007cb0;
   color: white;
 }
 @media (min-width: 768px) {
@@ -548,13 +548,11 @@ main.home {
 .home section.teaser {
   padding-top: 50px;
   background-color: #f6cab3;
-}
-.home .maps {
-  filter: grayscale(0%);
   margin-bottom: 0;
 }
-.home .maps h2, .home .maps .teaser .grid .item span, .teaser .grid .item .home .maps span {
-  color: white;
+.home .maps {
+  margin-bottom: 0;
+  background: linear-gradient(180deg, #f6cab3 0%, #007cb0 100%);
 }
 .home .button {
   background-color: #009de0;

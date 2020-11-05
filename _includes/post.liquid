@@ -7,4 +7,22 @@ layout: base.liquid
     <section>
         <p>{{content}}</p>
     </section>
+
+    <section class="teaser">
+        {% if teaser-headline %}<h2>{{teaser-headline}}</h2>{% endif %}
+        <div class="grid">
+            {% for item in teasers%}
+                <div class="item" onclick="window.location='{{item.url}}'">
+                    <div class="image" style="
+                    background-image: url({{item.image}});
+                    {%if item.image-y-position%}
+                        background-position-y: {{item.image-y-position}};
+                    {%endif%}
+                    "></div>
+                    {% comment %} <img src="{{item.image}}" alt=""> {% endcomment %}
+                    <span>{{item.name}}</span>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
 </main>

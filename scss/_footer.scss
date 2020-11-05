@@ -1,6 +1,6 @@
 footer {
     @include padding;
-    background-color: black;
+    background-color: $blue;
     color: white;
 
     .inner {

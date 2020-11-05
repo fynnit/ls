@@ -109,11 +109,11 @@ main.home {
     section.teaser {
         padding-top: 50px;
         background-color: $cream;
+        margin-bottom: 0;
     }
     .maps {
-        filter: grayscale(0%);
         margin-bottom: 0;
-        h2 {color: white;}
+        background: linear-gradient(180deg, $cream 0%, $blue 100%);
     }
     .button {
         background-color: $fresh-blue;
