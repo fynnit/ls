@@ -10,6 +10,7 @@ Back to Square One
 
 Reines To-Go-Angebot.  von Cappuccino bis Burrito. Wellenbrecher mit Pfandbecher.  
 
+***
 Mo-Fr 7:30-18:00Uhr
 
-Sa/So 9:00-18:00Uhr
+Sa-So 9:00-18:00Uhr

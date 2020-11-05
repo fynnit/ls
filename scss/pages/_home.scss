@@ -93,6 +93,10 @@ main.home {
 
     section.centered {
         background: linear-gradient(180deg, $blue 0%, rgba($cream, 1) 100%);
+        // @include media-down(md) {
+            text-align: left;
+            h2 {text-align: left;}
+        // }
     }
     .about {
         margin-bottom: 0;

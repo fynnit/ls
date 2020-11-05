@@ -77,6 +77,7 @@ p:not(:last-child) {
 }
 .nav .sitename {
   margin-left: 0 !important;
+  letter-spacing: normal !important;
 }
 .nav .menu-items {
   flex-grow: 1;
@@ -531,6 +532,10 @@ main.home {
 }
 .home section.centered {
   background: linear-gradient(180deg, #007cb0 0%, #f6cab3 100%);
+  text-align: left;
+}
+.home section.centered h2, .home section.centered .teaser .grid .item span, .teaser .grid .item .home section.centered span {
+  text-align: left;
 }
 .home .about {
   margin-bottom: 0;
