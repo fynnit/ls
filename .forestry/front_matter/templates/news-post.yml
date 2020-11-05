@@ -24,4 +24,5 @@ fields:
     maxSize: 64
   label: header-image
 pages:
+- news/lockdown-light-mit-vollmilch.md
 - news/webseiten-neubau-bezugsfertig.md
