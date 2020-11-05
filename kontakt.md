@@ -3,7 +3,7 @@ title: kontakt
 nav-title: kontakt
 layout: contact.liquid
 permalink: "/kontakt.html"
-header-image: 'assets/images/kontakt.jpg'
+header-image: '/assets/images/home_header4.jpeg'
 contact-headline: und so findest du zu uns
 
 ---

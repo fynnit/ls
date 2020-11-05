@@ -111,17 +111,35 @@ main.home {
                 flex-flow: column;
             }
         }
-        img {
-            height: 100%;
-            width: auto;
-            height: 300px;
-            margin-top: -40px;
-            @include media-down(mdl) {
-                height: 200px;
-                margin-top: 20px;
+        .logo {
+            display: flex;
+            justify-content: flex-end;
+            svg {
+                height: 300px;
+                margin-top: -30px;
+                width: auto;
+                @include media-down(mdl) {
+                    height: 200px;
+                    margin-top: 20px;
+                }
+                g {
+                    fill: $black;
+                }
             }
-            // max-height: 300px;
+            @keyframes flicker {
+                0% {fill: $cream;}
+                10% {fill: $tafel-black;}
+                20% {fill: rbga($cream, 20%);}
+                30% {fill: $tafel-black;}
+                100% {fill: $cream;}
+              }
+            &:hover {
+                g {
+                    animation: flicker 500ms forwards;
+                }
+            }
         }
+
         background: linear-gradient(180deg, $blue 0%, rgba($cream, 1) 100%);
         // @include media-down(md) {
             text-align: left;
@@ -146,13 +164,13 @@ main.home {
         background: linear-gradient(180deg, $cream 0%, $blue 100%);
     }
     .button {
-        background-color: $fresh-blue;
-        border-color: $fresh-blue;
-        &:hover { 
-            transition: background-color 400ms, border-color 400ms, color 400ms;
-            background-color: $light-blue;
-            color: $blue;
-            border-color: $light-blue;
-        }
+        color: $cream;
+        border-color: $cream;
+        // &:hover { 
+        //     transition: background-color 400ms, border-color 400ms, color 400ms;
+        //     background-color: $light-blue;
+        //     color: $blue;
+        //     border-color: $light-blue;
+        // }
     }
 }

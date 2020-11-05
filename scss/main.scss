@@ -11,6 +11,8 @@
 @import 'pages/kaffeebar';
 @import 'pages/catering';
 
+
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -28,7 +30,7 @@ html {
 }
 
 main {
-    min-height: calc(100% - 34px - 58px);
+    min-height: calc(100% - 31px - 58px);
     .content {
         width: 100%;
         max-width: 1600px;
@@ -102,6 +104,7 @@ section {
 
 .maps {
     text-align: center;
+    margin-bottom: 0;
     .map {position: relative;}
     .copyright {
         font-size: 14px;
@@ -124,7 +127,10 @@ section {
 ::selection {
     background-color: $light-blue;
 }
+.page {
+    background: linear-gradient(180deg, $cream 0%, $light-blue 70%, $blue 100%);
 
+}
 .post { 
     section {
         max-width: 1600px;

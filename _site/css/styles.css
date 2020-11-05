@@ -566,17 +566,43 @@ main.home {
     flex-flow: column;
   }
 }
-.home section.centered img {
-  height: 100%;
-  width: auto;
+.home section.centered .logo {
+  display: flex;
+  justify-content: flex-end;
+}
+.home section.centered .logo svg {
   height: 300px;
-  margin-top: -40px;
+  margin-top: -30px;
+  width: auto;
 }
 @media (max-width: 1023px) {
-  .home section.centered img {
+  .home section.centered .logo svg {
     height: 200px;
     margin-top: 20px;
   }
+}
+.home section.centered .logo svg g {
+  fill: #1a1a1a;
+}
+@keyframes flicker {
+  0% {
+    fill: #f6cab3;
+  }
+  10% {
+    fill: #0f2229;
+  }
+  20% {
+    fill: rbga(#f6cab3, 20%);
+  }
+  30% {
+    fill: #0f2229;
+  }
+  100% {
+    fill: #f6cab3;
+  }
+}
+.home section.centered .logo:hover g {
+  animation: flicker 500ms forwards;
 }
 .home section.centered h2, .home section.centered .teaser .grid .item span, .teaser .grid .item .home section.centered span {
   text-align: left;
@@ -599,14 +625,8 @@ main.home {
   background: linear-gradient(180deg, #f6cab3 0%, #007cb0 100%);
 }
 .home .button {
-  background-color: #009de0;
-  border-color: #009de0;
-}
-.home .button:hover {
-  transition: background-color 400ms, border-color 400ms, color 400ms;
-  background-color: #97e0ff;
-  color: #007cb0;
-  border-color: #97e0ff;
+  color: #f6cab3;
+  border-color: #f6cab3;
 }
 
 .kaffeebar h2, .kaffeebar .teaser .grid .item span, .teaser .grid .item .kaffeebar span {
@@ -670,7 +690,7 @@ html {
 }
 
 main {
-  min-height: calc(100% - 34px - 58px);
+  min-height: calc(100% - 31px - 58px);
 }
 main .content {
   width: 100%;
@@ -742,6 +762,7 @@ section.centered p {
 
 .maps {
   text-align: center;
+  margin-bottom: 0;
 }
 .maps .map {
   position: relative;
@@ -766,6 +787,10 @@ section.centered p {
 
 ::selection {
   background-color: #97e0ff;
+}
+
+.page {
+  background: linear-gradient(180deg, #f6cab3 0%, #97e0ff 70%, #007cb0 100%);
 }
 
 .post section {
