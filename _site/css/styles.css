@@ -594,11 +594,11 @@ main.home {
   20% {
     fill: rbga(#f6cab3, 20%);
   }
-  30% {
+  50% {
     fill: #0f2229;
   }
   100% {
-    fill: #f6cab3;
+    fill: #97e0ff;
   }
 }
 .home section.centered .logo:hover g {
@@ -627,6 +627,12 @@ main.home {
 .home .button {
   color: #f6cab3;
   border-color: #f6cab3;
+}
+.home .button:hover {
+  transition: background-color 400ms, border-color 400ms, color 400ms;
+  background-color: #97e0ff;
+  color: #007cb0;
+  border-color: #97e0ff;
 }
 
 .kaffeebar h2, .kaffeebar .teaser .grid .item span, .teaser .grid .item .kaffeebar span {
@@ -690,6 +696,7 @@ html {
 }
 
 main {
+  scroll-snap-type: y proximity;
   min-height: calc(100% - 31px - 58px);
 }
 main .content {
@@ -722,6 +729,7 @@ i.open {
 section {
   padding: 25px 20px;
   margin-bottom: 25px;
+  scroll-snap-align: start;
 }
 @media (min-width: 768px) {
   section {

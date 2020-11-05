@@ -130,8 +130,8 @@ main.home {
                 0% {fill: $cream;}
                 10% {fill: $tafel-black;}
                 20% {fill: rbga($cream, 20%);}
-                30% {fill: $tafel-black;}
-                100% {fill: $cream;}
+                50% {fill: $tafel-black;}
+                100% {fill: $light-blue;}
               }
             &:hover {
                 g {
@@ -166,11 +166,11 @@ main.home {
     .button {
         color: $cream;
         border-color: $cream;
-        // &:hover { 
-        //     transition: background-color 400ms, border-color 400ms, color 400ms;
-        //     background-color: $light-blue;
-        //     color: $blue;
-        //     border-color: $light-blue;
-        // }
+        &:hover { 
+            transition: background-color 400ms, border-color 400ms, color 400ms;
+            background-color: $light-blue;
+            color: $blue;
+            border-color: $light-blue;
+        }
     }
 }

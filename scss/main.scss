@@ -30,6 +30,8 @@ html {
 }
 
 main {
+    scroll-snap-type: y proximity;
+
     min-height: calc(100% - 31px - 58px);
     .content {
         width: 100%;
@@ -62,7 +64,7 @@ i.open {
 section {
     padding: 25px 20px;
     margin-bottom: 25px;
-
+    scroll-snap-align: start;
     @include media-up(md) {
         padding: 25px 40px;
     }
