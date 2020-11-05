@@ -33,9 +33,16 @@ main.home {
             bottom: 0;
             left: 0;
         }
-        p {
-            // text-shadow: 1px 1px 5px white;
+        .header-content {
+            max-width: 1600px;
+            width: 100%;
+            margin: 0 auto;
+            z-index: 1;
             text-align: left;
+
+        }
+        p {
+            text-align: inherit;
             position: static;
             z-index: 3;
             color: white
@@ -43,13 +50,16 @@ main.home {
         h2 {
             color: white;
             font-size: 2rem;
+            text-align: inherit;
         }
     }
     .news {
-        display: flex;
-        justify-content: space-between;
-        @include media-down(md) {
-            flex-flow: column;
+        .content{
+            display: flex;
+            justify-content: space-between;
+            @include media-down(md) {
+                flex-flow: column;
+            }
         }
 
         &.length-1 article {
@@ -92,6 +102,26 @@ main.home {
     }
 
     section.centered {
+        .content {
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+            align-items: center;
+            @include media-down(mdl) {
+                flex-flow: column;
+            }
+        }
+        img {
+            height: 100%;
+            width: auto;
+            height: 300px;
+            margin-top: -40px;
+            @include media-down(mdl) {
+                height: 200px;
+                margin-top: 20px;
+            }
+            // max-height: 300px;
+        }
         background: linear-gradient(180deg, $blue 0%, rgba($cream, 1) 100%);
         // @include media-down(md) {
             text-align: left;

@@ -12,50 +12,61 @@ contact_link: 'kontakt.html'
         </div>
         <div class="background2">
         </div>
-        <h2>{{headertitle}}</h2>
-        <p>{{headercontent}}</p>
+        <div class="header-content">
+            <h2>{{headertitle}}</h2>
+            <p>{{headercontent}}</p>
+        </div>
     </header>
 
     <section class="news length-{{collections.newsrev.length}}">
-        <article class="openinghours" onclick="window.location.href='{{contact_link}}'">
-            <h3>{{openinghours-title}}</h3>
-            <p>{% for row in openinghours %}<div>{{row}}</div>{%endfor%}</p>
-        </article>
-        
-        {% for article in collections.newsrev %}
-            <article class="article" onclick="window.location.href='{{article.url}}'">
-                <span class="date">{{article.date | dateformat }}</span>         
-                
-                <h3>{{article.data.title}}</h3>
-                <p>{% if article.data.page.excerpt %}
-                        {{-article.data.page.excerpt}}
-                    {% else %}
-                        {{-article.data.content}}
-                    {% endif %}
-                </p>
+        <div class="content">
+            <article class="openinghours" onclick="window.location.href='{{contact_link}}'">
+                <h3>{{openinghours-title}}</h3>
+                <p>{% for row in openinghours %}<div>{{row}}</div>{%endfor%}</p>
             </article>
-        {% endfor %}
+            
+            {% for article in collections.newsrev %}
+                <article class="article" onclick="window.location.href='{{article.url}}'">
+                    <span class="date">{{article.date | dateformat }}</span>         
+                    
+                    <h3>{{article.data.title}}</h3>
+                    <p>{% if article.data.page.excerpt %}
+                            {{-article.data.page.excerpt}}
+                        {% else %}
+                            {{-article.data.content}}
+                        {% endif %}
+                    </p>
+                </article>
+            {% endfor %}
+        </div>
     </section>
     
     <section class="centered about">
-        {{content}}
+        <div class="content">
+            <div class="copy">
+                {{content}}
+            </div>
+            <img src="/assets/images/ls_logo_sub.svg" alt="">
+        </div>
     </section>
 
     <section class="teaser">
-        {% if teaser-headline %}<h2>{{teaser-headline}}</h2>{% endif %}
-        <div class="grid">
-            {% for item in teasers%}
-                <div class="item" onclick="window.location='{{item.url}}'">
-                    <div class="image" style="
-                    background-image: url({{item.image}});
-                    {%if item.image-y-position%}
-                        background-position-y: {{item.image-y-position}};
-                    {%endif%}
-                    "></div>
-                    {% comment %} <img src="{{item.image}}" alt=""> {% endcomment %}
-                    <span>{{item.name}}</span>
-                </div>
-            {% endfor %}
+        <div class="content">
+            {% if teaser-headline %}<h2>{{teaser-headline}}</h2>{% endif %}
+            <div class="grid">
+                {% for item in teasers%}
+                    <div class="item" onclick="window.location='{{item.url}}'">
+                        <div class="image" style="
+                        background-image: url({{item.image}});
+                        {%if item.image-y-position%}
+                            background-position-y: {{item.image-y-position}};
+                        {%endif%}
+                        "></div>
+                        {% comment %} <img src="{{item.image}}" alt=""> {% endcomment %}
+                        <span>{{item.name}}</span>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
     </section>
 

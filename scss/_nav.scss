@@ -1,23 +1,33 @@
 .nav {
-    display: flex;
-    width: 100%;
-    align-self: flex-start;
-    justify-content: space-between;
-    position: relative;
     background-color: $blue;
-    @include media-between(sm, mdl) {
-        padding: 0 20px;
-    }
-    
+    .inner {
 
-    @include media-up(mdl) {
-        padding: 0 60px;
+        display: flex;
+        width: 100%;
+        max-width: 1600px;
+        margin: 0 auto;
+        align-self: flex-start;
+        justify-content: space-between;
+        position: relative;
+        @include media-between(xsm, mdl) {
+            padding: 0 20px;
+        }
+        
+        
+        @include media-up(mdl) {
+            padding: 0 60px;
+        }
+        @media (min-width: 1710px) {
+            padding: 0;
+        }
     }
 
 
     .sitename {
         margin-left: 0 !important;
-        letter-spacing: normal !important;
+        @media (min-width: 370px) {
+            letter-spacing: normal !important;
+        }
     }
     .menu-items {
         flex-grow: 1;

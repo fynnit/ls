@@ -29,6 +29,11 @@ html {
 
 main {
     min-height: calc(100% - 34px - 58px);
+    .content {
+        width: 100%;
+        max-width: 1600px;
+        margin: 0 auto;
+    }
 }
 body {
     height: 100%;

@@ -58,26 +58,39 @@ p:not(:last-child) {
 }
 
 .nav {
+  background-color: #007cb0;
+}
+.nav .inner {
   display: flex;
   width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
   align-self: flex-start;
   justify-content: space-between;
   position: relative;
-  background-color: #007cb0;
 }
-@media (min-width: 480px) and (max-width: 1023px) {
-  .nav {
+@media (min-width: 320px) and (max-width: 1023px) {
+  .nav .inner {
     padding: 0 20px;
   }
 }
 @media (min-width: 1024px) {
-  .nav {
+  .nav .inner {
     padding: 0 60px;
+  }
+}
+@media (min-width: 1710px) {
+  .nav .inner {
+    padding: 0;
   }
 }
 .nav .sitename {
   margin-left: 0 !important;
-  letter-spacing: normal !important;
+}
+@media (min-width: 370px) {
+  .nav .sitename {
+    letter-spacing: normal !important;
+  }
 }
 .nav .menu-items {
   flex-grow: 1;
@@ -479,8 +492,15 @@ main.home {
     display: none;
   }
 }
-.home header p {
+.home header .header-content {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 1;
   text-align: left;
+}
+.home header p {
+  text-align: inherit;
   position: static;
   z-index: 3;
   color: white;
@@ -488,13 +508,14 @@ main.home {
 .home header h2, .home header .teaser .grid .item span, .teaser .grid .item .home header span {
   color: white;
   font-size: 2rem;
+  text-align: inherit;
 }
-.home .news {
+.home .news .content {
   display: flex;
   justify-content: space-between;
 }
 @media (max-width: 767px) {
-  .home .news {
+  .home .news .content {
     flex-flow: column;
   }
 }
@@ -533,6 +554,29 @@ main.home {
 .home section.centered {
   background: linear-gradient(180deg, #007cb0 0%, #f6cab3 100%);
   text-align: left;
+}
+.home section.centered .content {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1023px) {
+  .home section.centered .content {
+    flex-flow: column;
+  }
+}
+.home section.centered img {
+  height: 100%;
+  width: auto;
+  height: 300px;
+  margin-top: -40px;
+}
+@media (max-width: 1023px) {
+  .home section.centered img {
+    height: 200px;
+    margin-top: 20px;
+  }
 }
 .home section.centered h2, .home section.centered .teaser .grid .item span, .teaser .grid .item .home section.centered span {
   text-align: left;
@@ -627,6 +671,11 @@ html {
 
 main {
   min-height: calc(100% - 34px - 58px);
+}
+main .content {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 body {
