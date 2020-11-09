@@ -1,18 +1,4 @@
 @font-face {
-    font-family: 'Nanum';
-    font-display: swap;
-    src: url(/assets/fonts/nanumgothic-regular.ttf);
-    font-weight: 300;
-}
-
-@font-face {
-    font-family: 'Staatliches';
-    font-display: swap;
-    src: url(/assets/fonts/Staatliches-Regular.ttf);
-    font-weight: 300;
-}
-
-@font-face {
     font-family: 'lulo-b';
     font-display: swap;
     src: url(/assets/fonts/lulo-bold.otf);
@@ -30,7 +16,7 @@
     src: url(/assets/fonts/Poppins-Light.otf);
 }
 
-$font-family-sans:       'poppins', 'Nanum', 'Helvetica Neue', Arial, sans-serif;
+$font-family-sans:       'poppins',  'Helvetica Neue', Arial, sans-serif;
 $font-family-display:    'lulo-b', sans-serif;
 $font-family-display-2:  'lulo', sans-serif;
 
@@ -46,6 +32,7 @@ h1,h2,h3,
     word-spacing: normal;
     word-break: break-word;
 }
+
 nav a:not(.sitename) {
     font-family: $font-family-display-2;
 

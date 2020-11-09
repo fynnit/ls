@@ -1,16 +1,4 @@
 @font-face {
-  font-family: "Nanum";
-  font-display: swap;
-  src: url(/assets/fonts/nanumgothic-regular.ttf);
-  font-weight: 300;
-}
-@font-face {
-  font-family: "Staatliches";
-  font-display: swap;
-  src: url(/assets/fonts/Staatliches-Regular.ttf);
-  font-weight: 300;
-}
-@font-face {
   font-family: "lulo-b";
   font-display: swap;
   src: url(/assets/fonts/lulo-bold.otf);
@@ -48,7 +36,7 @@ h2, .teaser .grid .item span {
 a, span, p, li, div {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "poppins", "Nanum", "Helvetica Neue", Arial, sans-serif;
+  font-family: "poppins", "Helvetica Neue", Arial, sans-serif;
   font-weight: 500;
   color: inherit;
 }
