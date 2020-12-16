@@ -1,13 +1,15 @@
 ---
-title: Webseiten Neubau bezugsfertig
+title: Öffnungszeiten Besonderheiten
 layout: post.liquid
 tags: news
-date: 2020-10-19T22:00:00Z
-header-image: "/assets/images/fynn-code26-09-20-at-3-09-pm.jpg"
+date: 2020-12-15T23:00:00Z
+header-image: "/assets/images/typorama.png"
 
 ---
-Eeeeendlich. Nach ungefähr vier Jahren statischer LS-Webpräsens hat unser lieber Fynn uns ein neues digitales Häusle gebaut. Die Handwerker sind schon wieder wech. Zeit, die Bude mit Leben zu füllen.
+Huhu, in den kommenden Tagen haben wir ein paar untypische Öffnungszeiten:
 
-***
+21-23. und 27-28. Dezember 9:00-16:00 Uhr
 
-Hier findet Ihr in Zukunft nicht nur die Basisinfos, wer wir sind und wat wir so machen, sondern auch regelmäßige Updates über Kaffeebohnenangebot, Früstückskarte und sonstige Shenanigans aus dem Hause Leuchtstoff.
+24-26. Dezember und 1. Januar geschlossen
+
+sonst wie gehabt
