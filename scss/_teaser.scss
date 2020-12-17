@@ -3,28 +3,27 @@
     .grid {
         display: grid;
         grid-template-columns: 1fr;
-        row-gap: 20px;
+        row-gap: 16px;
         
         @include media-up(md) {
             grid-template-columns: 1fr 1fr;
-            column-gap: 40px;
-            row-gap: 40px;
+            column-gap: 16px;
         }
 
         @include media-up(mdl) {
             grid-template-columns: 1fr 1fr;
-            column-gap: 60px;
-            row-gap: 60px;
+            column-gap: 16px;
+            row-gap: 16px;
         }
 
         @include media-up(lg) {
             grid-template-columns: 1fr 1fr;
-            column-gap: 100px;
-            row-gap: 100px;
+            column-gap: 32px;
+            row-gap: 32px;
         }
 
         .item {
-            // padding: 20px;
+            // padding: 16px;
             text-align: center;
             display: flex;
             justify-content: center;
@@ -52,7 +51,7 @@
                 background-size: cover;
                 background-position: center;
                 background-color: $light;
-                margin-bottom: 20px;
+                margin-bottom: 16px;
                 position: relative;
                 &:after {
                     content: '';
@@ -116,7 +115,7 @@
     &-content {
         background-color: $tafel-black;
         color: white;
-        padding: 20px 20px;
+        padding: 16px 16px;
     }
     h4 {
         margin-bottom: 5px;

@@ -21,21 +21,25 @@ contact_link: 'kontakt.html'
     <section class="news length-{{collections.newsrev.length}}">
         <div class="content">
             <article class="openinghours" onclick="window.location.href='{{contact_link}}'">
-                <h3>{{openinghours-title}}</h3>
-                <p>{% for row in openinghours %}<div>{{row}}</div>{%endfor%}</p>
+                <div class="article-content">
+                    <h3>{{openinghours-title}}</h3>
+                    <p>{% for row in openinghours %}<div>{{row}}</div>{%endfor%}</p>
+                </div>
             </article>
             
             {% for article in collections.newsrev %}
                 <article class="article" onclick="window.location.href='{{article.url}}'">
                     <span class="date">{{article.date | dateformat }}</span>         
-                    
-                    <h3>{{article.data.title}}</h3>
-                    <p>{% if article.data.page.excerpt %}
-                            {{-article.data.page.excerpt}}
-                        {% else %}
-                            {{-article.data.content}}
-                        {% endif %}
-                    </p>
+                    <img src="{{article.data.header-image}}" alt="">
+                    <div class="article-content">
+                        <h3>{{article.data.title}}</h3>
+                        <p>{% if article.data.page.excerpt %}
+                                {{-article.data.page.excerpt}}
+                            {% else %}
+                                {{-article.data.content}}
+                            {% endif %}
+                        </p>
+                    </div>
                 </article>
             {% endfor %}
         </div>

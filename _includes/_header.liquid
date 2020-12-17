@@ -1,10 +1,10 @@
 <header class="{%if header-image %}has-image{%endif%}">
-    <div class="background"
-        style="background-image: url({{header-image}});
+    <div class="background" style="background-image: url({{header-image}});
         {%if header-image-y-position%}
             background-position-y: {{header-image-y-position}};
         {%endif%}">
     </div>
+    <img src="{{header-image}}" alt="" srcset="">
     <div class="title">
         <h1>{{title}}</h1>
     </div>

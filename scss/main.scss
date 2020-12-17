@@ -62,16 +62,16 @@ i.open {
 }
 
 section {
-    padding: 25px 20px;
-    margin-bottom: 25px;
+    padding: 24px 16px;
+    margin-bottom: 24px;
     scroll-snap-align: start;
     @include media-up(md) {
-        padding: 25px 40px;
+        padding: 24px;
     }
 
     @include media-up(mdl) {
-        padding: 50px 60px;
-        margin-bottom: 50px;
+        padding: 32px;
+        margin-bottom: 48px;
     }
 
     &.centered {
@@ -130,13 +130,20 @@ section {
     background-color: $light-blue;
 }
 .page {
-    background: linear-gradient(180deg, $cream 0%, $light-blue 70%, $blue 100%);
+    background: $light-blue;
+    section {
+        margin-bottom: 0;
+    }
 
 }
 .post { 
+    .has-image + section > .title {
+        display: block;
+    }
     section {
         max-width: 1600px;
         margin: 0 auto;
+        .title {display: none;}
     }
     hr { display: none;}
 }

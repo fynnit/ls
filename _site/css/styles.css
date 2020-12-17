@@ -57,14 +57,14 @@ p:not(:last-child) {
   justify-content: space-between;
   position: relative;
 }
-@media (min-width: 320px) and (max-width: 1023px) {
+@media (min-width: 316px) and (max-width: 1023px) {
   .nav .inner {
-    padding: 0 20px;
+    padding: 0 16px;
   }
 }
 @media (min-width: 1024px) {
   .nav .inner {
-    padding: 0 60px;
+    padding: 0 32px;
   }
 }
 @media (min-width: 1710px) {
@@ -175,12 +175,12 @@ p:not(:last-child) {
     display: flex;
     height: 100vh;
     background: linear-gradient(180deg, #007cb0 0%, #007cb0 30%, rgba(255, 255, 255, 0) 100%);
-    padding: 20px 0;
+    padding: 16px 0;
   }
 }
 @media (max-width: 1023px) and (min-width: 480px) and (max-width: 1023px) {
   .nav.active .menu-items {
-    padding: 20px;
+    padding: 16px;
   }
 }
 @media (max-width: 1023px) {
@@ -199,15 +199,16 @@ p:not(:last-child) {
 
 header {
   height: 300px;
+  overflow: hidden;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
   background-color: #efefef;
   position: relative;
-  padding: 0 20px;
+  padding: 0 16px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
 }
 header.small {
   height: 200px;
@@ -226,13 +227,17 @@ header .background {
   background-position: center;
   background-repeat: no-repeat;
   z-index: 0;
+  filter: blur(10px);
+  transform: scale(1.2);
+}
+header img {
+  max-height: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
 }
 header.has-image .title {
-  background-color: #007cb0;
-  padding: 10px 20px;
-  color: #97e0ff;
-  position: static;
-  z-index: 2;
+  display: none;
 }
 @media (min-width: 768px) {
   header {
@@ -254,7 +259,7 @@ header p {
 }
 
 footer {
-  padding: 0 20px;
+  padding: 0 16px;
   background-color: #007cb0;
   color: white;
 }
@@ -272,7 +277,7 @@ footer .inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 16px 0;
   font-size: 12px;
 }
 footer a {
@@ -294,27 +299,26 @@ footer a:hover {
 .teaser .grid {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 20px;
+  row-gap: 16px;
 }
 @media (min-width: 768px) {
   .teaser .grid {
     grid-template-columns: 1fr 1fr;
-    column-gap: 40px;
-    row-gap: 40px;
+    column-gap: 16px;
   }
 }
 @media (min-width: 1024px) {
   .teaser .grid {
     grid-template-columns: 1fr 1fr;
-    column-gap: 60px;
-    row-gap: 60px;
+    column-gap: 16px;
+    row-gap: 16px;
   }
 }
 @media (min-width: 1280px) {
   .teaser .grid {
     grid-template-columns: 1fr 1fr;
-    column-gap: 100px;
-    row-gap: 100px;
+    column-gap: 32px;
+    row-gap: 32px;
   }
 }
 .teaser .grid .item {
@@ -343,7 +347,7 @@ footer a:hover {
   background-size: cover;
   background-position: center;
   background-color: #efefef;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   position: relative;
 }
 .teaser .grid .item .image:after {
@@ -399,7 +403,7 @@ footer a:hover {
 .post-content {
   background-color: #0f2229;
   color: white;
-  padding: 20px 20px;
+  padding: 16px 16px;
 }
 .post h4 {
   margin-bottom: 5px;
@@ -414,7 +418,7 @@ footer a:hover {
   border: 1px solid #000;
   cursor: pointer;
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   transition: background-color 400ms 100ms, border-color 400ms 100ms, color 400ms 100ms;
 }
 @media (min-width: 768px) {
@@ -436,13 +440,13 @@ footer a:hover {
   display: flex;
 }
 .buttons-wrapper .button {
-  margin-top: 20px;
+  margin-top: 16px;
 }
 .buttons-wrapper .button:first-child {
-  margin-right: 10px;
+  margin-right: 8px;
 }
 .buttons-wrapper .button:last-child {
-  margin-left: 10px;
+  margin-left: 8px;
 }
 
 main.home {
@@ -452,11 +456,11 @@ main.home {
 .home header {
   height: 400px;
   background-color: white;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
   position: relative;
   justify-content: flex-end;
   align-items: flex-start;
-  padding-bottom: 50px;
+  padding-bottom: 48px;
   background-color: #1a1a1a;
 }
 .home header .background {
@@ -466,6 +470,7 @@ main.home {
   background-position: 100% center;
   opacity: 1;
   z-index: 0;
+  filter: none;
 }
 .home header .background2 {
   background-image: linear-gradient(to bottom, transparent 40%, rgba(0, 52, 74, 0.6) 80%);
@@ -513,21 +518,27 @@ main.home {
   }
 }
 .home article {
-  width: 30%;
+  width: calc(33% - 8px);
   cursor: pointer;
   background-color: #009de0;
   color: white;
-  padding: 20px;
+  align-self: flex-start;
   position: relative;
 }
 @media (max-width: 767px) {
   .home article {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
 }
 .home article h3 {
   margin-bottom: 0.5rem;
+}
+.home article .article-content {
+  padding: 16px;
+}
+.home article .article-content p {
+  margin-bottom: 0.25rem;
 }
 .home article.openinghours span {
   display: block;
@@ -566,7 +577,7 @@ main.home {
 @media (max-width: 1023px) {
   .home section.centered .logo svg {
     height: 200px;
-    margin-top: 20px;
+    margin-top: 16px;
   }
 }
 .home section.centered .logo svg g {
@@ -604,7 +615,7 @@ main.home {
   background-attachment: fixed;
 }
 .home section.teaser {
-  padding-top: 50px;
+  padding-top: 48px;
   background-color: #f6cab3;
   margin-bottom: 0;
 }
@@ -636,10 +647,10 @@ main.home {
   width: 50%;
 }
 .detail-post .col-1 {
-  padding-right: 20px;
+  padding-right: 16px;
 }
 .detail-post .col-2 {
-  padding-left: 20px;
+  padding-left: 16px;
   text-align: left;
 }
 
@@ -715,19 +726,19 @@ i.open {
 }
 
 section {
-  padding: 25px 20px;
-  margin-bottom: 25px;
+  padding: 24px 16px;
+  margin-bottom: 24px;
   scroll-snap-align: start;
 }
 @media (min-width: 768px) {
   section {
-    padding: 25px 40px;
+    padding: 24px;
   }
 }
 @media (min-width: 1024px) {
   section {
-    padding: 50px 60px;
-    margin-bottom: 50px;
+    padding: 32px;
+    margin-bottom: 48px;
   }
 }
 section.centered {
@@ -786,12 +797,21 @@ section.centered p {
 }
 
 .page {
-  background: linear-gradient(180deg, #f6cab3 0%, #97e0ff 70%, #007cb0 100%);
+  background: #97e0ff;
+}
+.page section {
+  margin-bottom: 0;
 }
 
+.post .has-image + section > .title {
+  display: block;
+}
 .post section {
   max-width: 1600px;
   margin: 0 auto;
+}
+.post section .title {
+  display: none;
 }
 .post hr {
   display: none;

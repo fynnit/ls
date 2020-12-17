@@ -6,5 +6,8 @@
       border: none;
       outline: none
   }
+  p:empty {
+      display: none;
+  }
 
  
