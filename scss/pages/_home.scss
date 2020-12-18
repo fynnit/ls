@@ -1,5 +1,5 @@
 main.home {
-    background-color: $blue;
+    background-color: $light-blue;
 }
 
 .home {
@@ -22,17 +22,6 @@ main.home {
             opacity: 1;
             z-index: 0;
             filter: none;
-        }
-        .background2 {
-            @include media-up(md) {
-                display: none;
-            }
-            background-image: linear-gradient(to bottom, transparent 40%, rgba(darken($blue, 20%), 0.6) 80%);
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            bottom: 0;
-            left: 0;
         }
         .header-content {
             max-width: 1600px;
@@ -71,28 +60,39 @@ main.home {
     }
     
     article {
-        width: calc(33% - 8px);
+        border-radius: 20px;
+        overflow: hidden;
+        width: calc(33% - 16px);
         cursor: pointer;
-        background-color: $fresh-blue;
-        color: white;
+        background-color: lighten($fresh-blue, 70%);
+        color: $black;
         align-self: flex-start;
         @include media-down(md) {
             width: 100%;
             margin-bottom: 16px;
         }
-        position: relative;
-        // @extend %hover;
-        
+        // box-shadow: 5px 5px 10px #006996, 
+        //      -5px -5px 10px #008fca;
+
+
         h3 {
             margin-bottom: 0.5rem;
         }
+        img, svg { display: block; width: 100%;}
         .article-content {
-            padding: 16px;
+            padding: 32px;
+            position: relative;
             p {
                 margin-bottom: 0.25rem;
             }
         }
         &.openinghours {
+            svg {
+                padding: 32px;
+                path {
+                    fill: $black
+                }
+            }
             span {
                 display: block;
             }
@@ -108,45 +108,44 @@ main.home {
     }
 
     section.centered {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row;
         .content {
-            display: flex;
-            flex-flow: row;
-            justify-content: space-between;
-            align-items: center;
-            @include media-down(mdl) {
-                flex-flow: column;
-            }
+            width: auto;
         }
-        .logo {
-            display: flex;
-            justify-content: flex-end;
-            svg {
-                height: 300px;
-                margin-top: -30px;
-                width: auto;
-                @include media-down(mdl) {
-                    height: 200px;
-                    margin-top: 16px;
-                }
-                g {
-                    fill: $black;
-                }
-            }
-            @keyframes flicker {
-                0% {fill: $cream;}
-                10% {fill: $tafel-black;}
-                20% {fill: rbga($cream, 20%);}
-                50% {fill: $tafel-black;}
-                100% {fill: $light-blue;}
-              }
-            &:hover {
-                g {
-                    animation: flicker 500ms forwards;
-                }
-            }
-        }
+        // .logo {
+        //     display: flex;
+        //     justify-content: flex-end;
+        //     svg {
+        //         height: 300px;
+        //         margin-top: -30px;
+        //         width: auto;
+        //         @include media-down(mdl) {
+        //             height: 200px;
+        //             margin-top: 16px;
+        //         }
+        //         g {
+        //             fill: $black;
+        //         }
+        //     }
+        //     @keyframes flicker {
+        //         0% {fill: $cream;}
+        //         10% {fill: $tafel-black;}
+        //         20% {fill: rbga($cream, 20%);}
+        //         50% {fill: $tafel-black;}
+        //         100% {fill: $light-blue;}
+        //       }
+        //     &:hover {
+        //         g {
+        //             animation: flicker 500ms forwards;
+        //         }
+        //     }
+        // }
 
-        background: linear-gradient(180deg, $blue 0%, rgba($cream, 1) 100%);
+        background: linear-gradient(180deg, $light-blue 0%, rgba($cream, 1) 100%);
         // @include media-down(md) {
             text-align: left;
             h2 {text-align: left;}

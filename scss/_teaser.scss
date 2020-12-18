@@ -38,6 +38,7 @@
             &:hover {
                 transition: filter 300ms;
                 .image {
+                    
                     &:after {
                         box-shadow: inset 0 0 0 5px $fresh-blue;
                         transition: box-shadow 400ms 100ms;
@@ -53,10 +54,13 @@
                 background-color: $light;
                 margin-bottom: 16px;
                 position: relative;
+                border-radius: 20px;
                 &:after {
                     content: '';
                     position: absolute;
                     height: 100%;
+                border-radius: 20px;
+
                     width: 100%;
                     top: 0;
                     left: 0;
@@ -68,6 +72,7 @@
             span { 
             //     font-family: $font-family-display;
                 @extend h2;
+                margin-bottom: 0;
             }
             // @extend %hover;
         }

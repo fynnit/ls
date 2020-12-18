@@ -9,13 +9,14 @@
         align-self: flex-start;
         justify-content: space-between;
         position: relative;
+        padding: 16px;
         @include media-between(xsm, mdl) {
             padding: 0 16px;
         }
         
         
         @include media-up(mdl) {
-            padding: 0 32px;
+            padding: 8px 32px;
         }
         @media (min-width: 1710px) {
             padding: 0;
@@ -53,11 +54,11 @@
         @include media-up(lg){margin-left: 5vw;}
         line-height: 1;
         letter-spacing: -5px;
-        color: lighten($fresh-blue, 40%);
+        color: lighten($fresh-blue, 70%);
         &.active,
         &:hover {
             font-family: $font-family-display;
-            color: lighten($fresh-blue, 40%);
+            color: lighten($fresh-blue, 70%);
         }
         &.order-1 {order: 1;}
         &.order-2 {order: 2;}
