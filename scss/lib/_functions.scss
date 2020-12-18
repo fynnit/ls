@@ -20,11 +20,11 @@
   padding: 0 16px;
 
     @include media-up(md) {
-        padding: 0 40px;
+        padding: 0 32px;
     }
 
-    @include media-up(mdl) {
-        padding: 0 60px;
+    @include media-up(xl) {
+        padding: 0 48px;
     }
 }
 

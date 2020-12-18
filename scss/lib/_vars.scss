@@ -5,9 +5,9 @@ $black : #1a1a1a;
 $blue : #007cb0;
 $fresh-blue : #009de0;
 $tafel-black: #0f2229;
-$light-blue : lighten($blue, 45%);
+$light-blue : desaturate(lighten($blue, 35%), 55deg);
 $light: #efefef;
-$cream: #f6cab3;
+$cream: #fffaee;
 
 $line-height: 24px;
 

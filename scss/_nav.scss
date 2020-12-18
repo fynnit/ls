@@ -1,7 +1,16 @@
 .nav {
-    background-color: $blue;
+    background-color: $light-blue;
+    // border-bottom-left-radius: 20px;
+    // border-bottom-right-radius: 20px;
+    // background: linear-gradient(180deg, $light-blue 80%, transparent 100%) ;
+    box-shadow: 0 1px 20px -10px lighten($blue, 0%);
+    // padding-bottom: 8px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100000;
     .inner {
-
         display: flex;
         width: 100%;
         max-width: 1600px;
@@ -10,7 +19,7 @@
         justify-content: space-between;
         position: relative;
         padding: 16px;
-        @include media-between(xsm, mdl) {
+        @include media-between(xsm, md) {
             padding: 0 16px;
         }
         
@@ -34,7 +43,6 @@
         flex-grow: 1;
         display: flex;
         justify-content: flex-end;
-        // max-width: 800px;
 
         @include media-down(mdl) {
             display: none;
@@ -54,11 +62,10 @@
         @include media-up(lg){margin-left: 5vw;}
         line-height: 1;
         letter-spacing: -5px;
-        color: lighten($fresh-blue, 70%);
         &.active,
         &:hover {
             font-family: $font-family-display;
-            color: lighten($fresh-blue, 70%);
+            color: $black;
         }
         &.order-1 {order: 1;}
         &.order-2 {order: 2;}
