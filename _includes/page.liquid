@@ -2,9 +2,14 @@
 layout: base.liquid
 ---
 <main class="page">
-    {% include _header.liquid %}
-
-    <section class="{%if style != 'left'%}centered{%endif%}">
-        {{-content}}
+    {% comment %} {% include _header.liquid %} {% endcomment %}
+    <section>
+        <h1>{{title}}</h1>
+        <div class="inner">
+            <div class="content">
+                {{-content}}
+            </div>
+            <img src="{{header-image}}" alt=""> 
+       </div>
     </section>
 </main>

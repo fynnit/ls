@@ -12,6 +12,14 @@ main.home {
         align-items: flex-end;
         padding-bottom: 48px;
         background-color: $light-blue;
+        @include media-down(md) {
+            flex-flow: column;
+            height: auto;
+            padding-top: 80px;
+            padding-bottom: 32px;
+            .logo {display: none;};
+            margin-bottom: 0;
+        }
         // background: linear-gradient( 180deg, $blue 0%, $light-blue 100% );
         
 
@@ -30,6 +38,9 @@ main.home {
             z-index: 1;
             text-align: left;
             color: $black;
+            @include media-down(md) {
+                width: 100%;
+            }
         }
         p {
             text-align: inherit;
@@ -185,6 +196,7 @@ main.home {
         margin-bottom: 0;
         background: linear-gradient(180deg, $cream 0%, $blue 100%);
     }
+    
     .button {
         background-color: white;
         color: $black;

@@ -9,6 +9,8 @@
     display: inline-block;
     margin-bottom: 8px;
     border-radius: 40px;
+    background-color: $light-blue;
+    color: $blue;
     a {
         text-decoration: none;
     }
@@ -18,12 +20,19 @@
         transition: background-color 400ms, border-color 400ms, color 400ms;
         background-color: $light-blue;
         color: $blue;
-        border-color: $light-blue;
     }
 }
 .buttons-wrapper {
     display: flex;
     align-items: center;
+    flex-flow: column;
+    width: 100%;
+    @include media-up(md) {
+        flex-flow: row;
+    }
+    @include media-up(mdl) {
+        justify-content: center;
+    }
     h2 {
         text-transform: uppercase;
         color: white;
@@ -33,14 +42,35 @@
 .buttons {
     display: flex;
     align-items: center;
-    padding: 0 48px 0 32px ;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 8px;
+    @include media-up(md) {
+        flex-flow: row;
+        padding: 0 48px 0 48px ;
+    }
+    @include media-up(mdl) {
+        margin-top: 0;
+        width: 50%;
+        justify-content: flex-start;
+    }
     .button {
-        margin: 16px 0;
-        &:first-child {
-            margin-right: 8px;
+        padding: 8px 8px;
+        display: block;
+        width: calc(50% - 8px);
+        
+        @include media-up(sm) {
+            padding: 8px 16px;
         }
-        &:last-child {
-            margin-left: 48px;
+        @include media-up(md) {
+        padding: 8px 32px;
+
+            width: auto;
+            margin: 16px 0;
+            &:last-child {
+                margin-left: 48px;
+            }
         }
     }
 }

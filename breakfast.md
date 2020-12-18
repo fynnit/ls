@@ -1,8 +1,8 @@
 ---
-title: frühstück
+title: Everyday Breakfast
 nav-title: frühstück
 nav-order: "3"
-layout: breakfast.liquid
+layout: page.liquid
 tags: page
 permalink: "/breakfast.html"
 header-image: 'assets/images/baguette-magic.jpg'
@@ -12,7 +12,6 @@ weekheadline: unser wochenangeboot
 weekendheadline: am wochenende
 
 ---
-## Everyday Breakfast
 
 Die solide Begleitung für den ersten Kaffee am Morgen/Mittag/Nachmittag? Die berühmte wichtigste Mahlzeit des Tages? Gibts im Leuchtstoff jeden Tag solange die Vorräte reichen.
 

@@ -2,7 +2,7 @@
 layout: base.liquid
 ---
 <main class="page kaffeebar">
-    {% include _header.liquid %}
+    {% comment %} {% include _header.liquid %} {% endcomment %}
 
     <section class="{%if style != 'left'%}centered{%endif%}">
         {{-content}}

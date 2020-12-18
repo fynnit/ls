@@ -12,8 +12,8 @@
 
         @include media-up(mdl) {
             grid-template-columns: 1fr 1fr;
-            column-gap: 16px;
-            row-gap: 16px;
+            column-gap: 32px;
+            row-gap: 32px;
         }
 
         @include media-up(lg) {
@@ -36,6 +36,9 @@
             transition: filter 300ms;
             cursor: pointer;
             position: relative;
+            @include media-down(md) {
+                margin-bottom: 16px;
+            }
             &:hover {
                 transition: filter 300ms;
                 .image {
@@ -62,7 +65,7 @@
                     content: '';
                     position: absolute;
                     height: 100%;
-                border-radius: 20px;
+                    border-radius: 20px;
 
                     width: 100%;
                     top: 0;
@@ -71,10 +74,17 @@
                     transition: box-shadow 400ms;
                     z-index: 2;
                 }
+                @include media-down(md) {       
+                    order: 2;
+                }
             }
             span { 
             //     font-family: $font-family-display;
                 @extend h2;
+                @include media-down(md) {           
+                    order:1;
+                    margin-bottom: 8px;
+                }
                 margin-bottom: 0;
             }
             // @extend %hover;

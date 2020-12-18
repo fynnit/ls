@@ -36,7 +36,9 @@ main {
     .content {
         width: 100%;
         max-width: 1600px;
-        margin: 0 auto;
+        @include media-up(lg) {
+            margin: 0 auto;
+        }
     }
 }
 body {
@@ -75,10 +77,8 @@ section {
     }
 
     &.centered {
-        text-align: center;
         display: flex;
         flex-flow: column;
-        align-items: center;
         h2 {
             font-size: 32px;
             line-height: 48px;
@@ -87,8 +87,8 @@ section {
         
         p {
             max-width: 1000px;
-            font-size: 24px;
-            line-height: 36px;
+            // font-size: 24px;
+            // line-height: 36px;
         }
     }
 }
@@ -135,8 +135,42 @@ section {
     background-color: $light-blue;
 }
 .page {
+    padding-top: 48px;
     background: lighten($light-blue, 25%);
     section {
+
+        .inner {
+            padding: 32px 0;
+            display: flex; 
+            justify-content: space-between;
+            flex-flow: column;
+            @include media-up(mdl) {
+                flex-flow: row;
+            }
+            .content {
+                order: 2;
+                @include media-up(mdl) {
+                    order: 1;
+                }
+                
+            }
+            img { 
+                order: 1;
+                max-width: 90%;
+                margin: 0 0 16px ;
+                @include media-up(mdl) {
+                    order: 2;
+                    max-width: 450px;
+                    margin-left: 32px;
+                }
+                height: auto;
+                align-self: flex-start;
+                // border-radius: 20px;
+                box-shadow: 0 2px 20px -12px darken($blue, 20%);
+
+            }
+            p { text-align-last: left; }
+        }
         margin-bottom: 0;
     }
 
