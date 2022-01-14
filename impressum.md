@@ -14,9 +14,11 @@ Siegfriedstrasse 18
 12051 Berlin
 Kontakt: Zentrale@Leuchtstoff.berlin
 
-Umsetzung: [fynn.it](http://fynn.it)
+mit freundlicher Unterstützung von: [fynn.it](http://fynn.it)
 
 Die Daten wurden sorgfältig überprüft, es kann jedoch keine Gewähr für die Richtigkeit, Vollständigkeit und Aktualität der Daten übernommen werden. Jegliche Haftung, insbesondere Schadensersatz, ist ausgeschlossen. Auch besteht keine Verantwortung für fremde Inhalte, zu denen lediglich der Zugang zur Nutzung vermittelt wird. Dies gilt insbesondere für die Inhalte, die der Nutzer durch Aufrufen eines Hyperlinks abrufen kann.
+
+Wir haben hier keine Cookies eingebaut. Falls ein Hintergrund-Dienstleister Cookies verwendet, haben wir damit nüscht zu tun. 
 
 Hinweise auf fehlerhafte Informationen oder Links, Anregungen und Kritik senden Sie bitte an:
 
