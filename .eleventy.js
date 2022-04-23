@@ -30,6 +30,7 @@ module.exports = function(eleventyConfig) {
         return b.date - a.date;
       });
     });
+    eleventyConfig.addPassthroughCopy("src/assets/fonts");
     return {
       dir: {
           input: "src"

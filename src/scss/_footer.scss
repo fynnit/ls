@@ -17,7 +17,7 @@ footer {
         text-transform: uppercase;
         &:hover {
             transition: color 300ms,;
-            color: $fresh-blue;
+            color: $blue;
         }
         &:last-child {
             @include media-down(md) {

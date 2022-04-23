@@ -8,8 +8,6 @@
 @import 'teaser';
 @import 'buttons';
 @import 'pages/home';
-@import 'pages/kaffeebar';
-@import 'pages/catering';
 
 
 
@@ -27,6 +25,7 @@ main {
 html {
     height: 100%;
     background-color: whitesmoke;
+    background-color: $light;
 }
 
 main {
@@ -46,7 +45,7 @@ main {
 
 body {
     height: 100%;
-    color: $blue;
+    color: $blackboard;
     opacity: 1;
     transition: opacity 200ms;
     font-size: 20px;
@@ -150,56 +149,32 @@ section {
 
 
 ::selection {
-    background-color: $light-blue;
+    background-color: $light;
 }
 
 .page {
     padding-top: 48px;
-    background: lighten($light-blue, 25%);
-
-    section {
-
-        .inner {
-            padding: 32px 0;
-            display: flex;
-            justify-content: space-between;
-            flex-flow: column;
-
-            @include media-up(mdl) {
-                flex-flow: row;
-            }
-
-            .content {
-                order: 2;
-
-                @include media-up(mdl) {
-                    order: 1;
-                }
-
-            }
-
-            img {
-                order: 1;
-                max-width: 90%;
-                margin: 0 0 16px;
-
-                @include media-up(mdl) {
-                    order: 2;
-                    max-width: 450px;
-                    margin-left: 32px;
-                }
-
-                height: auto;
-                align-self: flex-start;
-
-            }
-
-            p {
-                text-align-last: left;
-            }
+    background: lighten($light, 25%);
+    header {
+        height: 40vh;
+        margin: 0 auto;
+        background-size: cover;
+        background-position: 0 10%;
+        position: relative;
+        &:after {
+            content: '';
+            display: block;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: linear-gradient(to bottom, transparent, $light);
         }
-
-        margin-bottom: 0;
+    }
+    .page-content {
+        margin: 0 auto;
+        max-width: 674px;
     }
 
 }

@@ -8,7 +8,20 @@
         justify-content: space-between;
         align-items: flex-end;
         padding-bottom: 48px;
-
+        background-image: url(/assets/images/bohnenregal.jpg);
+        background-size: cover;
+        background-position: 0% 10%;
+        position: relative;
+        &:after {
+            content: '';
+            display: block;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: linear-gradient(to bottom, transparent, $light);
+        }
         @include media-down(md) {
             flex-flow: column;
             height: auto;
@@ -17,7 +30,7 @@
             .logo {display: none;};
             margin-bottom: 0;
         }
-        // background: linear-gradient( 180deg, $blue 0%, $light-blue 100% );
+        // background: linear-gradient( 180deg, $blue 0%, $light 100% );
         
 
         // .background {
@@ -29,6 +42,10 @@
         //     z-index: 0;
         //     filter: none;
         // }
+        .intro {
+            position: relative;
+            z-index: 3;
+        }
         .header-content {
             max-width: 1600px;
             width: 40%;
@@ -45,7 +62,7 @@
             color: inherit;
         }
         h2 {
-            color: inherit;
+            color: inherit;  
             font-size: 2rem;
             text-align: inherit;
         }
@@ -70,23 +87,20 @@
             background-size: cover;
         }
         .content{
-            display: flex;
-            justify-content: space-between;
-            @include media-down(md) {
-                flex-flow: column;
-            }
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 32px;
+            // @include media-down(md) {
+            // }
         }
 
-        &.length-1 article {
-            @include media-up(md){
-                width: 45%;
-            }
+        &.length-1 .content {
+            grid-template-columns: 1fr 1fr;
         }
     }
     
     article {
         overflow: hidden;
-        width: calc(33% - 16px);
         cursor: pointer;
         align-self: flex-start;
 
@@ -107,9 +121,11 @@
             margin-bottom: 0.5rem;
         }
         img, svg { display: block; width: 100%;}
+
         .article-content {
             padding: 32px;
             position: relative;
+            background-color: #fff;
             p {
                 margin-bottom: 0.25rem;
             }

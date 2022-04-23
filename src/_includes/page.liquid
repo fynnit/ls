@@ -3,13 +3,12 @@ layout: base.liquid
 ---
 <main class="page">
     {% comment %} {% include _header.liquid %} {% endcomment %}
-    <section>
+    <header style="background-image: url({{header-image}});">
         <h1>{{title}}</h1>
-        <div class="inner">
-            <div class="content">
-                {{-content}}
-            </div>
-            <img src="{{header-image}}" alt=""> 
-       </div>
+    </header>
+    <section>
+        <div class="page-content">
+        {{-content}}
+        </div>
     </section>
 </main>

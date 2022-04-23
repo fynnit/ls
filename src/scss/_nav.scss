@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     z-index: 100000;
-    background-color: whitesmoke;
+    background-color: $light;
     .inner {
         display: flex;
         width: 100%;
@@ -25,13 +25,14 @@
         @media (min-width: 1710px) {
             padding: 0;
         }
+        a {text-transform: uppercase;}
     }
 
 
     .sitename {
         margin-left: 0 !important;
         @media (min-width: 370px) {
-            letter-spacing: normal !important;
+            // letter-spacing: normal !important;
         }
     }
     .menu-items {
@@ -50,17 +51,17 @@
         text-decoration: none;
         color: inherit;
         font-size: 28px;
-        padding: 6px 0 0;
         @include media-up(mdl){
             margin-left: 3vw;
             font-size: 25px;
         }
         @include media-up(lg){margin-left: 5vw;}
         line-height: 1;
-        letter-spacing: -5px;
+        // letter-spacing: -5px;
         &.active,
         &:hover {
             font-family: $font-family-display;
+            color: $blue
         }
         &.order-1 {order: 1;}
         &.order-2 {order: 2;}
@@ -112,7 +113,7 @@
             background-color: $blue;
             .sitename ,
             .nav-item {
-                color: $light-blue;
+                color: $light;
             }
             .menu-items {
                 width: 100%;
@@ -130,7 +131,7 @@
                 
             }
             .bar-1, .bar-2 {
-                // background-color: $light-blue;
+                // background-color: $light;
             }
                     
         }

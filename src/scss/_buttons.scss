@@ -27,8 +27,8 @@ a[href^="mailto:"] {
 
     &:hover {
         transition: background-color 400ms, border-color 400ms, color 400ms;
-            background-color: $light-blue;
-            color: whitesmoke;
+            background-color: $light;
+            color: $blackboard;
     }
 }
 

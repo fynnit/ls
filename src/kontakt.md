@@ -29,20 +29,22 @@ Schreibt uns an Catering@leuchtstoff.berlin
   
 Ihr wollt uns im Büro erreichen?<br> Schreibt am besten eine kurze Email an
 
-<div class="button"><a href="mailto:zentrale@leuchtstoff.berlin">zentrale(at)leuchtstoff.berlin</a></div>
+<a href="mailto:zentrale@leuchtstoff.berlin">zentrale(at)leuchtstoff.berlin</a>
 
 <br>
 <br>
 
-## Anfahrt / So findet ihr uns!
+
+## Öffnungszeiten
+
+Mo-Fr: 8-18 Uhr 
+<br>
+Sa-So: 9-18 Uhr
+<br>
+<br>
+
+## Anfahrt
 
 Leuchtstoff Gastro Kollektiv<br>
 Siegfriedstraße 18<br>
 12051 Berlin<br>
-
-<br>
-<br>
-
-## Öffnungszeiten
-
-Mo-Fr: 8-18 Uhr Sa-So: 9-18 Uhr
