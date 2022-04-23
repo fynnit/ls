@@ -1,15 +1,10 @@
 .nav {
-    background-color: $light-blue;
-    // border-bottom-left-radius: 20px;
-    // border-bottom-right-radius: 20px;
-    // background: linear-gradient(180deg, $light-blue 80%, transparent 100%) ;
-    box-shadow: 0 1px 20px -10px lighten($blue, 0%);
-    // padding-bottom: 8px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 100000;
+    background-color: whitesmoke;
     .inner {
         display: flex;
         width: 100%;
@@ -18,14 +13,14 @@
         align-self: flex-start;
         justify-content: space-between;
         position: relative;
-        padding: 16px;
+        padding: 32px;
         @include media-between(xsm, md) {
-            padding: 0 16px;
+            padding: 8px 16px;
         }
         
         
         @include media-up(mdl) {
-            padding: 8px 32px;
+            padding: 16px 32px;
         }
         @media (min-width: 1710px) {
             padding: 0;
@@ -66,7 +61,6 @@
         &.active,
         &:hover {
             font-family: $font-family-display;
-            color: $black;
         }
         &.order-1 {order: 1;}
         &.order-2 {order: 2;}
@@ -90,7 +84,7 @@
         %bar {
             height: 2px;
             width: 24px;
-            border-radius: 2px;
+
             display: block;
             background-color: $black;
             margin: 4px 0;
@@ -131,12 +125,12 @@
                 display: flex;
                 height: 100vh;
                 // height: 300px;
-                background: linear-gradient(180deg, $blue 0%, $blue 30%, rgba(255,255,255,0) 100%);
+                // background: linear-gradient(180deg, $blue 0%, $blue 30%, rgba(255,255,255,0) 100%);
                 padding: 16px;
                 
             }
             .bar-1, .bar-2 {
-                background-color: $light-blue;
+                // background-color: $light-blue;
             }
                     
         }

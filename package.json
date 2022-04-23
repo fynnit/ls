@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "watch:eleventy": "npx @11ty/eleventy --serve",
-    "watch:sass": "sass scss/main.scss _site/css/styles.css --watch",
+    "watch:sass": "sass src/scss/main.scss _site/css/styles.css --watch",
     "start": "npm run watch:eleventy && npm run watch:sass",
-    "build": "npm @11ty/eleventy && sass scss/main.scss _site/css/styles.css"
+    "build": "npx @11ty/eleventy && sass src/scss/main.scss _site/css/styles.css && netlify-lambda build ./src/functions"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +17,10 @@
     "moment-timezone": "^0.5.31"
   },
   "dependencies": {
+    "async": "^3.2.3",
+    "github": "^14.0.0",
+    "https": "^1.0.0",
+    "netlify-lambda": "^2.0.15",
     "sass": "^1.26.8"
   }
 }

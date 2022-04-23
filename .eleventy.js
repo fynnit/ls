@@ -30,4 +30,9 @@ module.exports = function(eleventyConfig) {
         return b.date - a.date;
       });
     });
+    return {
+      dir: {
+          input: "src"
+      },
+  };
 };

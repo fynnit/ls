@@ -26,27 +26,30 @@ main {
 
 html {
     height: 100%;
-    background-color: #fdfdfd;
+    background-color: whitesmoke;
 }
 
 main {
     scroll-snap-type: y proximity;
 
     min-height: calc(100% - 31px - 58px);
+
     .content {
         width: 100%;
         max-width: 1600px;
+
         @include media-up(lg) {
             margin: 0 auto;
         }
     }
 }
+
 body {
     height: 100%;
-    color: $text-black;
+    color: $blue;
     opacity: 1;
     transition: opacity 200ms;
-
+    font-size: 20px;
     &.loading {
         opacity: 0;
         transition: opacity 200ms;
@@ -67,6 +70,7 @@ section {
     padding: 24px 16px;
     margin-bottom: 24px;
     scroll-snap-align: start;
+
     @include media-up(md) {
         padding: 24px;
     }
@@ -75,18 +79,23 @@ section {
         padding: 32px;
         margin-bottom: 48px;
     }
-
     &.centered {
         display: flex;
         flex-flow: column;
+        max-width: 674px;
+        margin: 0 auto;
+        
+        &.intro {
+            text-align: center;
+        }
         h2 {
             font-size: 32px;
             line-height: 48px;
-            max-width: 1000px;
+
         }
-        
+
         p {
-            max-width: 1000px;
+
             // font-size: 24px;
             // line-height: 36px;
         }
@@ -109,10 +118,17 @@ section {
 .maps {
     text-align: center;
     margin-bottom: 0;
-    .map {position: relative; border-radius: 20px;overflow: hidden; margin-bottom: 16px;
-    box-shadow: 0 1px 20px -10px lighten($blue, 0%);
 
-    img{display: block;}}
+    .map {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 16px;
+
+        img {
+            display: block;
+        }
+    }
+
     .copyright {
         font-size: 14px;
         font-weight: 500;
@@ -122,8 +138,10 @@ section {
         bottom: 15px;
         left: 15px;
     }
+
     .open {
         display: none;
+
         @include media-up(md) {
             display: inline-block;
         }
@@ -134,57 +152,73 @@ section {
 ::selection {
     background-color: $light-blue;
 }
+
 .page {
     padding-top: 48px;
     background: lighten($light-blue, 25%);
+
     section {
 
         .inner {
             padding: 32px 0;
-            display: flex; 
+            display: flex;
             justify-content: space-between;
             flex-flow: column;
+
             @include media-up(mdl) {
                 flex-flow: row;
             }
+
             .content {
                 order: 2;
+
                 @include media-up(mdl) {
                     order: 1;
                 }
-                
+
             }
-            img { 
+
+            img {
                 order: 1;
                 max-width: 90%;
-                margin: 0 0 16px ;
+                margin: 0 0 16px;
+
                 @include media-up(mdl) {
                     order: 2;
                     max-width: 450px;
                     margin-left: 32px;
                 }
+
                 height: auto;
                 align-self: flex-start;
-                // border-radius: 20px;
-                box-shadow: 0 2px 20px -12px darken($blue, 20%);
 
             }
-            p { text-align-last: left; }
+
+            p {
+                text-align-last: left;
+            }
         }
+
         margin-bottom: 0;
     }
 
 }
-.post { 
-    .has-image + section > .title {
+
+.post {
+    .has-image+section>.title {
         display: block;
     }
+
     section {
         max-width: 1600px;
         margin: 0 auto;
-        .title {display: none;}
+
+        .title {
+            display: none;
+        }
     }
-    hr { display: none;}
+
+    hr {
+        display: none;
+    }
 }
-
-

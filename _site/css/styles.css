@@ -46,13 +46,12 @@ p:not(:last-child) {
 }
 
 .nav {
-  background-color: #8ec0d4;
-  box-shadow: 0 1px 20px -10px #007cb0;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 100000;
+  background-color: whitesmoke;
 }
 .nav .inner {
   display: flex;
@@ -62,16 +61,16 @@ p:not(:last-child) {
   align-self: flex-start;
   justify-content: space-between;
   position: relative;
-  padding: 16px;
+  padding: 32px;
 }
 @media (min-width: 316px) and (max-width: 767px) {
   .nav .inner {
-    padding: 0 16px;
+    padding: 8px 16px;
   }
 }
 @media (min-width: 1024px) {
   .nav .inner {
-    padding: 8px 32px;
+    padding: 16px 32px;
   }
 }
 @media (min-width: 1710px) {
@@ -121,7 +120,6 @@ p:not(:last-child) {
 }
 .nav .nav-item.active, .nav .nav-item:hover {
   font-family: "lulo-b", sans-serif;
-  color: #1a1a1a;
 }
 .nav .nav-item.order-1 {
   order: 1;
@@ -154,7 +152,6 @@ p:not(:last-child) {
 .nav .mobile-menu-button .bar-2, .nav .mobile-menu-button .bar-1 {
   height: 2px;
   width: 24px;
-  border-radius: 2px;
   display: block;
   background-color: #1a1a1a;
   margin: 4px 0;
@@ -186,11 +183,7 @@ p:not(:last-child) {
     justify-content: flex-start;
     display: flex;
     height: 100vh;
-    background: linear-gradient(180deg, #007cb0 0%, #007cb0 30%, rgba(255, 255, 255, 0) 100%);
     padding: 16px;
-  }
-  .nav.active .bar-1, .nav.active .bar-2 {
-    background-color: #8ec0d4;
   }
 }
 .nav.active .bar-1 {
@@ -209,7 +202,6 @@ header {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  background-color: #efefef;
   position: relative;
   padding: 0 16px;
   text-align: center;
@@ -280,7 +272,6 @@ footer .inner {
   justify-content: space-between;
   align-items: center;
   padding: 16px 0;
-  font-size: 12px;
 }
 footer a {
   text-decoration: none;
@@ -344,31 +335,22 @@ footer a:hover {
 .teaser .grid .item:hover {
   transition: filter 300ms;
 }
-.teaser .grid .item:hover .image:after {
-  box-shadow: inset 0 0 0 5px #009de0;
-  transition: box-shadow 400ms 100ms;
-}
 .teaser .grid .item .image {
   width: 100%;
   height: 100%;
-  box-shadow: 0 2px 20px -12px #00344a;
   background-size: cover;
   background-position: center;
   background-color: #efefef;
   margin-bottom: 16px;
   position: relative;
-  border-radius: 20px;
 }
 .teaser .grid .item .image:after {
   content: "";
   position: absolute;
   height: 100%;
-  border-radius: 20px;
   width: 100%;
   top: 0;
   left: 0;
-  box-shadow: inset 0 0 0 5px transparent;
-  transition: box-shadow 400ms;
   z-index: 2;
 }
 @media (max-width: 767px) {
@@ -435,7 +417,8 @@ footer a:hover {
   font-family: "lulo-b", sans-serif;
 }
 
-.button, a[href^="mailto:"] {
+.button,
+a[href^="mailto:"] {
   padding: 0.8rem;
   align-self: center;
   text-decoration: none;
@@ -443,23 +426,26 @@ footer a:hover {
   cursor: pointer;
   display: inline-block;
   margin-bottom: 8px;
-  border-radius: 40px;
-  background-color: #8ec0d4;
-  color: #007cb0;
+  background-color: #007cb0;
+  color: whitesmoke;
+  font-weight: bold;
   transition: background-color 400ms 100ms, border-color 400ms 100ms, color 400ms 100ms;
 }
 @media (min-width: 768px) {
-  .button, a[href^="mailto:"] {
+  .button,
+a[href^="mailto:"] {
     padding: 0.8rem 2rem;
   }
 }
-.button a, a[href^="mailto:"] a {
+.button a,
+a[href^="mailto:"] a {
   text-decoration: none;
 }
-.button:hover, a[href^="mailto:"]:hover {
+.button:hover,
+a[href^="mailto:"]:hover {
   transition: background-color 400ms, border-color 400ms, color 400ms;
   background-color: #8ec0d4;
-  color: #007cb0;
+  color: whitesmoke;
 }
 
 .buttons-wrapper {
@@ -480,7 +466,6 @@ footer a:hover {
 }
 .buttons-wrapper h2, .buttons-wrapper .teaser .grid .item span, .teaser .grid .item .buttons-wrapper span {
   text-transform: uppercase;
-  color: white;
   margin-bottom: 0;
 }
 
@@ -526,10 +511,6 @@ footer a:hover {
   }
 }
 
-main.home {
-  background-color: #8ec0d4;
-}
-
 .home header {
   height: 400px;
   margin-bottom: 48px;
@@ -538,7 +519,6 @@ main.home {
   justify-content: space-between;
   align-items: flex-end;
   padding-bottom: 48px;
-  background-color: #8ec0d4;
 }
 @media (max-width: 767px) {
   .home header {
@@ -557,7 +537,6 @@ main.home {
   width: 40%;
   z-index: 1;
   text-align: left;
-  color: #1a1a1a;
 }
 @media (max-width: 767px) {
   .home header .header-content {
@@ -583,7 +562,11 @@ main.home {
   width: auto;
 }
 .home header .logo path {
-  fill: #fff;
+  fill: #007cb0;
+}
+.home .news .news-image {
+  padding-top: 56%;
+  background-size: cover;
 }
 .home .news .content {
   display: flex;
@@ -600,14 +583,10 @@ main.home {
   }
 }
 .home article {
-  border-radius: 20px;
   overflow: hidden;
   width: calc(33% - 16px);
   cursor: pointer;
-  background-color: white;
-  color: #1a1a1a;
   align-self: flex-start;
-  box-shadow: 0 2px 20px -12px #00344a;
 }
 @media (max-width: 767px) {
   .home article {
@@ -647,23 +626,15 @@ main.home {
 .home article hr ~ * {
   display: none;
 }
-.home h2, .home .teaser .grid .item span, .teaser .grid .item .home span {
-  text-align: center;
-}
 .home section.centered {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
   flex-flow: row;
-  background: linear-gradient(180deg, #8ec0d4 0%, #fffaee 100%);
-  text-align: left;
 }
 .home section.centered .content {
   width: auto;
-}
-.home section.centered h2, .home section.centered .teaser .grid .item span, .teaser .grid .item .home section.centered span {
-  text-align: left;
 }
 .home .about {
   margin-bottom: 0;
@@ -675,22 +646,10 @@ main.home {
 }
 .home section.teaser {
   padding-top: 48px;
-  background-color: #fffaee;
   margin-bottom: 0;
 }
 .home .maps {
   margin-bottom: 0;
-  background: linear-gradient(180deg, #fffaee 0%, #007cb0 100%);
-}
-.home .button {
-  background-color: white;
-  color: #1a1a1a;
-}
-.home .button:hover {
-  transition: background-color 400ms, border-color 400ms, color 400ms;
-  background-color: #8ec0d4;
-  color: #007cb0;
-  border-color: #8ec0d4;
 }
 
 .kaffeebar h2, .kaffeebar .teaser .grid .item span, .teaser .grid .item .kaffeebar span {
@@ -750,7 +709,7 @@ main.home {
 
 html {
   height: 100%;
-  background-color: #fdfdfd;
+  background-color: whitesmoke;
 }
 
 main {
@@ -769,9 +728,10 @@ main .content {
 
 body {
   height: 100%;
-  color: #1f1f1f;
+  color: #007cb0;
   opacity: 1;
   transition: opacity 200ms;
+  font-size: 20px;
 }
 body.loading {
   opacity: 0;
@@ -807,16 +767,16 @@ section {
 section.centered {
   display: flex;
   flex-flow: column;
+  max-width: 674px;
+  margin: 0 auto;
+}
+section.centered.intro {
+  text-align: center;
 }
 section.centered h2, section.centered .teaser .grid .item span, .teaser .grid .item section.centered span {
   font-size: 32px;
   line-height: 48px;
-  max-width: 1000px;
 }
-section.centered p {
-  max-width: 1000px;
-}
-
 .date {
   display: block;
   padding: 5px 10px;
@@ -835,10 +795,8 @@ section.centered p {
 }
 .maps .map {
   position: relative;
-  border-radius: 20px;
   overflow: hidden;
   margin-bottom: 16px;
-  box-shadow: 0 1px 20px -10px #007cb0;
 }
 .maps .map img {
   display: block;
@@ -897,7 +855,6 @@ section.centered p {
   margin: 0 0 16px;
   height: auto;
   align-self: flex-start;
-  box-shadow: 0 2px 20px -12px #00344a;
 }
 @media (min-width: 1024px) {
   .page section .inner img {

@@ -7,11 +7,13 @@ contact_link: 'kontakt.html'
 <main class="home">
 
     <header >
-        <div class="header-content">
-            <h2>{{headertitle}}</h2>
-            <p>{{headercontent}}</p>
-        </div>
-        <div class="logo">
+        <section class="intro centered">
+            <div class="content">
+                <h2>{{headertitle}}</h2>
+                <p>{{headercontent}}</p>
+            </div>
+        </section>
+        <!-- <div class="logo">
             <?xml version="1.0" encoding="UTF-8"?>
                 <svg viewBox="0 0 821 503" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <title>leuchtstoff logo</title>
@@ -48,13 +50,13 @@ contact_link: 'kontakt.html'
                         </g>
                     </g>
                 </svg>
-        </div>
+        </div> -->
     </header>
 
     <section class="news length-{{collections.newsrev.length}}">
         <div class="content">
             <article class="openinghours" onclick="window.location.href='{{contact_link}}'">
-                <img src="{{header-image}}" alt="">
+                <div class="news-image""" style="background-image:url({{header-image}})" alt=""></div>
                 <div class="article-content">
                     <h3>{{openinghours-title}}</h3>
                     <p>{% for row in openinghours %}<div>{{row}}</div>{%endfor%}</p>
@@ -63,7 +65,7 @@ contact_link: 'kontakt.html'
             
             {% for article in collections.newsrev %}
                 <article class="article" onclick="window.location.href='{{article.url}}'">
-                    <img src="{{article.data.header-image}}" alt="">
+                    <div class="news-image""" style="background-image:url({{article.data.header-image}})" alt=""></div>
                     <div class="article-content">
                     <span class="date-v2">{{article.date | dateformat }}</span>         
                         <h3>{{article.data.title}}</h3>

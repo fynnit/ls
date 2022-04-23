@@ -43,16 +43,13 @@
                 transition: filter 300ms;
                 .image {
                     
-                    &:after {
-                        box-shadow: inset 0 0 0 5px $fresh-blue;
-                        transition: box-shadow 400ms 100ms;
-                    }
+            
                 }
             }
             .image {
                 width: 100%;
                 height: 100%;
-                box-shadow: 0 2px 20px -12px darken($blue, 20%);
+
 
                 // padding: 50% 0 0 0;
                 background-size: cover;
@@ -60,18 +57,17 @@
                 background-color: $light;
                 margin-bottom: 16px;
                 position: relative;
-                border-radius: 20px;
+
                 &:after {
                     content: '';
                     position: absolute;
                     height: 100%;
-                    border-radius: 20px;
 
                     width: 100%;
                     top: 0;
                     left: 0;
-                    box-shadow: inset 0 0 0 5px transparent;
-                    transition: box-shadow 400ms;
+
+
                     z-index: 2;
                 }
                 @include media-down(md) {       
