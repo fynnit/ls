@@ -13,17 +13,9 @@
         align-self: flex-start;
         justify-content: space-between;
         position: relative;
-        padding: 32px;
-        @include media-between(xsm, md) {
-            padding: 8px 16px;
-        }
-        
-        
-        @include media-up(mdl) {
+        padding: 8px 16px;
+        @include media-up(md) {
             padding: 16px 32px;
-        }
-        @media (min-width: 1710px) {
-            padding: 0;
         }
         a {text-transform: uppercase;}
     }
@@ -39,18 +31,18 @@
         flex-grow: 1;
         display: flex;
         justify-content: flex-end;
-
+        background-color: $light;
         @include media-down(mdl) {
             display: none;
-            padding: 16px 16px;
         }
     }
     .nav-item {
         text-transform: lowercase;
         display: inline-block;
         text-decoration: none;
-        color: inherit;
+
         font-size: 28px;
+        color: $blackboard;
         @include media-up(mdl){
             margin-left: 3vw;
             font-size: 25px;
@@ -87,7 +79,7 @@
             width: 24px;
 
             display: block;
-            background-color: $black;
+            background-color: $blackboard;
             margin: 4px 0;
             // position: absolute;
             // top: 0;
@@ -110,11 +102,6 @@
     }
     &.active {
         @include media-down(mdl) {
-            background-color: $blue;
-            .sitename ,
-            .nav-item {
-                color: $light;
-            }
             .menu-items {
                 width: 100%;
                 position: absolute;
@@ -125,13 +112,11 @@
                 justify-content: flex-start;
                 display: flex;
                 height: 100vh;
-                // height: 300px;
-                // background: linear-gradient(180deg, $blue 0%, $blue 30%, rgba(255,255,255,0) 100%);
-                padding: 16px;
+                padding: 8px 16px;
                 
-            }
-            .bar-1, .bar-2 {
-                // background-color: $light;
+                @include media-up(md) {
+                    padding: 16px 32px;
+                }
             }
                     
         }

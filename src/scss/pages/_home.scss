@@ -85,22 +85,32 @@
         .news-image {
             padding-top: 56%;
             background-size: cover;
+            transition: transform 800ms ease-in-out;
+                &:hover {
+                    transform: scale(1.01) translate(0, -1%);
+                    transition: transform 500ms ease-in-out;
+                }
+
         }
         .content{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 32px;
-            // @include media-down(md) {
-            // }
+            @include media-down(md) {
+                grid-template-columns: 1fr;
+            }
         }
-
+        
         &.length-1 .content {
             grid-template-columns: 1fr 1fr;
+            @include media-down(md) {
+                grid-template-columns: 1fr;
+            }
         }
     }
     
     article {
-        overflow: hidden;
+        // overflow: hidden;
         cursor: pointer;
         align-self: flex-start;
 
