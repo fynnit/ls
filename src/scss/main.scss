@@ -31,7 +31,7 @@ html {
 main {
     scroll-snap-type: y proximity;
 
-    min-height: calc(100% - 31px - 58px);
+    min-height: 100%;
 
     .content {
         width: 100%;
@@ -153,8 +153,9 @@ section {
 }
 
 .page {
-    padding-top: 48px;
-    background: lighten($light, 25%);
+    padding-top: 57px;
+    padding-bottom: 61px;
+
     header {
         height: 40vh;
         margin: 0 auto;

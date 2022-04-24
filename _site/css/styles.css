@@ -232,7 +232,7 @@ header.has-image .title {
 
 footer {
   padding: 0 16px;
-  background-color: #007cb0;
+  background-color: #0f2229;
   color: white;
 }
 @media (min-width: 768px) {
@@ -396,10 +396,10 @@ a[href^="mailto:"] {
   cursor: pointer;
   display: inline-block;
   margin-bottom: 8px;
-  background-color: #007cb0;
+  background-color: #0f2229;
   color: whitesmoke;
   font-weight: bold;
-  transition: background-color 400ms 100ms, border-color 400ms 100ms, color 400ms 100ms;
+  transition: background-color 400ms 100ms, color 400ms 100ms;
 }
 @media (min-width: 768px) {
   .button,
@@ -413,9 +413,9 @@ a[href^="mailto:"] a {
 }
 .button:hover,
 a[href^="mailto:"]:hover {
-  transition: background-color 400ms, border-color 400ms, color 400ms;
-  background-color: #e3f7ff;
-  color: #0f2229;
+  transition: background-color 400ms color 400ms;
+  background-image: #0f2229;
+  color: white;
 }
 
 .buttons-wrapper {
@@ -661,7 +661,7 @@ html {
 
 main {
   scroll-snap-type: y proximity;
-  min-height: calc(100% - 31px - 58px);
+  min-height: 100%;
 }
 main .content {
   width: 100%;
@@ -771,8 +771,8 @@ section.centered h2, section.centered .teaser .grid .item span, .teaser .grid .i
 }
 
 .page {
-  padding-top: 48px;
-  background: white;
+  padding-top: 57px;
+  padding-bottom: 61px;
 }
 .page header {
   height: 40vh;

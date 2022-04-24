@@ -13,7 +13,7 @@ a[href^="mailto:"] {
     display: inline-block;
     margin-bottom: 8px;
 
-    background-color: $blue;
+    background-color: $blackboard;
     color: whitesmoke;
     font-weight: bold;
 
@@ -22,13 +22,13 @@ a[href^="mailto:"] {
     }
 
     transition: background-color 400ms 100ms,
-        border-color 400ms 100ms,
         color 400ms 100ms;
 
     &:hover {
-        transition: background-color 400ms, border-color 400ms, color 400ms;
-            background-color: $light;
-            color: $blackboard;
+        transition: background-color 400ms color 400ms;
+            
+        background-image: $blackboard;
+        color: white;
     }
 }
 
