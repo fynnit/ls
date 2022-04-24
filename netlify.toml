@@ -1,4 +1,5 @@
 [[plugins]]
 package = "netlify-plugin-image-optim"
-[build]
+
+[[build]]
 functions = "./functions"
