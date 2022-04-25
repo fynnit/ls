@@ -5,51 +5,51 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
-  path: index.md
+  path: src/index.md
   label: home
 - type: directory
-  path: news
+  path: src/news
   label: home news
   create: documents
   match: "**/*"
 - type: document
-  path: kaffebar.md
+  path: src/kaffebar.md
   label: kaffee
 - type: directory
-  path: bohnen
+  path: src/bohnen
   label: bohnen
   create: documents
   match: "**/*"
   templates:
   - bohnen-post
 - type: document
-  path: bakery.md
+  path: src/bakery.md
   label: bakery
 - type: document
-  path: breakfast.md
+  path: src/breakfast.md
   label: frühstück
 - type: directory
-  path: frühstück
+  path: src/frühstück
   label: frühstück
   create: documents
   match: "**/*"
   templates:
   - breakfast-post
 - type: document
-  path: catering.md
+  path: src/catering.md
   label: catering
 - type: directory
-  path: produkte
+  path: src/produkte
   label: catering produkte
   create: documents
   match: "**/*"
   templates:
   - produkte-post
 - type: document
-  path: kontakt.md
+  path: src/kontakt.md
   label: kontakt
 - type: document
-  path: impressum.md
+  path: src/impressum.md
   label: impressum
 upload_dir: src/assets/images
 public_path: src/assets/images
