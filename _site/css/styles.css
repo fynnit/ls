@@ -49,7 +49,7 @@ p:not(:last-child) {
 .nav .inner {
   display: flex;
   width: 100%;
-  max-width: 1600px;
+  max-width: 1664px;
   margin: 0 auto;
   align-self: flex-start;
   justify-content: space-between;
@@ -249,7 +249,19 @@ footer .inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
+  gap: 32px;
   padding: 16px 0;
+}
+@media (min-width: 768px) {
+  footer .inner {
+    flex-direction: row;
+  }
+}
+footer .footer-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
 }
 footer a {
   text-decoration: none;
@@ -259,12 +271,6 @@ footer a {
 footer a:hover {
   transition: color 300ms;
   color: #007cb0;
-}
-@media (max-width: 767px) {
-  footer a:last-child {
-    margin-left: 5px;
-    display: inline-block;
-  }
 }
 
 .teaser .grid {
@@ -424,13 +430,9 @@ a[href^="mailto:"]:hover {
   flex-flow: column;
   width: 100%;
 }
-@media (min-width: 768px) {
-  .buttons-wrapper {
-    flex-flow: row;
-  }
-}
 @media (min-width: 1024px) {
   .buttons-wrapper {
+    flex-flow: row;
     justify-content: center;
   }
 }
@@ -442,38 +444,41 @@ a[href^="mailto:"]:hover {
 .buttons {
   display: flex;
   align-items: center;
-  flex-flow: row;
-  justify-content: space-between;
-  width: 100%;
+  justify-content: space-around;
   margin-top: 8px;
+  flex-flow: column;
+  gap: 8px;
+}
+.buttons h2, .buttons .teaser .grid .item span, .teaser .grid .item .buttons span {
+  flex-grow: 1;
+}
+@media (min-width: 316px) {
+  .buttons {
+    flex-flow: row;
+  }
 }
 @media (min-width: 768px) {
   .buttons {
-    flex-flow: row;
     padding: 0 48px 0 48px;
+    gap: 16px;
+    width: auto;
   }
 }
 @media (min-width: 1024px) {
   .buttons {
     margin-top: 0;
-    width: 50%;
+    gap: 32px;
     justify-content: flex-start;
   }
 }
 .buttons .button {
-  padding: 8px 8px;
+  padding: 10px 20px;
   display: block;
-  width: calc(50% - 8px);
-}
-@media (min-width: 480px) {
-  .buttons .button {
-    padding: 8px 16px;
-  }
+  width: auto;
 }
 @media (min-width: 768px) {
   .buttons .button {
     padding: 8px 32px;
-    width: auto;
     margin: 16px 0;
   }
   .buttons .button:last-child {
