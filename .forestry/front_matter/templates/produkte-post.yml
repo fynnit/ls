@@ -1,5 +1,5 @@
 ---
-label: src/produkte
+label: produkte
 hide_body: false
 fields:
 - type: text
