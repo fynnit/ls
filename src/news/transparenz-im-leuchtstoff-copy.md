@@ -2,7 +2,7 @@
 layout: post.liquid
 tags: news
 title: 'Mondags-Middags-Disch '
-date: 2022-11-14T23:00:00Z
+date: 2022-11-13T23:00:00Z
 header-image: src/assets/images/middagsdisch.png
 
 ---
