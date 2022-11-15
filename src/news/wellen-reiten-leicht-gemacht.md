@@ -1,11 +1,9 @@
 ---
 layout: post.liquid
 tags: news
-title: Wellen-Reiten leicht gemacht
-date: 2022-01-13T23:00:00Z
-header-image: "/assets/images/kaffeebar/363A6045.JPG"
+title: Transparenz im Leuchtstoff
+date: 2022-11-14T23:00:00Z
+header-image: src/assets/images/transparenz-22.jpg
 
 ---
-ab dem 15.1. gilt die nächste Verordnung zur Omikron-Wellen-Reiterei. Wer sich reinsetzen möchte, zeigt uns bitte einen Nachweis über ne Booster Impfung, oder Stanni-Impfung+Antigentest.  
-  
-Gracie 
+Wer erfahren möchte, wie die Ökonomie hinter der Leuchtstoff Kaffeebar funktioniert, ist herzlich eingeladen, sich unsere neuen Aushänge und Poster hier im Laden anzuschauen. In guter Leuchtstoff Tradition haben wir mal wieder blank gezogen
