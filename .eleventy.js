@@ -3,7 +3,7 @@ moment.tz.add("Europe/Berlin|CET CEST CEMT|-10 -20 -30|0101010101010121010121010
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.setTemplateFormats("html, liquid, njk, md");
-    eleventyConfig.addPassthroughCopy({"assets/": "/assets/"});
+    eleventyConfig.addPassthroughCopy({"src/assets/": "_site/assets/"});
     eleventyConfig.addWatchTarget("./scss/");
 
     eleventyConfig.setFrontMatterParsingOptions({
@@ -30,7 +30,6 @@ module.exports = function(eleventyConfig) {
         return b.date - a.date;
       });
     });
-    eleventyConfig.addPassthroughCopy("src/assets/fonts");
 
     return {
       dir: {
