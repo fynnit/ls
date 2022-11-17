@@ -1,12 +1,13 @@
 header {
-    height: 300px;
+    height: 650px;
 
     &.small {
-        height: 200px;
+        height: 400px;
     }
     overflow: hidden;
     display: flex;
     flex-flow: column;
+    margin-top: 55px;
     justify-content: center;
     align-items: center;
 

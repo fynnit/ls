@@ -179,10 +179,11 @@ p:not(:last-child) {
 }
 
 header {
-  height: 300px;
+  height: 650px;
   overflow: hidden;
   display: flex;
   flex-flow: column;
+  margin-top: 55px;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -191,7 +192,7 @@ header {
   margin-bottom: 48px;
 }
 header.small {
-  height: 200px;
+  height: 400px;
 }
 header h1, header h2, header .teaser .grid .item span, .teaser .grid .item header span, header h3 {
   z-index: 1;
