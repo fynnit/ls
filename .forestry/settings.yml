@@ -51,7 +51,7 @@ sections:
 - type: document
   path: src/impressum.md
   label: impressum
-upload_dir: assets/images
+upload_dir: src/assets/images
 public_path: "/assets/images"
 front_matter_path: ''
 use_front_matter_path: false
