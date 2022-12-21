@@ -2,7 +2,7 @@
 layout: post.liquid
 tags: news
 title: Öffnungszeiten Feiertage 2022/23
-date: 2022-11-13T23:00:00.000+00:00
+date: 2022-12-20T23:00:00Z
 header-image: "/assets/images/img_3819.JPG"
 
 ---
