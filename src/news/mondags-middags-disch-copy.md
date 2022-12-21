@@ -1,11 +1,9 @@
 ---
 layout: post.liquid
 tags: news
-title: Mondags-Middags-Disch -(copy)
+title: Öffnungszeiten Feiertage 2022/23
 date: 2022-11-13T23:00:00.000+00:00
-header-image: "/assets/images/middagsdisch.png"
+header-image: "/assets/images/img_3819.JPG"
 
 ---
-Wochenende vorbei, Kühlschrank leer. Wo kommt schnell was Gutes zu beißen her?  
-Immer Montags im Leuchtstoff: lecker Bio-Middach!   
-Wechselnder Mittagstisch mit Suppen, Pasta- und hausgemachten Knödelgerichten
+Fröhliche Weihnachten, Happy Chanukka und guten Start ins Neue Jahr! Wir sind dieser Tage fast immer für euch da und freuen uns auf nächste Schritte im Leuchtstoff in 2023 mit Euch!
