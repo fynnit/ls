@@ -13,8 +13,7 @@ weekendheadline: am wochenende
 ---
 Die solide Begleitung für den ersten Kaffee am Morgen/Mittag/Nachmittag? Die berühmte wichtigste Mahlzeit des Tages? Gibts im Leuchtstoff jeden Tag solange die Vorräte reichen.
 
-Hier bekommst du alles von hausgebackenem Müsli (glutenfrei) auf Beeren und Joghurt (auch vegan), über gegrillte Baguettes und Croissants mit herzhaften oder süßen Belägen, bis hin zum großen Berlin Breakfast Burrito mit Rührei (oder scrambled Tofu), veganer Chorizo, Bohnen, Kartoffel und jede Menge Salsa.  
-Aktuell haben wir coronabedingt leider keine Burritos und kein Müsli - dafür geile neue Toasts und andere Leckereien.
+Hier bekommst du alles von knackigen Sandwiches und gegrillten Baguettes, verschiedene Croissants mit herzhaften oder süßen Belägen, bis hin zu fancy Brunchoptionen a la Carte am Wochenende \[aktuell: Nick's legendary Peanut-Teriyaki-Mushroom-Toast (vegan) und David's Raver-Stulle-Deluxe mit Tahini-Rührei und Coleslaw\]
 
 Leckofanny, is dat jeil.
 
